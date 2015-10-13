@@ -1,0 +1,100 @@
+#copyright{
+	text-align: center;
+}
+#avatar{
+	width: 180px;
+}
+
+#Jumbotron-profile {
+    text-align: center;
+    margin-bottom: 0;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+}
+
+#Titre-Profile {
+    font-size: 45px;
+}
+#Sous-Titre {
+    font-size: 35px;
+    font-weight: 100;
+}
+#Jumbotron-propos {
+    padding: 40px;
+    text-align: center;
+        margin-bottom: 0;
+}
+#Titre-jumbotron{
+    font-size: 28px;
+}
+#Text-presentation {
+    font-size: 18px;
+    font-weight: normal;
+        max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Jumbotron-competence{
+padding: 40px;
+    text-align: center;
+    margin-bottom: 0;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+}
+
+.progress{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 22px;
+    background: #ECF0F1;
+    border-radius: 5px;
+    box-shadow: none;
+}
+.progress-bar {
+    line-height: 12px;
+    background: #2980B9;
+    box-shadow: none;
+}
+#Jumbotron-experience{
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#container-Experience {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+}
+
+.col-md-3 {
+    background-color: #34495E;;
+    margin: 10px;
+    color: #ECF0F1;
+}
+
+@media (min-width: 992px){
+.col-md-3 {
+    max-width: 355px;
+    width: 31%;
+}
+}
+#Titre-Stage {
+    background-color: #2980B9;
+    color: #ECF0F1;
+    font-weight: normal;
+}
+
+#nomEntreprise {
+    font-size: 27px;
+    font-weight: normal;
+}
+#description-Stage {
+    font-size: 18px;
+}
+#Jumbotron-footer{
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
