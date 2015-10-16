@@ -42,17 +42,25 @@ padding: 40px;
     color: #ECF0F1;
 }
 
-.progress{
-    max-width: 500px;
+#container-Skill {
+    max-width: 1130px;
+    min-height: 570px;
     margin-left: auto;
     margin-right: auto;
-    height: 22px;
+    text-align: left;
+}
+
+.progress{
+    max-width: 500px;
+    padding: 5px;
+    height: 30px;
     background: #ECF0F1;
     border-radius: 5px;
     box-shadow: none;
 }
 .progress-bar {
     line-height: 12px;
+    height: 20px;
     background: #2980B9;
     box-shadow: none;
 }
@@ -80,6 +88,7 @@ padding: 40px;
     width: 31%;
 }
 }
+
 #Titre-Stage {
     background-color: #2980B9;
     color: #ECF0F1;
@@ -93,8 +102,81 @@ padding: 40px;
 #description-Stage {
     font-size: 18px;
 }
+#Jumbotron-education{
+        text-align: center;
+    margin-bottom: 0;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+}
+.cd-timeline-content h2 {
+     font-size: 23px;
+    font-family: Avenir Next;
+    font-weight: 500;
+
+}
+@media (max-width: 1170px){
+.cd-timeline-content .cd-date {
+    float: left;
+    /* padding: 0; */
+    opacity: .7;
+    font-size: 15px;
+    color: #2C3E50;
+}
+}
+@media (min-width: 1170px){
+.cd-timeline-content .cd-date {
+    position: absolute;
+    width: 100%;
+    left: 78%;
+    bottom: 78%;
+    top: inherit;
+    font-size: 30px;
+}
+}
+#Jumbotron-Social-Download {
+    text-align: center;
+    background-color: #2C3E50;
+    margin-bottom: 0;
+}
+#DL-CV {
+    background-color: #E67E22;
+}
+#circule-Social{
+        font-size: 30px;
+            border-radius: 37px;
+}
 #Jumbotron-footer{
     padding: 40px;
     text-align: center;
     margin-bottom: 0;
+}
+footer {
+    padding: 0;
+    font-size: 15px;
+    color: rgb(67,67,67);
+    background-color: #edeff1;
+}
+
+/*Smartphone Size */
+@media (max-width: 700px){
+    #Jumbotron-propos {
+    padding: 15px;
+}
+    #Jumbotron-competence {
+    padding: 15px;
+}
+    #Jumbotron-experience {
+    padding: 15px;
+}
+#Jumbotron-education{
+    padding: 15px;
+}
+#Jumbotron-Social-Download {
+padding: 15px;
+}
+#Jumbotron-footer {
+    padding: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 }
