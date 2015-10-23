@@ -19,6 +19,18 @@
     font-size: 35px;
     font-weight: 100;
 }
+nav.navbar.navbar-inverse.navbar-static-top {
+    margin-bottom: 0;
+}
+
+.navbar-nav {
+    margin: 0;
+    margin-left: auto;
+    text-align: center;
+    float: none;
+    margin-right: auto;
+    max-width: 675px;
+}
 #Jumbotron-propos {
     padding: 40px;
     text-align: center;
@@ -35,7 +47,7 @@
     margin-right: auto;
 }
 #Jumbotron-competence{
-padding: 40px;
+    padding: 20px;
     text-align: center;
     margin-bottom: 0;
     background-color: #2C3E50;
@@ -43,7 +55,7 @@ padding: 40px;
 }
 
 #container-Skill {
-    max-width: 1130px;
+    max-width: 1080px;
     min-height: 570px;
     margin-left: auto;
     margin-right: auto;
@@ -51,16 +63,16 @@ padding: 40px;
 }
 
 .progress{
-    max-width: 500px;
+    max-width: 250px;
     padding: 5px;
-    height: 30px;
+    height: 20px;
     background: #ECF0F1;
     border-radius: 5px;
     box-shadow: none;
 }
 .progress-bar {
     line-height: 12px;
-    height: 20px;
+    height: 10px;
     background: #2980B9;
     box-shadow: none;
 }
@@ -75,17 +87,29 @@ padding: 40px;
     margin-right: auto;
     max-width: 1100px;
 }
-
+#titre-Competence{
+        margin-top: 10px;
+}
 .col-md-3 {
     background-color: #34495E;;
     margin: 10px;
     color: #ECF0F1;
 }
-
+@media (max-width: 992px){
+#Col-Competence {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+}
 @media (min-width: 992px){
 .col-md-3 {
     max-width: 355px;
     width: 31%;
+}
+#Col-Competence{
+    width: 250px;
 }
 }
 
@@ -305,4 +329,90 @@ padding: 15px;
     padding-left: 5px;
     padding-right: 5px;
 }
+}
+
+
+
+span.blinker {
+  position: relative;
+}
+
+span.blinker:before {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  content: '';
+  width: 2px;
+  height: 30px;
+  margin-top: -15px;
+  background-color: #ffffff;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: blinker;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: blinker;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 768px) {
+span.blinker:before {
+    left: 10px;
+    width: 3px;
+    height: 50px;
+    margin-top: -25px;
+  }
+}
+
+@media (min-width: 992px) {
+span.blinker:before {
+    width: 3px;
+    height: 50px;
+    margin-top: -25px;
+  }
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  4.4. BLINKER
+/*---------------------------------------------------------------------*/
+@-moz-keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
 }
