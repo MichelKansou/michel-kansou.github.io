@@ -5,11 +5,19 @@
 	width: 180px;
 }
 
+body{
+        background-color: #2C3E50;
+}
+nav.navbar.navbar-inverse.navbar-fixed-top {
+    margin: 0;
+}
+
 #Jumbotron-profile {
     text-align: center;
     margin-bottom: 0;
     background-color: #2C3E50;
     color: #ECF0F1;
+    margin-top: 30px;
 }
 
 #Titre-Profile {
@@ -18,9 +26,6 @@
 #Sous-Titre {
     font-size: 35px;
     font-weight: 100;
-}
-nav.navbar.navbar-inverse.navbar-static-top {
-    margin-bottom: 0;
 }
 
 .navbar-nav {
@@ -38,6 +43,9 @@ nav.navbar.navbar-inverse.navbar-static-top {
 }
 #Titre-jumbotron{
     font-size: 28px;
+}
+#Titre-Font-jumbotron{
+    font-family: inherit;
 }
 #Text-presentation {
     font-size: 18px;
@@ -134,7 +142,7 @@ nav.navbar.navbar-inverse.navbar-static-top {
 }
 .cd-timeline-content h2 {
      font-size: 23px;
-    font-family: Avenir Next;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 500;
 
 }
@@ -283,13 +291,281 @@ nav.navbar.navbar-inverse.navbar-static-top {
 	transform: scale(1);	
 }
 
+/*---------------------------------------------------------------------*/
+/*  SECTION - Processus
+/*---------------------------------------------------------------------*/
+#Jumbotron-Processus{
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#work-process {
+  background-color: #171717;
+}
+
+@media (max-width: 767px) {
+  #work-process .text-justify {
+    text-align: center;
+  }
+}
+
+#work-process .divider {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  #work-process .divider {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.work-process {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .work-process {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px 15px;
+        max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.work-process .item {
+  position: relative;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .work-process .item {
+    margin: 0 auto;
+    width: 200px;
+    height: 132px;
+  }
+}
+
+@media (max-width: 767px) {
+  .work-process .item:before {
+    position: absolute;
+    z-index: 10;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    margin-bottom: -66px;
+    border-left: 1px dashed #6e6e6e;
+  }
+}
+
+.work-process .item .inner-content {
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  height: 132px;
+}
+
+@media (min-width: 768px) {
+  .work-process .item .inner-content {
+    margin-top: 102px;
+    height: 102px;
+  }
+}
+
+.work-process .item .inner-content:before {
+  position: absolute;
+  z-index: 10;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #6e6e6e;
+}
+
+.work-process .item .inner-content:after {
+  position: absolute;
+  z-index: 10;
+  content: '';
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  margin-top: -132px;
+  border-left: 1px dashed #6e6e6e;
+}
+
+@media (min-width: 768px) {
+  .work-process .item .inner-content:after {
+    margin-top: -102px;
+  }
+}
+
+.work-process .item .inner-content > i {
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 86px;
+    height: 66px;
+    line-height: 66px;
+    margin-top: -33px;
+    margin-left: -43px;
+    color: #ECF0F1;
+    background-color: #E74C3C;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.work-process .item .inner-content > span.title {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+  margin-top: -18px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .work-process .item .inner-content > span.title {
+    margin-top: -33px;
+    font-size: medium;
+  }
+}
+
+.work-process .item .inner-content > span.dot {
+  position: absolute;
+  z-index: 15;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #6e6e6e;
+  border-radius: 25%;
+}
+
+.work-process .item > i.icon-Arrow {
+  display: block;
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 45px;
+  margin-right: -25px;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .work-process .item > i.icon-Arrow.icon-Down-3 {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .work-process .item > i.icon-Arrow.icon-Up-3 {
+    left: 0;
+    margin-left: -25px;
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .work-process .item > i.icon-Arrow.icon-Up-3 {
+    margin-top: -25px;
+  }
+}
+
+.work-process .item.first .inner-content:before {
+  left: auto;
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  .work-process .item.last:before {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .work-process .item.last .inner-content:before {
+    left: auto;
+    right: 0;
+  }
+}
+
+.work-process .item.last .inner-content:after {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .work-process .item.last .inner-content > span.dot {
+    right: 0;
+    left: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .work-process .item.no-margin:before {
+    display: none;
+  }
+}
+
+.work-process .item.no-margin .inner-content {
+  margin-top: 0px;
+}
+
+.work-process .item.no-margin .inner-content:after {
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .work-process .item.no-margin .inner-content > span.title {
+    top: auto;
+    bottom: 0;
+    font-size: medium;
+    margin-bottom: -33px;
+  }
+}
+
+
+
+#Jumbotron-portfolio{
+    padding: 40px;
+    background-color: #2C3E50;
+    color: #edeff1;
+    text-align: center;
+    margin-bottom: 0;
+}
+
 #Jumbotron-Social-Download {
     text-align: center;
-    background-color: #2C3E50;
     margin-bottom: 0;
 }
 #DL-CV {
-    background-color: #E67E22;
+        background-color: #E67E22;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 10px;
+    margin-bottom: 0;
 }
 #circule-Social{
         font-size: 30px;
@@ -297,6 +573,8 @@ nav.navbar.navbar-inverse.navbar-static-top {
 }
 #Jumbotron-footer{
     padding: 40px;
+    background-color: #2C3E50;
+    color: #edeff1;
     text-align: center;
     margin-bottom: 0;
 }
@@ -319,6 +597,12 @@ footer {
     padding: 15px;
 }
 #Jumbotron-education{
+    padding: 15px;
+}
+#Jumbotron-Processus{
+    padding: 15px;
+}
+#Jumbotron-portfolio{
     padding: 15px;
 }
 #Jumbotron-Social-Download {
