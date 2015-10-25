@@ -45,7 +45,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
     font-size: 28px;
 }
 #Titre-Font-jumbotron{
-    font-family: inherit;
+    font-family: monospace;
 }
 #Text-presentation {
     font-size: 18px;
