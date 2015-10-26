@@ -6,16 +6,18 @@
 }
 
 body{
-        background-color: #2C3E50;
+        background-color: #353E49;
 }
 nav.navbar.navbar-inverse.navbar-fixed-top {
     margin: 0;
 }
-
+.navbar-inverse {
+    background-color: #353E49;
+}
 #Jumbotron-profile {
     text-align: center;
     margin-bottom: 0;
-    background-color: #2C3E50;
+    background-color: #353E49;
     color: #ECF0F1;
     margin-top: 30px;
 }
@@ -34,7 +36,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
     text-align: center;
     float: none;
     margin-right: auto;
-    max-width: 675px;
+    max-width: 742px;
 }
 #Jumbotron-propos {
     padding: 40px;
@@ -58,7 +60,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
     padding: 20px;
     text-align: center;
     margin-bottom: 0;
-    background-color: #2C3E50;
+    background-color: #353E49;
     color: #ECF0F1;
 }
 
@@ -99,7 +101,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
         margin-top: 10px;
 }
 .col-md-3 {
-    background-color: #34495E;;
+    background-color: #34495E;
     margin: 10px;
     color: #ECF0F1;
 }
@@ -122,7 +124,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 }
 
 #Titre-Stage {
-    background-color: #2980B9;
+    background-color: #F39C12;
     color: #ECF0F1;
     font-weight: normal;
 }
@@ -137,7 +139,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 #Jumbotron-education{
         text-align: center;
     margin-bottom: 0;
-    background-color: #2C3E50;
+    background-color: #353E49;
     color: #ECF0F1;
 }
 .cd-timeline-content h2 {
@@ -550,7 +552,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 
 #Jumbotron-portfolio{
     padding: 40px;
-    background-color: #2C3E50;
+    background-color: #353E49;
     color: #edeff1;
     text-align: center;
     margin-bottom: 0;
@@ -573,7 +575,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 }
 #Jumbotron-footer{
     padding: 40px;
-    background-color: #2C3E50;
+    background-color: #353E49;
     color: #edeff1;
     text-align: center;
     margin-bottom: 0;
