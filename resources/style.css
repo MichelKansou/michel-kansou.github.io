@@ -8,9 +8,6 @@
 body{
         background-color: #353E49;
 }
-nav.navbar.navbar-inverse.navbar-fixed-top {
-    margin: 0;
-}
 .navbar-inverse {
     background-color: #353E49;
 }
@@ -40,6 +37,8 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 }
 #Jumbotron-propos {
     padding: 40px;
+        padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
         margin-bottom: 0;
 }
@@ -60,6 +59,8 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
     padding: 20px;
     text-align: center;
     margin-bottom: 0;
+        padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #353E49;
     color: #ECF0F1;
 }
@@ -88,6 +89,8 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 }
 #Jumbotron-experience{
     padding: 40px;
+        padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
     margin-bottom: 0;
 }
@@ -139,6 +142,8 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 #Jumbotron-education{
         text-align: center;
     margin-bottom: 0;
+        padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #353E49;
     color: #ECF0F1;
 }
@@ -298,6 +303,8 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 /*---------------------------------------------------------------------*/
 #Jumbotron-Processus{
     padding: 40px;
+        padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
     margin-bottom: 0;
 }
@@ -552,6 +559,8 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 
 #Jumbotron-portfolio{
     padding: 40px;
+        padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #353E49;
     color: #edeff1;
     text-align: center;
@@ -559,6 +568,8 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 }
 
 #Jumbotron-Social-Download {
+      padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
     margin-bottom: 0;
 }
@@ -591,24 +602,38 @@ footer {
 @media (max-width: 700px){
     #Jumbotron-propos {
     padding: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
     #Jumbotron-competence {
     padding: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
     #Jumbotron-experience {
     padding: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 #Jumbotron-education{
     padding: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 #Jumbotron-Processus{
     padding: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 #Jumbotron-portfolio{
     padding: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 #Jumbotron-Social-Download {
 padding: 15px;
+padding-top: 60px;
+    padding-bottom: 60px;
 }
 #Jumbotron-footer {
     padding: 15px;
