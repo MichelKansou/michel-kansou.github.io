@@ -33,7 +33,7 @@ body{
     text-align: center;
     float: none;
     margin-right: auto;
-    max-width: 742px;
+    max-width: 875px;
 }
 #Jumbotron-propos {
     padding: 40px;
@@ -726,4 +726,16 @@ span.blinker:before {
   100% {
     opacity: 1.0;
   }
+}
+
+
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 0;
+}
+.fr{
+  display: block;
+}
+
+.en{
+  display: none;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +24,24 @@
   </head>
 
   <body>
+    
+    <script>
+    function changeLanFR()
+    {
+      var frClass = document.querySelector(".fr");
+      var enClass = document.querySelector(".en");
+      enClass.style.display = "none";
+      frClass.style.display = "block";
+    }
+    function changeLanEN()
+    {
+      var frClass = document.querySelector(".fr");
+      var enClass = document.querySelector(".en");
+      enClass.style.display = "block";
+      frClass.style.display = "none";
+    }
+      </script>
+    <div class="fr">
         <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -44,6 +62,15 @@
             <li><a href="#formation">Formation</a></li>
             <li><a href="#processus">Processus</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Langage <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a id="LanFR" onclick="changeLanFR()">Français</a></li>
+                  <li><a id="LanEN" onclick="changeLanEN()">English</a></li>
+                </ul>
+              </li>
+            </ul>
+            
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -462,6 +489,465 @@
                 </div>
 
     </div>
+    </div><!-- Langage FR -->
+    
+    
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-----------------------------------------------------------------  EN Part -------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <div class="en">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+               <a href="#presentation">Profile</a>
+                    </li>
+            <li><a href="#competence">Skills</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#formation">Education</a></li>
+            <li><a href="#processus">Work Process</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a id="LanFR" onclick="changeLanFR()">Français</a></li>
+                  <li><a id="LanEN" onclick="changeLanEN()">English</a></li>
+                </ul>
+              </li>
+              
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    
+    
+    
+    
+    
+      <section id="profile">
+    <!-- Main jumbotron -->
+    <div class="jumbotron" id="Jumbotron-profile">
+        <img src="resources/Images/Avatar.png" class="img-circle" alt="Image profile" id="avatar">
+        <p id="Titre-Profile">I'm Michel Kansou <span class="blinker"></span></p>
+          <p id="Sous-Titre">Creative. Developer. Innovator.</p>
+    </div>
+      </section>
+    
+    
+    <section id="presentation">
+    <div class="jumbotron" id="Jumbotron-propos">
+      <span class="fui-user" id="Titre-jumbotron"> <span id="Titre-Font-jumbotron">- Profile</span></span>
+          <p id="Text-presentation">Hello my name is Michel Kansou currently a student in first year of an engineering programme at eXia.CESI Arras. I enjoy keeping abreast of the latest programming language, virtual reality and video games technology. Dynamic, I like learning new things and I am involved in my projects (whether independently or in groups). This site allows me to show my various achievements and make dispotion a contact form for people interested in my services in the Mobile and Web Development.</p>
+    </div>
+   </section>
+    
+        <section id="competence">
+        <div class="jumbotron" id="Jumbotron-competence">
+          <span class="fui-gear" id="Titre-jumbotron"> <span id="Titre-Font-jumbotron">- Skills</span></span>
+          <div class="row">
+            <div id="container-Skill">
+  <div class="col-md-3" id="Col-Competence">
+     <!-- Web -->
+    <h4 id="titre-Competence"><i class="fa fa-html5 fa-2x" id ="fa-Competence"></i>  Web</h4>
+          <span>HTML5<div class="progress">
+           <div class="progress-bar" style="width: 100%;"></div>
+          </div></span>
+          
+          <span>CSS3
+          <div class="progress">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div></span>
+          
+           <span>PHP
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%;"></div>
+          </div></span>
+          
+           <span>Javascript
+          <div class="progress">
+            <div class="progress-bar" style="width: 65%;"></div>
+          </div></span>
+          
+          
+           <span>Responsive Design
+          <div class="progress">
+            <div class="progress-bar" style="width: 82%;"></div>
+          </div></span>
+          
+          <span>Bootstrap 3
+          <div class="progress">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div></span>
+          
+           <span>WordPress
+          <div class="progress">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div></span>
+          </div> <!-- col-md-3 -->
+          
+          
+          
+          
+           <!-- Mobile -->
+            <div class="col-md-3" id="Col-Competence">
+              <h4 id="titre-Competence"><i class="fa fa-mobile fa-2x" id ="fa-Competence"></i>  Mobile</h4>
+           <span>Swift
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div></span>
+          <span>Xcode
+          <div class="progress">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div> </span>
+          
+           <hr>
+          <h4 id="titre-Competence"><i class="fa fa-cog fa-2x" id ="fa-Competence"></i>  Tools</h4>
+          <span>OS X
+          <div class="progress">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div></span>
+             <span>Windows
+          <div class="progress">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div></span>
+           <span>Linux
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div></span>
+          <span>PhotoShop CC
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%;"></div>
+          </div></span>
+          <span>Pixelmator
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%;"></div>
+          </div></span>
+          </div> <!-- col-md-3 -->
+          
+          
+          
+          
+          
+          <!-- Logiciel / BDD -->
+           <div class="col-md-3" id="Col-Competence">
+             
+              <h4 id="titre-Competence"><i class="fa fa-laptop fa-2x" id ="fa-Competence"></i>  Software</h4>
+          <span>JAVA
+          <div class="progress">
+            <div class="progress-bar" style="width: 56%;"></div>
+          </div></span>
+         
+         <span>C
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%;"></div>
+          </div></span>
+          
+         <span>Lua
+          <div class="progress">
+            <div class="progress-bar" style="width: 55%;"></div>
+          </div></span>
+          
+          </span>Python
+          <div class="progress">
+            <div class="progress-bar" style="width: 48%;"></div>
+          </div></span>
+               <hr>
+              <h4 id="titre-Competence"><i class="fa fa-database fa-2x" id ="fa-Competence"></i>  DB</h4>
+              
+              
+          <span>SQL
+          <div class="progress">
+            <div class="progress-bar" style="width: 65%;"></div>
+          </div></span>
+                    <span>MySQL
+          <div class="progress">
+            <div class="progress-bar" style="width: 60%;"></div>
+          </div></span>
+                    <span>SQL Server
+          <div class="progress">
+            <div class="progress-bar" style="width: 50%;"></div>
+          </div></span>
+           </div> <!-- col-md-3 -->
+           
+           
+           
+           
+           
+           <!-- Standard -->
+           
+                      <div class="col-md-3" id="Col-Competence">
+              <h4 id="titre-Competence"><i class="fa fa-plus-square fa-2x" id ="fa-Competence"></i>  Standard</h4>
+          <span>Agile / SCRUM
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div></span>
+                    <span>UML
+          <div class="progress">
+            <div class="progress-bar" style="width: 67%;"></div>
+          </div></span>
+                    <span>Merise
+          <div class="progress">
+            <div class="progress-bar" style="width: 60%;"></div>
+          </div></span>
+                    <span>POO OOP
+          <div class="progress">
+            <div class="progress-bar" style="width: 74%;"></div>
+          </div></span>
+                    <span>MVC
+          <div class="progress">
+            <div class="progress-bar" style="width: 65%;"></div>
+          </div></span>
+          
+            <span>Github
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%;"></div>
+          </div></span>
+                             <span>Trello
+          <div class="progress">
+            <div class="progress-bar" style="width: 65%;"></div>
+          </div></span>
+           </div> <!-- col-md-3 -->
+           </div>  <!-- container skill -->
+          </div>
+           </div>
+              </section>
+              
+              
+              
+              
+              
+              
+               <section id="experience">
+            <div class="jumbotron" id="Jumbotron-experience">
+              <span class="fui-document"id="Titre-jumbotron"> <span id="Titre-Font-jumbotron">- Work Experience</span></span>
+              <div id="container-Experience">
+              <div class="row">
+              <div class="col-md-3">
+                <p id ="Titre-Stage">Sep. - Nov. 2014</p>
+                <div id="textStage">
+                  <p id="nomEntreprise">Adenatis</p>
+                  <p id="poste-Stage">Web Developer</p>
+                  <p id="description-Stage">Internship Web development and Responsive Design</p>
+                  </div>
+                
+              </div>
+              <div class="col-md-3">
+                <p id ="Titre-Stage">Mai - Juin 2015</p>
+                <div id="textStage">
+                  <p id="nomEntreprise">LCOMLOCAL</p>
+                  <p id="poste-Stage">Web Developer</p>
+                  <p id="description-Stage">Internship Web development, Responsive Design and SEO consultancy</p>
+                  </div>
+              </div>
+              <div class="col-md-3">
+              <p id ="Titre-Stage">2015</p>
+                <div id="textStage">
+                  <p id="nomEntreprise">Squart</p>
+                  <p id="poste-Stage">Project manager</p>
+                  <p id="description-Stage">Creation and development of a mobile game for iOS 9 using Swift</p>
+                  </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </section>
+              
+              
+              
+              
+              
+                  <section id="formation">
+              <div class="jumbotron" id="Jumbotron-education">
+                              <span class="glyphicon glyphicon-education"id="Titre-jumbotron"> <span id="Titre-Font-jumbotron">- Education</span></span>
+                              
+<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="http://izee.ro/market/mywall/one/img/ed1.png" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Master degree in computer Sciences</h2>
+				<span class="cd-date">July 2018</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+    
+    
+    <div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="http://izee.ro/market/mywall/one/img/ed2.png" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Analyst Programmer</h2>
+				<span class="cd-date">July 2015</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+    
+    
+     <div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="http://izee.ro/market/mywall/one/img/ed3.png" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Degree : A levels of Science</h2>
+				<span class="cd-date">July 2013</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+</section>
+    </div>
+    </section>
+    
+    
+    <section id="processus">
+    <div class="jumbotron" id="Jumbotron-Processus">
+        <span class="glyphicon glyphicon-check" id="Titre-jumbotron"> <span id="Titre-Font-jumbotron">- Work Process</span></span>
+        <div class="work-process">
+                    <div class="row">
+                        <div class="col-sm-2 col-md-2 item no-margin first">
+                            <div class="inner-content">
+                                <i class="fa fa-lightbulb-o"></i>
+
+                                <span class="title animated fadeInUp" style="opacity: 1;">1. Idea</span>
+
+                                <span class="dot"></span>
+                            </div>
+                            <!-- //.inner-content -->
+
+                            <i class="icon-Arrow icon-Down-3"></i>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-2 col-md-2 item">
+                            <div class="inner-content">
+                                <i class="fa fa-pencil"></i>
+
+                                <span class="title animated fadeInUp" style="opacity: 1;">2. Sketch</span>
+                            </div>
+                            <!-- //.inner-content -->
+
+                            <i class="icon-Arrow icon-Up-3"></i>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-2 col-md-2 item no-margin">
+                            <div class="inner-content">
+                                <i class="fa fa-desktop"></i>
+
+                                <span class="title animated fadeInUp" style="opacity: 1;">3. Design</span>
+                            </div>
+                            <!-- //.inner-content -->
+
+                            <i class="icon-Arrow icon-Down-3"></i>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-2 col-md-2 item">
+                            <div class="inner-content">
+                                <i class="fa fa-code"></i>
+
+                                <span class="title animated fadeInUp" style="opacity: 1;">4. Develop</span>
+                            </div>
+                            <!-- //.inner-content -->
+
+                            <i class="icon-Arrow icon-Up-3"></i>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-2 col-md-2 item no-margin">
+                            <div class="inner-content">
+                                <i class="fa fa-bug"></i>
+
+                                <span class="title animated fadeInUp" style="opacity: 1;">5. Test</span>
+                            </div>
+                            <!-- //.inner-content -->
+
+                            <i class="icon-Arrow icon-Down-3"></i>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-2 col-md-2 item last">
+                            <div class="inner-content">
+                                <i class="fa fa-rocket"></i>
+
+                                <span class="title animated fadeInUp" style="opacity: 1;">6. Launch</span>
+
+                                <span class="dot"></span>
+                            </div>
+                            <!-- //.inner-content -->
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.row -->
+                </div>
+    </div>
+    </section>
+    
+    
+     <section id="portfolio">
+        <div class="jumbotron" id="Jumbotron-portfolio">
+      <span class="fui-eye" id="Titre-jumbotron"> <span id="Titre-Font-jumbotron">- Portfolio</span></span>
+      <ul class="ch-grid">
+	<li>
+		<div class="ch-item ch-img-1">
+			<div class="ch-info">
+				<h3>Squart</h3>
+				<p><a href="https://itunes.apple.com/fr/app/id1032369864">iOS Game</a></p>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="ch-item ch-img-2">
+			<div class="ch-info">
+				<h3>LCOMLOCAL</h3>
+				<p><a href="http://www.lcomlocal.fr/">Website</a></p>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="ch-item ch-img-3">
+			<div class="ch-info">
+				<h3>Twelve's Light</h3>
+				<p><a href="http://www.twelves-light.com/">Presonal Website</a></p>
+			</div>
+		</div>
+	</li>
+</ul>
+    </div>
+     </section>
+     
+     
+    
+            <div class="jumbotron" id="Jumbotron-Social-Download">
+              <div class="row">
+                	<div class="col-sm-8 col-sm-offset-2">
+           <a href="https://www.facebook.com/michel.kansou" class="btn azm-social azm-size-64 azm-circle azm-facebook" id="circule-Social" alt="facebook"><i class="fa fa-facebook"></i></a>
+           <a href="https://twitter.com/MichelKansou" class="btn azm-social azm-size-64 azm-circle azm-twitter" id="circule-Social" alt="twitter"><i class="fa fa-twitter"></i></a>
+           <a href="https://fr.linkedin.com/pub/michel-kansou/8a/4a3/438" class="btn azm-social azm-size-64 azm-circle azm-linkedin" id="circule-Social" alt="linkedin"><i class="fa fa-linkedin"></i></a>
+           <a href="https://github.com/MichelKansou" class="btn azm-social azm-size-64 azm-circle azm-github" id="circule-Social" alt="github"><i class="fa fa-github"></i></a>
+           <a href="mailto:michel.kansou@viacesi.fr" class="btn azm-social azm-size-64 azm-circle azm-email-2" id="circule-Social" alt="email"><i class="fa fa-envelope"></i></a>
+           <a href="resources/Michel Kansou CV - En.pdf" class="btn btn-default" id="DL-CV"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>Download Resume</a>
+                    </div>
+                </div>
+
+    </div>
+    </div> <!-- Language En -->
+ 
       <footer>
 <div class="jumbotron" id="Jumbotron-footer">
                <p id="copyright">Copyright &copy; 2015 Michel Kansou</p>
