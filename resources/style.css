@@ -7,13 +7,17 @@
 
 body{
         background-color: #353E49;
+        width: 100%;
+        height: 100%;
 }
 .navbar-inverse {
     background-color: #353E49;
+        width: 100%;
 }
 #Jumbotron-profile {
     text-align: center;
     margin-bottom: 0;
+        border-radius: 0;
     background-color: #353E49;
     color: #ECF0F1;
     margin-top: 30px;
@@ -39,6 +43,7 @@ body{
     padding: 40px;
         padding-top: 60px;
     padding-bottom: 60px;
+        border-radius: 0;
     text-align: center;
         margin-bottom: 0;
 }
@@ -60,6 +65,7 @@ body{
     text-align: center;
     margin-bottom: 0;
         padding-top: 60px;
+            border-radius: 0;
     padding-bottom: 60px;
     background-color: #353E49;
     color: #ECF0F1;
@@ -91,6 +97,7 @@ body{
     padding: 40px;
         padding-top: 60px;
     padding-bottom: 60px;
+        border-radius: 0;
     text-align: center;
     margin-bottom: 0;
 }
@@ -142,6 +149,7 @@ body{
 #Jumbotron-education{
         text-align: center;
     margin-bottom: 0;
+        border-radius: 0;
         padding-top: 60px;
     padding-bottom: 60px;
     background-color: #353E49;
@@ -305,6 +313,7 @@ body{
     padding: 40px;
         padding-top: 60px;
     padding-bottom: 60px;
+        border-radius: 0;
     text-align: center;
     margin-bottom: 0;
 }
@@ -561,6 +570,7 @@ body{
     padding: 40px;
         padding-top: 60px;
     padding-bottom: 60px;
+        border-radius: 0;
     background-color: #353E49;
     color: #edeff1;
     text-align: center;
@@ -571,6 +581,7 @@ body{
       padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+        border-radius: 0;
     margin-bottom: 0;
 }
 #DL-CV {
@@ -588,6 +599,7 @@ body{
     padding: 40px;
     background-color: #353E49;
     color: #edeff1;
+        border-radius: 0;
     text-align: center;
     margin-bottom: 0;
 }
@@ -738,4 +750,14 @@ span.blinker:before {
 
 .en{
   display: none;
+}
+
+#container-FR {
+   width: inherit;
+   padding: 0px;
+}
+
+#container-EN{
+   width: inherit;
+   padding: 0px;
 }
