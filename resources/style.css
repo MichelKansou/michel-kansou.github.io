@@ -758,6 +758,14 @@ span.blinker:before {
   display: none;
 }
 
+.nav-fr{
+  display: block;
+}
+
+.nav-en{
+  display: none;
+}
+
 #container-FR {
    width: inherit;
    padding: 0px;
