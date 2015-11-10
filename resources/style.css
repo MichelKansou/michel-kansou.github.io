@@ -161,6 +161,12 @@ body{
     font-weight: 500;
 
 }
+.cd-timeline-content{
+  color: #2C3E50;
+}
+.cd-timeline-content .cd-date{
+  color: #ECF0F1;
+}
 @media (max-width: 1170px){
 .cd-timeline-content .cd-date {
     float: left;
@@ -174,7 +180,7 @@ body{
 .cd-timeline-content .cd-date {
     position: absolute;
     width: 100%;
-    left: 78%;
+    left: 86%;
     bottom: 78%;
     top: inherit;
     font-size: 30px;

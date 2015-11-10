@@ -24,6 +24,7 @@
   <body>
     
     <script>
+    var language = window.navigator.language;
     function changeLanFR()
     {
       var frClass = document.querySelector(".fr");
@@ -37,6 +38,12 @@
       var enClass = document.querySelector(".en");
       enClass.style.display = "block";
       frClass.style.display = "none";
+    }
+    if (language == "en"){
+      changeLanEN();
+    }
+    else {
+      changeLanFR();
     }
       </script>
     <div class="fr">
@@ -783,7 +790,8 @@
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
-				<h2>Master degree in computer Sciences</h2>
+				<h2>Diploma in Computer Engineering</h2>
+        <p>eXia.CESI a Computer Engineering School, Arras</p>
 				<span class="cd-date">July 2018</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
@@ -795,8 +803,9 @@
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
-				<h2>Analyst Programmer</h2>
-				<span class="cd-date">July 2015</span>
+				<h2>Computer Science</h2>
+        <p>eXia.CESI a Computer Engineering School, Arras</p>
+				<span class="cd-date">September 2013</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
     
@@ -808,6 +817,7 @@
 
 			<div class="cd-timeline-content">
 				<h2>Degree : A levels of Science</h2>
+        <p>Guy De Maupassant High School, Fécamp</p>
 				<span class="cd-date">July 2013</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
