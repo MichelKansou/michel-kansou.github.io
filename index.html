@@ -24,13 +24,12 @@
   <body>
     
     <script>
-    var language = window.navigator.language;
     function changeLanFR()
     {
       var frClass = document.querySelector(".fr");
       var enClass = document.querySelector(".en");
-      enClass.style.display = "none";
       frClass.style.display = "block";
+      enClass.style.display = "none";
     }
     function changeLanEN()
     {
@@ -39,13 +38,6 @@
       enClass.style.display = "block";
       frClass.style.display = "none";
     }
-    if (language == "en"){
-      changeLanEN();
-    }
-    else {
-      changeLanFR();
-    }
-    alert(language);
       </script>
     <div class="fr">
       <div class="container" id="container-FR">
@@ -967,6 +959,21 @@
                <p id="copyright">Copyright &copy; 2015 Michel Kansou</p>
     </div>
       </footer>
+      
+      
+      
+      
+<script>
+   var language = window.navigator.userLanguage || window.navigator.language;
+   if (language == "en-US" || language == "en"){
+     changeLanEN();
+     }
+   else {
+     changeLanFR();
+     }
+</script>
+      
+      
       
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
