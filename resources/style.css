@@ -1,5 +1,6 @@
 #copyright{
 	text-align: center;
+  margin-top: 30px;
 }
 #avatar{
 	width: 180px;
@@ -37,8 +38,9 @@ body{
     text-align: center;
     float: none;
     margin-right: auto;
-    max-width: 875px;
+    max-width: 932px;
 }
+
 #Jumbotron-propos {
     padding: 40px;
         padding-top: 60px;
@@ -582,14 +584,36 @@ body{
     text-align: center;
     margin-bottom: 0;
 }
-
-#Jumbotron-Social-Download {
+.section-subtitle {
+    margin-top: 20px;
+}
+#Jumbotron-Contact {
       padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
         border-radius: 0;
     margin-bottom: 0;
 }
+
+.azm-size-130{
+      width: 130px;
+    height: 130px;
+    margin: 10px;
+    padding-top: 16px;
+    font-size: 28px;
+    line-height: 28px;
+}
+#circule-Contact{
+      font-size: 30px;
+    border-radius: 67px;
+}
+.fa.fa-envelope {
+    margin-top: 10px;
+}
+#envelope-FR {
+    font-size: 75px;
+}
+
 #DL-CV {
         background-color: #F39C12;
     font-size: 20px;
@@ -622,6 +646,10 @@ footer {
     font-size: 15px;
     color: rgb(67,67,67);
     background-color: #edeff1;
+}
+#row-footer{
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 /*Smartphone Size */
@@ -656,7 +684,7 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-#Jumbotron-Social-Download {
+#Jumbotron-Contact {
 padding: 15px;
 padding-top: 60px;
     padding-bottom: 60px;
@@ -783,4 +811,3 @@ span.blinker:before {
    width: inherit;
    padding: 0px;
 }
-
