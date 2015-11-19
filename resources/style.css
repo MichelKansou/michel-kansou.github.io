@@ -591,12 +591,20 @@ body{
     margin-bottom: 0;
 }
 #DL-CV {
-        background-color: #E67E22;
+        background-color: #F39C12;
     font-size: 20px;
     padding: 10px 15px;
     margin: 10px;
     margin-bottom: 0;
+    box-shadow: 0 3px 0 0 #E67E22;
 }
+
+#DL-CV:hover{
+  -webkit-transform:translateY(-3px);
+  transform:translateY(-3px);
+  box-shadow:0 6px 0 0 #E67E22;
+  color:#fff;
+  }
 #circule-Social{
         font-size: 30px;
             border-radius: 37px;
@@ -775,3 +783,4 @@ span.blinker:before {
    width: inherit;
    padding: 0px;
 }
+
