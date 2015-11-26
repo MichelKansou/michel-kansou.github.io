@@ -608,13 +608,14 @@ body{
 }
 #circule-Contact{
       font-size: 30px;
-    border-radius: 67px;
+    border-radius: 20px;
 }
 .fa.fa-envelope {
-    margin-top: 10px;
+	margin-top: 5px;
+	font-size: 50px;
 }
 #envelope-FR {
-    font-size: 75px;
+    font-size: 90px;
 }
 
 #DL-CV {
