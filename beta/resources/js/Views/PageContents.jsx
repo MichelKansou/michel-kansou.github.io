@@ -27,7 +27,7 @@ var PageContents = React.createClass({
               <section id="education">
                   <Education trans={trans}/>
               </section>
-              <section id="process">
+              <section id="portfolio">
                   <Portfolio trans={trans}/>
               </section>
               <section id="contact">
