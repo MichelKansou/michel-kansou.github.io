@@ -57,12 +57,12 @@ var Skills = React.createClass({
                           </span>
                           <span><T text={trans + 'Skills.web.javascript'}/>
                               <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium_high}></div>
+                                  <div className="progress-bar progress" style={medium}></div>
                                 </div>
                           </span>
                           <span><T text={trans + 'Skills.web.react'}/>
                               <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={high}></div>
+                                  <div className="progress-bar progress" style={medium_high}></div>
                                 </div>
                           </span>
                           <span><T text={trans + 'Skills.web.php'}/>
@@ -72,7 +72,7 @@ var Skills = React.createClass({
                           </span>
                           <span><T text={trans + 'Skills.web.sass'}/>
                               <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium_high}></div>
+                                  <div className="progress-bar progress" style={medium}></div>
                                 </div>
                           </span>
                           <span><T text={trans + 'Skills.web.responsive'}/>
@@ -100,12 +100,12 @@ var Skills = React.createClass({
                       <h3 className="skills-title"><i className="fa fa-mobile fa"></i>  <T text={trans + 'Skills.mobile.title'}/></h3>
                           <span><T text={trans + 'Skills.mobile.swift'}/>
                               <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={high}></div>
+                                  <div className="progress-bar progress" style={medium_high}></div>
                                 </div>
                           </span>
                           <span><T text={trans + 'Skills.mobile.react-native'}/>
                               <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium_high}></div>
+                                  <div className="progress-bar progress" style={low_medium}></div>
                                 </div>
                         </span>
                         <span><T text={trans + 'Skills.mobile.xcode'}/>
@@ -139,12 +139,12 @@ var Skills = React.createClass({
                       <h3 className="skills-title"><i className="fa fa-laptop fa"></i>  <T text={trans + 'Skills.software.title'}/></h3>
                       <span><T text={trans + 'Skills.software.java'}/>
                           <div className="progress-wrap progress">
-                              <div className="progress-bar progress" style={medium_high}></div>
+                              <div className="progress-bar progress" style={medium}></div>
                             </div>
                       </span>
                       <span><T text={trans + 'Skills.software.c'}/>
                           <div className="progress-wrap progress">
-                              <div className="progress-bar progress" style={high}></div>
+                              <div className="progress-bar progress" style={medium_high}></div>
                             </div>
                       </span>
                       <span><T text={trans + 'Skills.software.csharp'}/>
@@ -183,12 +183,22 @@ var Skills = React.createClass({
                           <h3 className="skills-title"><i className="fa fa-plus-square fa"></i>  <T text={trans + 'Skills.standard.title'}/></h3>
                           <span><T text={trans + 'Skills.standard.github'}/>
                               <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={ultra}></div>
+                                  <div className="progress-bar progress" style={high}></div>
                                 </div>
                           </span>
                           <span><T text={trans + 'Skills.standard.slack'}/>
                               <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={high}></div>
+                                  <div className="progress-bar progress" style={medium_high}></div>
+                                </div>
+                          </span>
+                          <span><T text={trans + 'Skills.standard.gitlab'}/>
+                              <div className="progress-wrap progress">
+                                  <div className="progress-bar progress" style={low_medium}></div>
+                                </div>
+                          </span>
+                          <span><T text={trans + 'Skills.standard.vagrant'}/>
+                              <div className="progress-wrap progress">
+                                  <div className="progress-bar progress" style={low_medium}></div>
                                 </div>
                           </span>
                           <span><T text={trans + 'Skills.standard.mvc'}/>

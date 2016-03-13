@@ -63,6 +63,8 @@ EN:
             mvc: MVC
             slack: Slack
             github: Github
+            gitlab: Gitlab
+            vagrant: Vagrant
             trello: Trello
         in-progress: Learning in progress ...
     Work-experience:
@@ -213,6 +215,8 @@ FR:
             mvc: MVC
             slack: Slack
             github: Github
+            gitlab: Gitlab
+            vagrant: Vagrant
             trello: Trello
         in-progress: En cours d'apprentissage ...
     Work-experience:
