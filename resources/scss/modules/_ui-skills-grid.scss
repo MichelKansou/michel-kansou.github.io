@@ -17,6 +17,7 @@
                     border-top: 0;
                 }
                 &.custom-column {
+                    text-align: left;
                     border-top: 1px solid;
                     border-color: $grid-border;
                     h3.skills-title {
