@@ -1,13 +1,42 @@
 var React = require('react');
 var T = require('i18n-react');
 var $ = require('jquery');
+var scrollMonitor = require("scrollMonitor");
 $.fn.dropdown = require('semantic-ui-dropdown');
 $.fn.transition = require('semantic-ui-transition');
 
 var NavigationMenu = React.createClass({
+    getInitialState: function() {
+        return {
+            NavTitle: 'My Resume'
+        };
+    },
     componentDidMount() {
-        $('.ui.dropdown')
-            .dropdown();
+        var profileWatcher = scrollMonitor.create( document.getElementById("profile") );
+        var skillsWatcher = scrollMonitor.create( document.getElementById("skills") );
+        var experienceWatcher = scrollMonitor.create( document.getElementById("experience") );
+        var educationWatcher = scrollMonitor.create( document.getElementById("education") );
+        var portfolioWatcher = scrollMonitor.create( document.getElementById("portfolio") );
+        var contactWatcher = scrollMonitor.create( document.getElementById("contact") );
+        $('.ui.dropdown').dropdown();
+        profileWatcher.fullyEnterViewport(function() {
+            this.setState({ NavTitle: 'Profile' })
+        }.bind(this));
+        skillsWatcher.fullyEnterViewport(function() {
+            this.setState({ NavTitle: 'Skills' })
+        }.bind(this));
+        experienceWatcher.fullyEnterViewport(function() {
+            this.setState({ NavTitle: 'Experience' })
+        }.bind(this));
+        educationWatcher.fullyEnterViewport(function() {
+            this.setState({ NavTitle: 'Education' })
+        }.bind(this));
+        portfolioWatcher.fullyEnterViewport(function() {
+            this.setState({ NavTitle: 'Portfolio' })
+        }.bind(this));
+        contactWatcher.fullyEnterViewport(function() {
+            this.setState({ NavTitle: 'Contact' })
+        }.bind(this));
     },
     render: function() {
       var trans = this.props.trans;
@@ -22,7 +51,7 @@ var NavigationMenu = React.createClass({
                   </div>
               </div>
           <div className="wrap" aria-expanded="true">
-              <h2 className="logo"><a>My Resume</a></h2>
+              <h2 className="logo"><a>{this.state.NavTitle}</a></h2>
             <a id="menu-icon">&#9776; Menu</a>
             <nav className="navbar">
               <ul className="menu">
@@ -48,4 +77,3 @@ var NavigationMenu = React.createClass({
 });
 
 export default NavigationMenu;
-//module.exports = NavigationMenu;

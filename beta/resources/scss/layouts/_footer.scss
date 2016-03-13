@@ -2,18 +2,21 @@
     &.custom-footer {
         @include custom-footer;
         text-align: center;
-    }
-    .social-container {
-        padding: 10px;
-        .twitter-icon{
-            background-color: $twitter-bg;
+        #copyright {
+            margin-top: 30px;
         }
-        a:hover, a:visited, a:link, a:active
-        {
-            text-decoration: none;
-        }
-        i.circular.inverted{
-            margin-right: 10px;
+        .social-container {
+            padding: 10px;
+            .twitter-icon{
+                background-color: $twitter-bg;
+            }
+            a:hover, a:visited, a:link, a:active
+            {
+                text-decoration: none;
+            }
+            i.circular.inverted{
+                margin-right: 10px;
+            }
         }
     }
 }

@@ -40,7 +40,7 @@ var App = React.createClass({
         })
     },
   render: function() {
-      console.log(this.state.languagechanged);
+    //   console.log(this.state.languagechanged);
       var trans = this.state.languagechanged;
     return (
         <div className="app-container">

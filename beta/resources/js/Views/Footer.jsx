@@ -22,6 +22,7 @@ var Footer = React.createClass({
                   <br/><a className="ui orange button resume-download" href={"resources/CV/Michel Kansou CV-"+trans+"pdf"} >
                       <i className="fa fa-download"></i> <T text={trans + 'Profile.downloadCV'}/>
                         </a>
+                <p id="copyright"><i className="fa fa-code"></i> with <i className="fa fa-heart"></i> <T text={trans + 'Footer.copyright'}/></p>
               </div>
         </div>
       );
