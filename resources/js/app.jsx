@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var T = require('i18n-react');
 var $ = require('jquery');
+var ga = require('react-google-analytics');
 import NavigationMenu from './Views/NavigationMenu.jsx';
 import PageContents from './Views/PageContents.jsx';
 import Footer from './Views/Footer.jsx';
@@ -40,6 +41,9 @@ var App = React.createClass({
         })
     },
   render: function() {
+      ga('create', 'UA-69121322-1', 'auto');
+      ga('send', 'pageview');
+      var GAInitiailizer = ga.Initializer;
     //   console.log(this.state.languagechanged);
       var trans = this.state.languagechanged;
     return (
@@ -47,6 +51,7 @@ var App = React.createClass({
             <NavigationMenu trans={trans} handleClick={this.handleClick} />
             <PageContents trans={trans}/>
             <Footer trans={trans}/>
+            <GAInitiailizer />
         </div>
         );
   }
