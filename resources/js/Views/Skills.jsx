@@ -33,7 +33,7 @@ var Skills = React.createClass({
     render: function() {
       var trans = this.props.trans;
       var low = {left: "30%"};
-      var low_medium = {left: "40%"};
+      var low_medium = {left: "45%"};
       var medium = {left: "50%"};
       var medium_high = {left: "60%"};
       var high = {left: "70%"};
@@ -67,7 +67,7 @@ var Skills = React.createClass({
                           </span>
                           <span><T text={trans + 'Skills.web.php'}/>
                               <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={low}></div>
+                                  <div className="progress-bar progress" style={low_medium}></div>
                                 </div>
                           </span>
                           <span><T text={trans + 'Skills.web.sass'}/>
