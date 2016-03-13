@@ -1,0 +1,75 @@
+@import "compass/css3";
+@import "compass/css3/animation";
+@import 'compass';
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+@import "http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
+
+// Typography
+$base-font: helvetica, arial, tahoma, verdana;
+$base-font-title: "Dosis", arial, tahoma, verdana;
+
+/* Color Palletes */
+$awesome-white: #f9f9f9;
+$blue: cornflowerblue;
+$red: #E25041;
+$green: mediumaquamarine;
+$purple: mediumpurple;
+$silver: silver;
+$gray: #D1D5D8;
+$flatgray: #bdc3c7;
+$black: #34495e;
+$yellow: #FAC51C;
+$flat-blue: #2969B0;
+$flat-orange: #F37934;
+$flat-carrot: #e67e22;
+$flat-pumpkin: #d35400;
+$flat-whiteCloud: #ecf0f1;
+$flat-graySmoke: #bdc3c7;
+$flat-blueWhale: #28324E;
+$flat-whiteSmoke: #EFEFEF;
+$flat-black: #313131;
+$gray-smoked: #7D7D7D;
+$body-bg: $flat-black;
+$link-color: $red;
+
+/* UI Navbar background  color */
+$navbar-bg: $flat-blue;
+$navigation-color: $awesome-white;
+$navigation-language-button: $black;
+
+/* UI Segments background  color */
+$segment-bg1 : $flat-blueWhale;
+$segment-bg2 : $awesome-white;
+$segment-text2 : $flat-black;
+
+/* UI Skills Grid background  color */
+$grid-bg : $awesome-white;
+$grid-color: $flat-black;
+$grid-box-shadow: $red;
+$grid-border: $gray;
+$skills-title: $red;
+$skills-title-color: $awesome-white;
+$skills-progress: $red;
+
+/* UI Experience background  color */
+$experience-title: $flat-whiteCloud;
+$experience-color: $awesome-white;
+$experience-bg: $flat-blueWhale;
+$experience-job-title: $flat-black;
+$experience-border-color: $flat-graySmoke ;
+$experience-date-bg: $flat-orange;
+
+/* UI Timeline Education background  color */
+$timeline-text-color: $flat-black;
+$timeline-color-white: $awesome-white;
+$timeline-color: $flat-blue;
+
+/* UI Hobbies background  color */
+$hobbies-quotes-border: $awesome-white;
+
+/* UI Footer background  color */
+$footer-border: $gray-smoked;
+$download-bg: $flat-carrot;
+$download-box: $flat-pumpkin;
+
+$twitter-bg: #55acee;

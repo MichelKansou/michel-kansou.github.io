@@ -1,0 +1,34 @@
+/* Base Styles */
+*,*:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 100%;
+	font-family: "Nunito", Arial, sans-serif;
+	font-weight: normal;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+span {
+	font-size: 100%;
+	font-family: "Nunito", Arial, sans-serif;
+	font-weight: normal;
+}
+a {
+	color: $link-color;
+	opacity: 1;
+	text-decoration: none;
+	&:hover {
+		opacity: 0.85;
+		text-decoration: underline;
+	}
+}
+
+.content {
+	text-align: center;
+	margin-top: 2em;
+}

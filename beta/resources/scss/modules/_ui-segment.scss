@@ -1,0 +1,17 @@
+.ui.segment{
+    &.customSegment1 {
+        @include customSegment;
+        background-color: $segment-bg1;
+    }
+    &.customSegment2 {
+        @include customSegment;
+        background-color: $segment-bg2;
+        color: $segment-text2;
+        .ui.inverted.header {
+            color: $segment-text2;
+        }
+    }
+    .segment-title {
+        font-size: 26px;
+    }
+}

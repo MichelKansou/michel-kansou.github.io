@@ -1,0 +1,10 @@
+.ui.text.container{
+    &.portfolio-container {
+        max-width: 907px!important;
+    }
+    .ui.link.cards{
+        &.portfolio-cards {
+            margin-top: 20px;
+        }
+    }
+}
