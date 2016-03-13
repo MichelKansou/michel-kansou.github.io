@@ -1,0 +1,13 @@
+@include keyframes (blinker) {
+    from { opacity : 1.0; }
+    50% { opacity: 0.0; }
+    to { opacity: 1.0; }
+}
+
+.blinker
+{
+    font-size: 35px;
+    @include animation-name(blinker);
+    @include animation-duration(1.67s);
+    @include animation-iteration-count(infinite);
+}

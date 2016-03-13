@@ -1,0 +1,297 @@
+EN:
+    Title: Michel Kansou Resume
+    Navigation:
+        profile: Profile
+        skills: Skills
+        workExperience: Work Experience
+        education: Education
+        workProcess: Work Process
+        portfolio: Portfolio
+        contact: Contact
+        languageSelection: Select Language
+        english: English
+        french: Français
+    Presentation:
+        hello: I'm, Michel Kansou
+        title: Creative. Developer. Innovator.
+    Profile:
+        title: Profile
+        description: Hello my name is Michel Kansou currently a student in second year of an engineering programme at eXia.CESI Arras. I enjoy keeping abreast of the latest programming language, virtual reality and video games technology. Dynamic, I like learning new things and I am involved in my projects (whether independently or in groups). This site allows me to show my various achievements and make dispotion a contact form for people interested in my services in the Mobile and Web Development.
+        downloadCV: Download My Resume
+    Skills:
+        title: Skills
+        web:
+            title: Web
+            html-css: HTML5/CSS3
+            php: PHP
+            javascript: JavaScript
+            sass: Sass & Compass
+            react: React JS
+            responsive: Responsive Design
+            semantic: Semantic UI
+            bootstrap: Bootstrap 3
+            wordpress: WordPress
+        mobile:
+            title: Mobile
+            swift: Swift
+            react-native: React Native
+            xcode: XCode
+        tools:
+            title: Tools
+            atom: Atom
+            electron: Electron
+            os: OS X / Linux / Windows
+            pixelmator: Pixelmator
+        software:
+            title: Software
+            java: Java
+            c: C
+            csharp: C#
+            lua: Lua
+            python: Python
+        database:
+            title: DB
+            sql: SQL
+            mysql: MySQL
+            firebase: Firbase
+        standard:
+            title: Standard
+            agile: Agile / SCRUM
+            uml: UML
+            merise: Merise
+            oop: OOP
+            mvc: MVC
+            slack: Slack
+            github: Github
+            trello: Trello
+        in-progress: Learning in progress ...
+    Work-experience:
+        title: Work Experience
+        kumquats:
+            title: Kumquats
+            date: February - May 2016
+            job-title: Web & Mobile Developer
+            description: |+
+                            - Designing web and mobile application
+                            - API developement with Symfony 2
+                            - Front-end developement with ReactJS
+        squart:
+            title: Squart
+            date: Summer 2015
+            job-title: Project Manager
+            description: Creation and development of a mobile game for iOS 9 using Swift
+        lcomlocal:
+            title: Lcomlocal
+            date: May - June 2015
+            job-title: Web Developer
+            description: Internship Web development, Responsive Design and SEO consultancy
+        adenatis:
+            title: Adenatis
+            date: Sep. - Nov. 2014
+            job-title: Web Developer
+            description: Internship Web development and Responsive Design
+    Education:
+        title: Education
+        high-school:
+            degree: A levels of Science
+            name: Guy De Maupassant High School, Fécamp
+            date: July 2013
+        college:
+            degree: Computer Science
+            name: eXia.CESI a Computer Engineering School, Arras
+            date: September 2013
+        college2:
+            degree: Diploma in Computer Engineering
+            name: eXia.CESI a Computer Engineering School, Arras
+            date: July 2018
+    Process:
+        title: Work Process
+        idea: Idea
+        sketch: Sketch
+        design: Design
+        develop: Develop
+        test: Test
+        launch: Launch
+    Portfolio:
+        title: Portfolio
+        squart:
+            title: Squart
+            description: Mini iOS Game
+        twelves-light:
+            title: Twelves's Light
+            description: Personal Web Site
+        adenatis:
+            title: Adenatis
+            description: a shopping website
+    Hobbies:
+        title: Hobbies & Interests
+        music: Music
+        video-game: Video Games
+        technology: Technology
+        quotes:
+            joker:
+                title: Batman
+                name: The Joker.
+                quote: If you are good at something, don't do it for free.
+            apple:
+                title: Apple devices
+                name: Steve Jobs.
+                quote: Details matter, it’s worth waiting to get it right.
+            assassin-creed:
+                title: Assassin Creed
+                name: Hassan-i Sabbāh.
+                quote: Nothing is true everything is permitted.
+    Footer:
+        contact:
+            title: Contact Me
+            message: Have a project you'd like to discuss ?
+        copyright: by Michel Kansou. ©  2015 All rights reserved.
+FR:
+    Title: Michel Kansou CV
+    Navigation:
+        profile: Présentation
+        skills: Compétences
+        workExperience: Expériences
+        education: Formation
+        workProcess: Processus
+        portfolio: Portfolio
+        contact: Contact
+        languageSelection: Langage
+        english: English
+        french: Français
+    Presentation:
+        hello: Michel Kansou
+        title: Développeur. Créatif. Innovateur.
+    Profile:
+        title: À Propos
+        description: Actuellement étudiant en 2éme Cycle d'ingénieur informatique à l'eXia.CESI Arras. Je suis passionné par la programmation, réalité virtuel et jeux vidéo. Dynamique, j'aime apprendre de nouvelles choses et je suis impliqué dans mes différents projets (que cela soit en autonomie ou en groupe). Ce site me permet de montrer mes différentes réalisations et de mettre à dispotion un formulaire de contact pour les personnes intéréssées par mes prestations dans le développement Mobile ou Web.
+        downloadCV: Télécharger mon CV
+    Skills:
+        title: Compétences
+        web:
+            title: Web
+            html-css: HTML5/CSS3
+            php: PHP
+            javascript: JavaScript
+            sass: Sass & Compass
+            react: React
+            responsive: Responsive Design
+            semantic: Semantic UI
+            bootstrap: Bootstrap 3
+            wordpress: WordPress
+        mobile:
+            title: Mobile
+            swift: Swift
+            react-native: React Native
+            xcode: XCode
+        tools:
+            title: Outils
+            atom: Atom
+            electron: Electron
+            osx: OS X
+            windows: Windows
+            linux: Linux
+            pixelmator: Pixelmator
+        software:
+            title: Logiciel
+            java: Java
+            c: C
+            csharp: C#
+            lua: Lua
+            python: Python
+        database:
+            title: BDD
+            sql: SQL
+            mysql: MySQL
+            firebase: Firbase
+        standard:
+            title: Standard
+            agile: Agile / SCRUM
+            uml: UML
+            merise: Merise
+            oop: OOP
+            mvc: MVC
+            slack: Slack
+            github: Github
+            trello: Trello
+        in-progress: En cours d'apprentissage ...
+    Work-experience:
+        title: Expériences
+        kumquats:
+            title: Kumquats
+            date: Février - Mai 2016
+            job-title: Développeur Web & Mobile
+            description: Concevoir l'architecture et le modèle de données d'une application web ou mobile, Développement d'API avec le framework Symfony 2, Développement Front-end avec le framework ReactJS
+        squart:
+            title: Squart
+            date: '2015'
+            job-title: Chef de Projet
+            description: Création et développement d'un jeu mobile pour iOS 9 avec Swift
+        lcomlocal:
+            title: Lcomlocal
+            date: Mai - Juin 2015
+            job-title: Développeur Web
+            description: Stage développement web en Responsive Design et conseil en référencement
+        adenatis:
+            title: Adenatis
+            date: Sep. - Nov. 2014
+            job-title: Développeur Web
+            description: Stage développement Web et adaptation de sites pour les mobiles
+    Education:
+        title: Formation
+        high-school:
+            degree: Bac Scientifique S, SVT
+            name: Lycée Guy De Maupassant, Fécamp
+            date: Juillet 2013
+        college:
+            degree: Diplôme analyste programmeur
+            name: eXia.CESI école d'ingénieur informatique, Rouen
+            date: Juillet 2015
+        college2:
+            degree: Diplôme d'ingénieur en informatique
+            name: eXia.CESI école d'ingénieur informatique, Arras
+            date: Juillet 2018
+    Process:
+        title: Processus
+        idea: Idée
+        sketch: Conception
+        design: Design
+        develop: Développement
+        test: Test
+        launch: Déploiement
+    Portfolio:
+        title: Portfolio
+        more: En savoir plus
+        squart:
+            title: Squart
+            description: Mini jeu iOS
+            url: https://itunes.apple.com/fr/app/id1032369864
+        twelves-light:
+            title: Twelves's Light
+            description: Mon site personnel
+        adenatis:
+            title: Adenatis
+            description: Commerce en scene - site Web
+    Hobbies:
+        title: Centre d’intérêts
+        music: Musique
+        video-game: Jeux Vidéo
+        technology: Technologie
+        quotes:
+            joker:
+                title: Batman
+                name: The Joker.
+                quote: If you are good at something, don't do it for free.
+            apple:
+                title: Apple
+                name: Steve Jobs.
+                quote: Details matter, it’s worth waiting to get it right.
+            assassin-creed:
+                title: Assassin Creed
+                quote: Nothing is true everything is permitted.
+                name: Hassan-i Sabbāh.
+    Footer:
+        contact:
+            title: Me Contacter
+            message: Envie de me connaître un peu plus ou de m'envoyer un message ?
+        copyright: Tous droits réservés © 2015 Michel Kansou
