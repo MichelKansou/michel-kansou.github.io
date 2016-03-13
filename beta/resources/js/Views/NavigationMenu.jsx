@@ -55,7 +55,7 @@ var NavigationMenu = React.createClass({
             <a id="menu-icon">&#9776; Menu</a>
             <nav className="navbar">
               <ul className="menu">
-                  <li><a className="active" href="#profile"> <T text={trans + 'Navigation.profile'}/> </a></li>
+                  <li><a href="#profile"> <T text={trans + 'Navigation.profile'}/> </a></li>
                   <li><a href="#skills"> <T text={trans + 'Navigation.skills'}/> </a></li>
                   <li><a href="#experience"> <T text={trans + 'Navigation.workExperience'}/> </a></li>
                   <li><a href="#education"> <T text={trans + 'Navigation.education'}/> </a></li>
