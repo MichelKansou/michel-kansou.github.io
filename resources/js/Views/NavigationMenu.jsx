@@ -69,7 +69,6 @@ var NavigationMenu = React.createClass({
                   </a></li>
               </ul>
             </nav>
-
           </div>
         </header>
       );

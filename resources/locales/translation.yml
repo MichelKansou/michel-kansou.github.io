@@ -128,17 +128,24 @@ EN:
     Hobbies:
         title: Hobbies & Interests
         music: Music
-        video-game: Video Games
+        video-game:
+            title: Video Games
+            description: |
+                            My favorite game
+                            C&C Red Alert 2.
         technology: Technology
+        movie:
+            title: Movies
+            name: The Dark Knight, The Joker.
+            quote: If you're good at something, never do it for free.
+        apple:
+            title: Apple devices
+            name: Steve Jobs.
+            quote: Details matter, it’s worth waiting to get it right.
+        book:
+            title: Tom Clancy's Books
+            description: Ghost Recon, Splinter Cell
         quotes:
-            joker:
-                title: Batman
-                name: The Joker.
-                quote: If you are good at something, don't do it for free.
-            apple:
-                title: Apple devices
-                name: Steve Jobs.
-                quote: Details matter, it’s worth waiting to get it right.
             assassin-creed:
                 title: Assassin Creed
                 name: Hassan-i Sabbāh.
@@ -279,21 +286,28 @@ FR:
     Hobbies:
         title: Centre d’intérêts
         music: Musique
-        video-game: Jeux Vidéo
+        video-game:
+            title: Jeux Vidéo
+            description: |
+                            Mon jeu préféré
+                            C&C Red Alert 2.
         technology: Technologie
+        movie:
+            title: Films
+            name: The Dark Knight, The Joker.
+            quote: If you're good at something, never do it for free.
+        apple:
+            title: Apple
+            name: Steve Jobs.
+            quote: Details matter, it’s worth waiting to get it right.
+        book:
+            title: Les livres de Tom Clancy
+            description: Ghost Recon, Splinter Cell
         quotes:
-            joker:
-                title: Batman
-                name: The Joker.
-                quote: If you are good at something, don't do it for free.
-            apple:
-                title: Apple
-                name: Steve Jobs.
-                quote: Details matter, it’s worth waiting to get it right.
             assassin-creed:
                 title: Assassin Creed
-                quote: Nothing is true everything is permitted.
                 name: Hassan-i Sabbāh.
+                quote: Nothing is true everything is permitted
     Footer:
         contact:
             title: Me Contacter
