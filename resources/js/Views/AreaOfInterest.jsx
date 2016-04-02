@@ -25,7 +25,7 @@ var AreaOfInterest = React.createClass({
                           <br/><T text={trans + 'Hobbies.technology'}/>
                       </div>
                       <div className="column">
-                          <i className="circular large inverted film icon custom-icon-hobbies"></i>
+                          <span className="batmanIcon">X</span>
                           <br/><h3 className="hobbies-quotes-title"><T text={trans + 'Hobbies.movie.title'}/></h3>
                           <h4 className="hobbies-quotes">"<T text={trans + 'Hobbies.movie.quote'}/>"</h4>
                           <h5 className="hobbies-quotes-name">- <T text={trans + 'Hobbies.movie.name'}/></h5>
