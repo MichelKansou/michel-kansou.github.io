@@ -1,0 +1,104 @@
+Web_skills:
+        -
+            name: "HTML5/CSS3"
+            progress: "80%"
+        -
+            name: "JavaScript"
+            progress: "60%"
+        -
+            name: "React JS"
+            progress: "65%"
+        -
+            name: "Redux"
+            progress: "50%"
+        -
+            name: "PHP"
+            progress: "60%"
+        -
+            name: "Sass & Compass"
+            progress: "70%"
+        -
+            name: "Responsive Design"
+            progress: "75%"
+        -
+            name: "Semantic UI"
+            progress: "60%"
+        -
+            name: "Bootstrap 3"
+            progress: "70%"
+
+Mobile_skills:
+            -
+                name: "Swift"
+                progress: "60%"
+            -
+                name: "React Native"
+                progress: "50%"
+            -
+                name: "XCode"
+                progress: "55%"
+Tools:
+        -
+            name: "Atom"
+            progress: "70%"
+        -
+            name: "Electron"
+            progress: "65%"
+        -
+            name: "Pixelmator"
+            progress: "75%"
+        -
+            name: "OS X / Linux / Windows"
+            progress: "85%"
+
+Software_skills:
+            -
+                name: "Java"
+                progress: "55%"
+            -
+                name: "C"
+                progress: "60%"
+            -
+                name: "C#"
+                progress: "25%"
+            -
+                name: "Lua"
+                progress: "20%"
+            -
+                name: "Python"
+                progress: "35%"
+Database:
+    -
+        name: "SQL"
+        progress: "45%"
+    -
+        name: "MySQL"
+        progress: "45%"
+    -
+        name: "Firbase"
+        progress: "30%"
+Standard:
+    -
+        name: "Github"
+        progress: "65%"
+    -
+        name: "Slack"
+        progress: "70%"
+    -
+        name: "Gitlab"
+        progress: "45%"
+    -
+        name: "Vagrant"
+        progress: "45%"
+    -
+        name: "MVC"
+        progress: "45%"
+    -
+        name: "Trello"
+        progress: "50%"
+    -
+        name: "Agile / SCRUM"
+        progress: "45%"
+    -
+        name: "UML"
+        progress: "45%"

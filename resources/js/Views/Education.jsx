@@ -1,51 +1,30 @@
 var React = require('react');
-var T = require('i18n-react');
+
 
 var Education = React.createClass({
     render: function() {
       var trans = this.props.trans;
+      var schoolsList = trans.Education.schools.map((data, index) =>
+          <div className="timeline-item" key={index}>
+              <div className="timeline-icon">
+                  <img className="timeline-img" src={data.imgURL} />
+              </div>
+              <div className={"timeline-date "+data.position}>{data.date}</div>
+                  <div className={"timeline-content "+data.position}>
+                      <h4>{data.degree}</h4>
+                      <p>
+                          {data.name}
+                      </p>
+                  </div>
+          </div>
+      )
       return (
           <div className="ui inverted vertical masthead center aligned segment customSegment1">
               <div className="ui text container vertical-timeline-container">
                   <div className="segment-title">
-                      <i className="fa fa-graduation-cap"> - <T text={trans + 'Education.title'}/> </i>
+                      <i className="fa fa-graduation-cap"> - {trans.Education.title} </i>
                           <div id="timeline">
-                            <div className="timeline-item">
-                                <div className="timeline-icon">
-                                    <img className="timeline-img" src="http://izee.ro/market/mywall/one/img/ed1.png" alt="Picture"/>
-                                </div>
-                                <div className="timeline-date"><T text={trans + 'Education.college2.date'}/></div>
-                                    <div className="timeline-content">
-                                        <h4><T text={trans + 'Education.college2.degree'}/></h4>
-                                        <p>
-                                            <T text={trans + 'Education.college2.name'}/>
-                                        </p>
-                                    </div>
-                            </div>
-                            <div className="timeline-item">
-                                <div className="timeline-icon">
-                                    <img className="timeline-img" src="http://izee.ro/market/mywall/one/img/ed2.png" alt="Picture"/>
-                                </div>
-                                <div className="timeline-date right"><T text={trans + 'Education.college.date'}/></div>
-                                    <div className="timeline-content right">
-                                        <h4><T text={trans + 'Education.college.degree'}/></h4>
-                                        <p>
-                                            <T text={trans + 'Education.college.name'}/>
-                                        </p>
-                                    </div>
-                            </div>
-                            <div className="timeline-item">
-                                <div className="timeline-icon">
-                                    <img className="timeline-img" src="http://izee.ro/market/mywall/one/img/ed3.png" alt="Picture"/>
-                                </div>
-                                <div className="timeline-date"><T text={trans + 'Education.high-school.date'}/></div>
-                                    <div className="timeline-content">
-                                        <h4><T text={trans + 'Education.high-school.degree'}/></h4>
-                                        <p>
-                                            <T text={trans + 'Education.high-school.name'}/>
-                                        </p>
-                                    </div>
-                            </div>
+                            {schoolsList}
                         </div>
                   </div>
               </div>

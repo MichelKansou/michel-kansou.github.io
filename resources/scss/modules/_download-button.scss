@@ -1,8 +1,10 @@
-.ui.orange.button{
+.ui.custom.button{
+    background-color: $download-bg;
+    color: $awesome-white2;
     &.resume-download{
         box-shadow: 0 4px 0 0 $download-box;
     }
-    &.resume-download:hover{
+    &:hover{
         @include transform(translateY(-3px));
         box-shadow: 0 7px 0 0 $download-box;
         //@include animation-iteration-count(1);

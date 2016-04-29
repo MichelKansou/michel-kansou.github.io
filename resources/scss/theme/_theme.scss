@@ -10,8 +10,10 @@ $base-font-title: "Dosis", arial, tahoma, verdana;
 
 /* Color Palletes */
 $awesome-white: #f9f9f9;
+$awesome-white2: #FDFDFD;
 $blue: cornflowerblue;
 $red: #E25041;
+$pomegranate: #C0392B;
 $green: mediumaquamarine;
 $purple: mediumpurple;
 $silver: silver;
@@ -26,9 +28,14 @@ $flat-pumpkin: #d35400;
 $flat-whiteCloud: #ecf0f1;
 $flat-graySmoke: #bdc3c7;
 $flat-blueWhale: #28324E;
+$flat-NightBlue: #284058;
+$flat-NightBlue2: #34495E;
 $flat-whiteSmoke: #EFEFEF;
 $flat-black: #313131;
 $gray-smoked: #7D7D7D;
+
+/* default Element background  color */
+
 $body-bg: $flat-black;
 $link-color: $red;
 
@@ -69,7 +76,7 @@ $hobbies-quotes-border: $awesome-white;
 
 /* UI Footer background  color */
 $footer-border: $gray-smoked;
-$download-bg: $flat-carrot;
-$download-box: $flat-pumpkin;
+$download-bg: $red;
+$download-box: $pomegranate;
 
 $twitter-bg: #55acee;

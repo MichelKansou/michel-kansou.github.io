@@ -1,5 +1,4 @@
 var React = require('react');
-var T = require('i18n-react');
 
 import ProfileHeader from './ProfileHeader.jsx';
 import Profile from './Profile.jsx';
@@ -10,22 +9,23 @@ import Portfolio from './Portfolio.jsx';
 import AreaOfInterest from './AreaOfInterest.jsx';
 
 var PageContents = React.createClass({
+    // Ajout Experience avec un map -_-
     render: function() {
       var trans = this.props.trans;
       return (
           <div className="page-contents">
               <ProfileHeader trans={trans}/>
               <section id="profile">
-                  <Profile trans={trans}/>
+                  <Profile trans={trans} />
               </section>
               <section id="skills">
-                  <Skills trans={trans}/>
+                  <Skills trans={trans} />
               </section>
               <section id="experience">
-                  <Experience trans={trans}/>
+                  <Experience trans={trans} />
               </section>
               <section id="education">
-                  <Education trans={trans}/>
+                  <Education trans={trans} />
               </section>
               <section id="portfolio">
                   <Portfolio trans={trans}/>

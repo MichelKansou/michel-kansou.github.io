@@ -8,9 +8,15 @@ import PageContents from './Views/PageContents.jsx';
 import Footer from './Views/Footer.jsx';
 
 
-T.setTexts( require('../locales/translation.yml') );
+import English from '../locales/EN-en.yml';
+import French from '../locales/FR-fr.yml';
 
 var App = React.createClass({
+    getInitialState: function() {
+        return {
+            trans: English
+        };
+    },
     //Write all Js for Semantic UI in root App in componentDidMount function :D
     componentDidMount() {
         $(document).ready(function(){
@@ -30,27 +36,30 @@ var App = React.createClass({
           });
         });
     },
-    getInitialState: function() {
-        return {
-            languagechanged: 'EN.'
-        };
-    },
-    handleClick: function(value) {
-        this.setState({
-            languagechanged: value
-        })
+    handleClick( language ) {
+        if ( language == 'FR' ){
+            this.setState({
+                trans: French
+            });
+        }
+        else {
+            this.setState({
+                trans: English
+            });
+        }
     },
   render: function() {
       ga('create', 'UA-69121322-1', 'auto');
       ga('send', 'pageview');
       var GAInitiailizer = ga.Initializer;
+      var translation = this.state.trans;
     //   console.log(this.state.languagechanged);
-      var trans = this.state.languagechanged;
+    //   var trans = this.state.languagechanged;
     return (
         <div className="app-container">
-            <NavigationMenu trans={trans} handleClick={this.handleClick} />
-            <PageContents trans={trans}/>
-            <Footer trans={trans}/>
+            <NavigationMenu trans={translation} handleClick={this.handleClick} />
+            <PageContents trans={translation}/>
+            <Footer trans={translation}/>
             <GAInitiailizer />
         </div>
         );

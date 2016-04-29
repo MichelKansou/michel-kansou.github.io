@@ -1,5 +1,7 @@
 var React = require('react');
-var T = require('i18n-react');
+
+var skillsDB = require("../../locales/skills.yml");
+
 var Skills = React.createClass({
     componentDidMount() {
         // var loaded = 0;
@@ -31,196 +33,75 @@ var Skills = React.createClass({
         //}
     },
     render: function() {
-      var trans = this.props.trans;
-      var low = {left: "30%"};
-      var low_medium = {left: "45%"};
-      var medium = {left: "50%"};
-      var medium_high = {left: "60%"};
-      var high = {left: "70%"};
-      var ultra = {left: "75%"};
-      var expert = {left: "80%"};
-      var awesome = {left: "90%"};
-      var serial_killer = {left: "100%"};
+        var trans = this.props.trans;
+        var webSkills = skillsDB.Web_skills.map((data, index) =>
+          <span key={index}>{data.name}
+              <div className="progress-wrap progress" key={index}>
+                  <div className="progress-bar progress" style={{left: data.progress}}></div>
+                </div>
+          </span>
+        )
+        var mobileSkills = skillsDB.Mobile_skills.map((data, index) =>
+            <span key={index}>{data.name}
+                <div className="progress-wrap progress" key={index}>
+                    <div className="progress-bar progress" style={{left: data.progress}}></div>
+                  </div>
+            </span>
+        )
+        var tools = skillsDB.Tools.map((data, index) =>
+            <span key={index}>{data.name}
+                <div className="progress-wrap progress" key={index}>
+                    <div className="progress-bar progress" style={{left: data.progress}}></div>
+                  </div>
+            </span>
+        )
+        var softwareSkills = skillsDB.Software_skills.map((data, index) =>
+            <span key={index}>{data.name}
+                <div className="progress-wrap progress" key={index}>
+                    <div className="progress-bar progress" style={{left: data.progress}}></div>
+                  </div>
+            </span>
+        )
+        var database = skillsDB.Database.map((data, index) =>
+            <span key={index}>{data.name}
+                <div className="progress-wrap progress" key={index}>
+                    <div className="progress-bar progress" style={{left: data.progress}}></div>
+                  </div>
+            </span>
+        )
+        var standard = skillsDB.Standard.map((data, index) =>
+            <span key={index}>{data.name}
+                <div className="progress-wrap progress" key={index}>
+                    <div className="progress-bar progress" style={{left: data.progress}}></div>
+                  </div>
+            </span>
+        )
       return (
         <div className="ui inverted vertical masthead center aligned segment customSegment1">
             <div className="ui text container skills-container">
                 <div className="segment-title">
-                    <i className="fa fa-cogs"> - <T text={trans + 'Skills.title'}/> </i>
+                    <i className="fa fa-cogs"> - {trans.Skills.title} </i>
                 </div>
                 <div className="ui stackable four column grid custom-grid">
                   <div className="column custom-column">
-                      <h3 className="skills-title"><i className="fa fa-html5 fa"></i>  <T text={trans + 'Skills.web.title'}/></h3>
-                          <span><T text={trans + 'Skills.web.html-css'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={expert}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.web.javascript'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.web.react'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium_high}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.web.php'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={low_medium}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.web.sass'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.web.responsive'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={ultra}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.web.semantic'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium_high}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.web.bootstrap'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={high}></div>
-                                </div>
-                      </span>
-                      <span><T text={trans + 'Skills.web.wordpress'}/>
-                          <div className="progress-wrap progress">
-                              <div className="progress-bar progress" style={medium}></div>
-                            </div>
-                    </span>
+                      <h3 className="skills-title"><i className="fa fa-html5 fa"></i>  {trans.Skills.web.title} </h3>
+                      {webSkills}
                   </div>
                   <div className="column custom-column">
-                      <h3 className="skills-title"><i className="fa fa-mobile fa"></i>  <T text={trans + 'Skills.mobile.title'}/></h3>
-                          <span><T text={trans + 'Skills.mobile.swift'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium_high}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.mobile.react-native'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={low_medium}></div>
-                                </div>
-                        </span>
-                        <span><T text={trans + 'Skills.mobile.xcode'}/>
-                            <div className="progress-wrap progress">
-                                <div className="progress-bar progress" style={medium}></div>
-                              </div>
-                      </span>
-                      <h3 className="skills-title"><i className="fa fa-cog fa"></i>  <T text={trans + 'Skills.tools.title'}/></h3>
-                      <span><T text={trans + 'Skills.tools.atom'}/>
-                          <div className="progress-wrap progress">
-                              <div className="progress-bar progress" style={medium}></div>
-                            </div>
-                              </span>
-                              <span><T text={trans + 'Skills.tools.electron'}/>
-                                  <div className="progress-wrap progress">
-                                      <div className="progress-bar progress" style={low_medium}></div>
-                                    </div>
-                          </span>
-                          <span><T text={trans + 'Skills.tools.pixelmator'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium}></div>
-                                </div>
-                      </span>
-                      <span><T text={trans + 'Skills.tools.os'}/>
-                          <div className="progress-wrap progress">
-                              <div className="progress-bar progress" style={expert}></div>
-                            </div>
-                  </span>
+                      <h3 className="skills-title"><i className="fa fa-mobile fa"></i>  {trans.Skills.mobile.title} </h3>
+                         {mobileSkills}
+                      <h3 className="skills-title"><i className="fa fa-cog fa"></i>  {trans.Skills.tools.title} </h3>
+                         {tools}
                   </div>
                   <div className="column custom-column">
-                      <h3 className="skills-title"><i className="fa fa-laptop fa"></i>  <T text={trans + 'Skills.software.title'}/></h3>
-                      <span><T text={trans + 'Skills.software.java'}/>
-                          <div className="progress-wrap progress">
-                              <div className="progress-bar progress" style={medium}></div>
-                            </div>
-                      </span>
-                      <span><T text={trans + 'Skills.software.c'}/>
-                          <div className="progress-wrap progress">
-                              <div className="progress-bar progress" style={medium_high}></div>
-                            </div>
-                      </span>
-                      <span><T text={trans + 'Skills.software.csharp'}/>
-                          <div className="progress-wrap progress">
-                              <div className="progress-bar progress" style={low}></div>
-                            </div>
-                      </span>
-                      <span><T text={trans + 'Skills.software.python'}/>
-                          <div className="progress-wrap progress">
-                              <div className="progress-bar progress" style={low}></div>
-                            </div>
-                      </span>
-                      <span><T text={trans + 'Skills.software.lua'}/>
-                          <div className="progress-wrap progress">
-                              <div className="progress-bar progress" style={low_medium}></div>
-                            </div>
-                      </span>
-                      <h3 className="skills-title"><i className="fa fa-database fa"></i>  <T text={trans + 'Skills.database.title'}/></h3>
-                          <span><T text={trans + 'Skills.database.sql'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={low_medium}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.database.mysql'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={low_medium}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.database.firebase'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium}></div>
-                                </div>
-                          </span>
+                      <h3 className="skills-title"><i className="fa fa-laptop fa"></i>  {trans.Skills.software.title} </h3>
+                         {softwareSkills}
+                      <h3 className="skills-title"><i className="fa fa-database fa"></i>  {trans.Skills.database.title} </h3>
+                         {database}
                   </div>
                   <div className="column custom-column">
-                          <h3 className="skills-title"><i className="fa fa-plus-square fa"></i>  <T text={trans + 'Skills.standard.title'}/></h3>
-                          <span><T text={trans + 'Skills.standard.github'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={high}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.standard.slack'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium_high}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.standard.gitlab'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={low_medium}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.standard.vagrant'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={low_medium}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.standard.mvc'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={low_medium}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.standard.trello'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={medium_high}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.standard.agile'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={low_medium}></div>
-                                </div>
-                          </span>
-                          <span><T text={trans + 'Skills.standard.uml'}/>
-                              <div className="progress-wrap progress">
-                                  <div className="progress-bar progress" style={low_medium}></div>
-                                </div>
-                          </span>
+                          <h3 className="skills-title"><i className="fa fa-plus-square fa"></i>  {trans.Skills.standard.title} </h3>
+                         {standard}
                   </div>
                 </div>
             </div>
