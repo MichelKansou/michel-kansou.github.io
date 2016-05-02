@@ -39,7 +39,7 @@ WorkExperience:
             -
                 title: SlideDeck
                 date: Mars - Avril 2016
-                jobTitle: Chef de projet et développeur
+                jobTitle: Développeur logiciel
                 jobType: Projet personnel
                 description: Une application decktop pour les présentation HTML, le projet est en open source
 
@@ -50,12 +50,12 @@ WorkExperience:
                 jobType: Stage
                 description: |+
                                 - Concevoir l'architecture et le modèle de données d'une application web et mobile
-                                - Développement mobile avec React Native
-                                - Développement Front-end avec le framework ReactJS
+                                - Développement d'un plugin pour React Native
+                                - Développement Front-end avec Semantic UI, HTML5/Sass & ReactJs.
             -
                 title: Squart
                 date: '2015'
-                jobTitle: Chef de projet et développeur
+                jobTitle: Développeur mobile
                 jobType: Projet personnel
                 description: Création et développement d'un jeu mobile pour iOS 9 avec Swift
             -

@@ -30,6 +30,9 @@
             margin-right: 1px;
             background-color: $experience-bg;
         }
+        .column.column-experience-description{
+            white-space: pre-line;
+        }
         .ten.wide.column{
             &.custom-column-experience {
                 text-align: left;
@@ -56,6 +59,16 @@
                     border-color: $experience-border-color;
                 h4.experience-job-title {
                     margin-top: 0;
+                }
+                h5.experience-job-type {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    font-size: 0.6em;
+                    background-color: $experience-job-type;
+                    color: $experience-title;
+                    margin: 0;
+                    padding: 0.5em;
                 }
             }
         }

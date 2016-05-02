@@ -481,7 +481,11 @@ h2.logo {
   margin-right: 1px;
   background-color: #28324E;
 }
-/* line 34, ../scss/modules/_ui-experience-grid.scss */
+/* line 33, ../scss/modules/_ui-experience-grid.scss */
+.ui.text.container .ui.grid .column.column-experience-description {
+  white-space: pre-line;
+}
+/* line 37, ../scss/modules/_ui-experience-grid.scss */
 .ui.text.container .ui.grid .ten.wide.column.custom-column-experience {
   text-align: left;
   padding: 15px;
@@ -489,15 +493,15 @@ h2.logo {
   padding-right: 0;
   padding-bottom: 0;
 }
-/* line 41, ../scss/modules/_ui-experience-grid.scss */
+/* line 44, ../scss/modules/_ui-experience-grid.scss */
 .ui.text.container .ui.grid .ten.wide.column p.experience-date {
   text-align: center;
   margin-left: auto;
   padding: 7px;
   max-width: 190px;
-  background-color: #F37934;
+  background-color: #E25041;
 }
-/* line 50, ../scss/modules/_ui-experience-grid.scss */
+/* line 53, ../scss/modules/_ui-experience-grid.scss */
 .ui.text.container .ui.grid .six.wide.column.custom-column-experience {
   padding: 20px;
   font-size: 20px;
@@ -506,24 +510,35 @@ h2.logo {
   border: 1px solid;
   border-color: #bdc3c7;
 }
-/* line 57, ../scss/modules/_ui-experience-grid.scss */
+/* line 60, ../scss/modules/_ui-experience-grid.scss */
 .ui.text.container .ui.grid .six.wide.column.custom-column-experience h4.experience-job-title {
   margin-top: 0;
 }
+/* line 63, ../scss/modules/_ui-experience-grid.scss */
+.ui.text.container .ui.grid .six.wide.column.custom-column-experience h5.experience-job-type {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 0.6em;
+  background-color: #C0392B;
+  color: #ecf0f1;
+  margin: 0;
+  padding: 0.5em;
+}
 
 @media only screen and (min-width: 768px) {
-  /* line 69, ../scss/modules/_ui-experience-grid.scss */
+  /* line 82, ../scss/modules/_ui-experience-grid.scss */
   .ui.text.container .ui.grid.custom-grid-experience {
     margin-left: 0;
     margin-right: 0;
   }
 
-  /* line 76, ../scss/modules/_ui-experience-grid.scss */
+  /* line 89, ../scss/modules/_ui-experience-grid.scss */
   .ten.wide.column.custom-column-experience {
     padding-bottom: 15px;
   }
 
-  /* line 81, ../scss/modules/_ui-experience-grid.scss */
+  /* line 94, ../scss/modules/_ui-experience-grid.scss */
   .six.wide.column.custom-column-experience {
     font-size: 30px;
   }

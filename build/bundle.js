@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a8f5e0b17ca42e55352c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c9a2121baf73fbe8a4fd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -36653,9 +36653,12 @@
 	                    React.createElement(
 	                        "h4",
 	                        { className: "experience-job-title" },
-	                        " ",
-	                        data.jobTitle,
-	                        " "
+	                        data.jobTitle
+	                    ),
+	                    React.createElement(
+	                        "h5",
+	                        { className: "experience-job-type" },
+	                        data.jobType
 	                    )
 	                ),
 	                React.createElement(
@@ -37156,7 +37159,7 @@
 				{
 					"title": "SlideDeck",
 					"date": "March - April 2016",
-					"jobTitle": "Project Manager & Developer",
+					"jobTitle": "Software Developer",
 					"jobType": "Personal Project",
 					"description": "A desktop App for HTML presentation the project is open source"
 				},
@@ -37165,12 +37168,13 @@
 					"date": "February - May 2016",
 					"jobTitle": "Web & Mobile Developer",
 					"jobType": "Internship",
-					"description": "- Designing web and mobile application\n- Mobile developement with React Native\n- Front-end developement with ReactJS"
+					"description": "Designing web and mobile application.\nPlugin creation for React Native.\nFront-end development with Semantic UI, HTML5/Sass & ReactJs."
 				},
 				{
 					"title": "Squart",
 					"date": "Summer 2015",
-					"jobTitle": "Project Manager & Developer",
+					"jobTitle": "Mobile Developer",
+					"jobType": "Personal Project",
 					"description": "Creation and development of a mobile game for iOS 9 using Swift"
 				},
 				{
@@ -37355,7 +37359,7 @@
 				{
 					"title": "SlideDeck",
 					"date": "Mars - Avril 2016",
-					"jobTitle": "Chef de projet et développeur",
+					"jobTitle": "Développeur logiciel",
 					"jobType": "Projet personnel",
 					"description": "Une application decktop pour les présentation HTML, le projet est en open source"
 				},
@@ -37364,12 +37368,12 @@
 					"date": "Février - Mai 2016",
 					"jobTitle": "Développeur Web & Mobile",
 					"jobType": "Stage",
-					"description": "- Concevoir l'architecture et le modèle de données d'une application web et mobile\n- Développement mobile avec React Native\n- Développement Front-end avec le framework ReactJS"
+					"description": "- Concevoir l'architecture et le modèle de données d'une application web et mobile\n- Développement d'un plugin pour React Native\n- Développement Front-end avec Semantic UI, HTML5/Sass & ReactJs."
 				},
 				{
 					"title": "Squart",
 					"date": "2015",
-					"jobTitle": "Chef de projet et développeur",
+					"jobTitle": "Développeur mobile",
 					"jobType": "Projet personnel",
 					"description": "Création et développement d'un jeu mobile pour iOS 9 avec Swift"
 				},

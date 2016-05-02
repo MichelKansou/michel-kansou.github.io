@@ -39,7 +39,7 @@ WorkExperience:
             -
                 title: SlideDeck
                 date: March - April 2016
-                jobTitle: Project Manager & Developer
+                jobTitle: Software Developer
                 jobType: Personal Project
                 description: A desktop App for HTML presentation the project is open source
             -
@@ -48,13 +48,14 @@ WorkExperience:
                 jobTitle: Web & Mobile Developer
                 jobType: Internship
                 description: |+
-                                - Designing web and mobile application
-                                - Mobile developement with React Native
-                                - Front-end developement with ReactJS
+                                Designing web and mobile application.
+                                Plugin creation for React Native.
+                                Front-end development with Semantic UI, HTML5/Sass & ReactJs.
             -
                 title: Squart
                 date: Summer 2015
-                jobTitle: Project Manager & Developer
+                jobTitle: Mobile Developer
+                jobType: Personal Project
                 description: Creation and development of a mobile game for iOS 9 using Swift
             -
                 title: Lcomlocal

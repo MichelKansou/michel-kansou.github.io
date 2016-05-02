@@ -7,7 +7,8 @@ var Experience = React.createClass({
           <div className="ui grid custom-grid-experience" key={index}>
               <div className="six wide column custom-column-experience">
                   {data.title}
-                  <h4 className="experience-job-title" > {data.jobTitle} </h4>
+                  <h4 className="experience-job-title" >{data.jobTitle}</h4>
+                  <h5 className="experience-job-type">{data.jobType}</h5>
               </div>
               <div className="ten wide column custom-column-experience">
                   <div className="ui stackable two column grid">
