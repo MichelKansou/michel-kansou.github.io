@@ -7,7 +7,7 @@ $.fn.transition = require('semantic-ui-transition');
 var NavigationMenu = React.createClass({
     getInitialState: function() {
         return {
-            NavTitle: 'My Resume'
+            NavTitle: 'Michel Kansou'
         };
     },
     componentDidMount() {
