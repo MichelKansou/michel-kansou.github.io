@@ -107,11 +107,6 @@ Portfolio:
             url: https://github.com/MichelKansou/SlideDeck
             img: ./resources/images/SlideApp.png
         -
-            projectName: Aéronef
-            description: Un site pour les concerts
-            url: http://www.aeronef-spectacles.com/
-            img: ./resources/images/aeronef.png
-        -
             projectName: Squart
             description: Mini jeu iOS
             url: https://itunes.apple.com/fr/app/id1032369864
