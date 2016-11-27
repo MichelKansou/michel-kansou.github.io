@@ -1,35 +1,35 @@
 Web_skills:
         -
             name: "HTML5/CSS3"
+            progress: "90%"
+        -
+            name: "React JS"
             progress: "80%"
         -
             name: "JavaScript"
-            progress: "60%"
-        -
-            name: "React JS"
-            progress: "65%"
-        -
-            name: "Redux"
-            progress: "50%"
+            progress: "70%"
         -
             name: "PHP"
             progress: "60%"
         -
+            name: "Redux"
+            progress: "50%"
+        -
+            name: "Laravel 5"
+            progress: "50%"
+        -
             name: "Sass & Compass"
-            progress: "70%"
+            progress: "80%"
         -
             name: "Responsive Design"
-            progress: "75%"
+            progress: "80%"
         -
             name: "Semantic UI"
-            progress: "60%"
-        -
-            name: "Bootstrap 3"
             progress: "70%"
 
 Mobile_skills:
             -
-                name: "Swift"
+                name: "Swift 2"
                 progress: "60%"
             -
                 name: "React Native"
@@ -60,20 +60,17 @@ Software_skills:
                 progress: "60%"
             -
                 name: "C#"
-                progress: "25%"
-            -
-                name: "Lua"
-                progress: "20%"
+                progress: "30%"
             -
                 name: "Python"
                 progress: "35%"
 Database:
     -
         name: "SQL"
-        progress: "45%"
+        progress: "50%"
     -
         name: "MySQL"
-        progress: "45%"
+        progress: "50%"
     -
         name: "Firbase"
         progress: "30%"
@@ -86,19 +83,19 @@ Standard:
         progress: "70%"
     -
         name: "Gitlab"
-        progress: "45%"
+        progress: "60%"
     -
         name: "Vagrant"
-        progress: "45%"
+        progress: "60%"
     -
         name: "MVC"
-        progress: "45%"
+        progress: "60%"
     -
         name: "Trello"
         progress: "50%"
     -
         name: "Agile / SCRUM"
-        progress: "45%"
+        progress: "55%"
     -
         name: "UML"
         progress: "45%"

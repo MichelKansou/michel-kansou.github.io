@@ -1,6 +1,5 @@
 var React = require('react');
 var $ = require('jquery');
-var scrollMonitor = require("scrollMonitor");
 $.fn.dropdown = require('semantic-ui-dropdown');
 $.fn.transition = require('semantic-ui-transition');
 
@@ -12,30 +11,6 @@ var NavigationMenu = React.createClass({
     },
     componentDidMount() {
         $('.ui.dropdown').dropdown();
-        // var profileWatcher = scrollMonitor.create( document.getElementById("profile") );
-        // var skillsWatcher = scrollMonitor.create( document.getElementById("skills") );
-        // var experienceWatcher = scrollMonitor.create( document.getElementById("experience") );
-        // var educationWatcher = scrollMonitor.create( document.getElementById("education") );
-        // var portfolioWatcher = scrollMonitor.create( document.getElementById("portfolio") );
-        // var contactWatcher = scrollMonitor.create( document.getElementById("contact") );
-        // profileWatcher.fullyEnterViewport(function() {
-        //     this.setState({ NavTitle: 'Profile' })
-        // }.bind(this));
-        // skillsWatcher.fullyEnterViewport(function() {
-        //     this.setState({ NavTitle: 'Skills' })
-        // }.bind(this));
-        // experienceWatcher.fullyEnterViewport(function() {
-        //     this.setState({ NavTitle: 'Experience' })
-        // }.bind(this));
-        // educationWatcher.fullyEnterViewport(function() {
-        //     this.setState({ NavTitle: 'Education' })
-        // }.bind(this));
-        // portfolioWatcher.fullyEnterViewport(function() {
-        //     this.setState({ NavTitle: 'Portfolio' })
-        // }.bind(this));
-        // contactWatcher.fullyEnterViewport(function() {
-        //     this.setState({ NavTitle: 'Contact' })
-        // }.bind(this));
     },
     render() {
         let trans = this.props.trans;
