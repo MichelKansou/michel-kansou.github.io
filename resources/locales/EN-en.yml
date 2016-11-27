@@ -58,12 +58,6 @@ WorkExperience:
                 jobType: Personal Project
                 description: Creation and development of a mobile game for iOS 9 using Swift
             -
-                title: Lcomlocal
-                date: May - June 2015
-                jobTitle: Web Developer
-                jobType: Internship
-                description: Internship Web development, Responsive Design and SEO consultancy
-            -
                 title: Adenatis
                 date: Sep. - Nov. 2014
                 jobTitle: Web Developer
@@ -100,6 +94,11 @@ Portfolio:
     title: Portfolio
     list:
         -
+            projectName: OpenRA-MI
+            description: Desktop App to make mod installation quicker and easier for OpenRA Project
+            url: https://github.com/MichelKansou/OpenRA-MI
+            img: ./resources/images/OpenRA-MI.png
+        -
             projectName: SlideDeck
             description: Desktop App for HTML presentation
             url: https://github.com/MichelKansou/SlideDeck
@@ -109,11 +108,6 @@ Portfolio:
             description: Mini iOS Game
             url: https://itunes.apple.com/fr/app/id1032369864
             img: ./resources/images/Squart.png
-        -
-            projectName: Twelves's Light
-            description: Personal Web Site
-            url: http://www.twelves-light.com/
-            img: ./resources/images/twelvelight.png
         -
             projectName: Adenatis
             description: Shopping website

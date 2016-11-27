@@ -59,12 +59,6 @@ WorkExperience:
                 jobType: Projet personnel
                 description: Création et développement d'un jeu mobile pour iOS 9 avec Swift
             -
-                title: Lcomlocal
-                date: Mai - Juin 2015
-                jobTitle: Développeur Web
-                jobType: Stage
-                description: Stage développement web en Responsive Design avec Bootstrap et conseil en référencement
-            -
                 title: Adenatis
                 date: Sep. - Nov. 2014
                 jobTitle: Développeur Web
@@ -102,6 +96,11 @@ Portfolio:
     more: En savoir plus
     list:
         -
+            projectName: OpenRA-MI
+            description: Une application desktop pour installer rapidement des mods du projet OpenRA
+            url: https://github.com/MichelKansou/OpenRA-MI
+            img: ./resources/images/OpenRA-MI.png
+        -
             projectName: SlideDeck
             description: Une application desktop pour les présentations HTML
             url: https://github.com/MichelKansou/SlideDeck
@@ -111,11 +110,6 @@ Portfolio:
             description: Mini jeu iOS
             url: https://itunes.apple.com/fr/app/id1032369864
             img: ./resources/images/Squart.png
-        -
-            projectName: Twelves's Light
-            description: Mon site personnel
-            url: http://www.twelves-light.com/
-            img: ./resources/images/twelvelight.png
         -
             projectName: Adenatis
             description: Commerce en scene - site Web
