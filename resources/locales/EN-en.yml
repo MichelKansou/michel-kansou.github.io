@@ -94,6 +94,11 @@ Portfolio:
     title: Portfolio
     list:
         -
+            projectName: Personal Blog
+            description: A blog using Vapor a Swift Framework
+            url: https://github.com/MichelKansou/Vapor-Blog
+            img: ./resources/images/vapor.jpg
+        -
             projectName: OpenRA-MI
             description: Desktop App to make mod installation quicker and easier for OpenRA Project
             url: https://github.com/MichelKansou/OpenRA-MI
@@ -108,11 +113,6 @@ Portfolio:
             description: Mini iOS Game
             url: https://itunes.apple.com/fr/app/id1032369864
             img: ./resources/images/Squart.png
-        -
-            projectName: Adenatis
-            description: Shopping website
-            url: http://www.commerces-en-scene.fr/
-            img: ./resources/images/adenatis.png
 Hobbies:
     title: Hobbies & Interests
     music: Music
@@ -142,4 +142,4 @@ Footer:
     contact:
         title: Contact Me
         message: Have a project you'd like to discuss ?
-    copyright: by Michel Kansou. ©  2016 All rights reserved.
+    copyright: by Michel Kansou. ©  2017 All rights reserved.

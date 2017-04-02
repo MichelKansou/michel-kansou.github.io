@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0458374627e928c01771"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "14801c0182116641b329"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -36917,7 +36917,7 @@
 		],
 		"Mobile_skills": [
 			{
-				"name": "Swift 2",
+				"name": "Swift 3",
 				"progress": "60%"
 			},
 			{
@@ -36982,7 +36982,7 @@
 		"Standard": [
 			{
 				"name": "Github",
-				"progress": "65%"
+				"progress": "70%"
 			},
 			{
 				"name": "Slack",
@@ -37006,11 +37006,11 @@
 			},
 			{
 				"name": "Agile / SCRUM",
-				"progress": "55%"
+				"progress": "70%"
 			},
 			{
 				"name": "UML",
-				"progress": "45%"
+				"progress": "50%"
 			}
 		]
 	};
@@ -37615,6 +37615,12 @@
 			"title": "Portfolio",
 			"list": [
 				{
+					"projectName": "Personal Blog",
+					"description": "A blog using Vapor a Swift Framework",
+					"url": "https://github.com/MichelKansou/Vapor-Blog",
+					"img": "./resources/images/vapor.jpg"
+				},
+				{
 					"projectName": "OpenRA-MI",
 					"description": "Desktop App to make mod installation quicker and easier for OpenRA Project",
 					"url": "https://github.com/MichelKansou/OpenRA-MI",
@@ -37631,12 +37637,6 @@
 					"description": "Mini iOS Game",
 					"url": "https://itunes.apple.com/fr/app/id1032369864",
 					"img": "./resources/images/Squart.png"
-				},
-				{
-					"projectName": "Adenatis",
-					"description": "Shopping website",
-					"url": "http://www.commerces-en-scene.fr/",
-					"img": "./resources/images/adenatis.png"
 				}
 			]
 		},
@@ -37675,7 +37675,7 @@
 				"title": "Contact Me",
 				"message": "Have a project you'd like to discuss ?"
 			},
-			"copyright": "by Michel Kansou. ©  2016 All rights reserved."
+			"copyright": "by Michel Kansou. ©  2017 All rights reserved."
 		}
 	};
 
