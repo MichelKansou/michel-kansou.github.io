@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "14801c0182116641b329"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9cfe08c26860e3d26e2e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -37548,6 +37548,13 @@
 		"WorkExperience": {
 			"title": "Work Experience",
 			"experiences": [
+				{
+					"title": "Neoxia",
+					"date": "September - February 2017",
+					"jobTitle": "Software Developer",
+					"jobType": "Internship",
+					"description": "Front-end development with ReactJS & Redux\nBack-end development with Laravel 5\nCreate mobile app for iOS & Android with React Native\n"
+				},
 				{
 					"title": "SlideDeck",
 					"date": "March - April 2016",

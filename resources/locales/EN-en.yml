@@ -37,6 +37,15 @@ WorkExperience:
     title: Work Experience
     experiences:
             -
+                title: Neoxia
+                date: September - February 2017
+                jobTitle: Software Developer
+                jobType: Internship
+                description: |+
+                                Front-end development with ReactJS & Redux
+                                Back-end development with Laravel 5
+                                Create mobile app for iOS & Android with React Native
+            -
                 title: SlideDeck
                 date: March - April 2016
                 jobTitle: Software Developer
