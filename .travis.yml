@@ -7,4 +7,4 @@ node_js:
   - "6"
 notifications:
   email: true
-script: yarn run build
+script: npm run webpack
