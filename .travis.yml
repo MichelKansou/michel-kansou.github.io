@@ -4,10 +4,7 @@ cache:
   directories:
     - node_modules
 node_js:
-  - "7"
   - "6"
-  - "5"
-  - "4"
 notifications:
   email: true
 script: yarn run build
