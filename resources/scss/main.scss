@@ -2,18 +2,27 @@
 
 @import "base/default";
 
+@import '../../node_modules/loaders.css/src/variables';
+@import '../../node_modules/loaders.css/src/mixins';
+
+/**
+ * Animations
+ */
+@import "base/animation";
+@import '../../node_modules/loaders.css/src/animations/line-scale';
+
 @import "layouts/header";
-@import "layouts/page-contents";
+@import "layouts/main";
 @import "layouts/footer";
 
-
-@import "modules/download-button";
+@import "modules/hexagon-loader";
+@import "modules/buttons";
 @import "modules/navigationMenu";
 @import "modules/blinker";
-@import "modules/ui-segment";
-@import "modules/ui-skills-grid";
+@import "modules/segment";
+@import "modules/experience-grid";
 @import "modules/progress-bar";
-@import "modules/ui-experience-grid";
-@import "modules/vertical-timeline";
+@import "modules/skills-grid";
 @import "modules/portfolio";
-@import "modules/hobbies-like";
+@import "modules/hobbies";
+@import "modules/contact";

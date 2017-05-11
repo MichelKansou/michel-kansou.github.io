@@ -1,0 +1,43 @@
+.segment.skills {
+    .row {
+        display: flex;
+        justify-content: space-around;
+        .column {
+            width: 40%;
+            text-align: left;
+            h3 {
+                font-size: 25px;
+            }
+            .skill {
+                margin: 5px 0px;
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .resume-project {
+        margin: 1em 0;
+        font-style: italic;
+        .btn {
+            font-style: normal;
+            display: block;
+            max-width: 200px;
+            padding: .5em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1em;
+        }
+    }
+}
+
+
+@media only screen and (max-width : 904px) {
+    .segment.skills {
+        .row {
+            flex-direction: column;
+            .column {
+                width: 100%;
+            }
+        }
+    }
+}

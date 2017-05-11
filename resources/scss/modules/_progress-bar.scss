@@ -1,20 +1,17 @@
-.ui.progress .bar {
-    height: 1em;
-}
-
-.progress {
-  width: 100%;
-  height: 1em;
-}
-.progress-wrap {
-  background: $skills-progress;
-  margin: 10px 0;
-  overflow: hidden;
-  position: relative;
-  .progress-bar {
-    background: #ddd;
-    left: 0;
-    position: absolute;
-    top: 0;
-  }
+.progress-wrapper {
+    background-color: $skills-progress-bg;
+    height: 2px;
+    margin-top: 1em;
+    .progress {
+        background-color: $skills-progress;
+        height: 100%;
+        width: 0;
+        position: relative;
+        .skills-percent {
+            position: absolute;
+            right: 0;
+            top: -25px;
+            font-size: 15px;
+        }
+    }
 }

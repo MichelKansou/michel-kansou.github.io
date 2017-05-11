@@ -8,6 +8,11 @@
 }
 
 .wrap {
-	max-width: 960px; /* Changge this with your max-width size */
-	margin: 0 auto;
+	margin: 0 2em;
+}
+
+@media only screen and (max-width : 904px) {
+    .wrap {
+    	margin: 0;
+    }
 }

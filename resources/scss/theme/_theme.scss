@@ -1,8 +1,7 @@
 @import "compass/css3";
 @import "compass/css3/animation";
 @import 'compass';
-@import url(http://fonts.googleapis.com/css?family=Nunito);
-@import "http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 
 // Typography
 $base-font: helvetica, arial, tahoma, verdana;
@@ -10,15 +9,15 @@ $base-font-title: "Dosis", arial, tahoma, verdana;
 
 /* Color Palletes */
 $awesome-white: #f9f9f9;
-$awesome-white2: #FDFDFD;
+$awesome-white2: #f5f5f5;
 $blue: cornflowerblue;
 $red: #E25041;
 $pomegranate: #C0392B;
 $green: mediumaquamarine;
 $purple: mediumpurple;
 $silver: silver;
-$gray: #D1D5D8;
-$flatgray: #bdc3c7;
+$gray: #6d747c;
+$flatgray: #e7e7e7;
 $black: #34495e;
 $yellow: #FAC51C;
 $flat-blue: #2969B0;
@@ -31,53 +30,57 @@ $flat-blueWhale: #28324E;
 $flat-NightBlue: #284058;
 $flat-NightBlue2: #34495E;
 $flat-whiteSmoke: #EFEFEF;
-$flat-black: #313131;
+$flat-black: #202325;
+$flat-black2: #191b1d;
 $gray-smoked: #7D7D7D;
 
 /* default Element background  color */
 
-$body-bg: $flat-black;
+$body-bg: #313131;
 $link-color: $red;
 
 /* UI Navbar background  color */
-$navbar-bg: $flat-blue;
-$navigation-color: $awesome-white;
+$navbar-bg: $awesome-white;
+$navigation-color: $flat-black2;
+$navigation-hover-text-color: $red;
 $navigation-language-button: $black;
 
 /* UI Segments background  color */
-$segment-bg1 : $flat-blueWhale;
-$segment-bg2 : $awesome-white;
-$segment-text2 : $flat-black;
+$segment-hr : $red;
+$segment-dark : $flat-black2;
+$segment-dark-text-color: $awesome-white;
+$segment-light : $awesome-white;
+$segment-light-text-color: $flat-black2;
 
 /* UI Skills Grid background  color */
-$grid-bg : $awesome-white;
-$grid-color: $flat-black;
-$grid-box-shadow: $red;
-$grid-border: $gray;
 $skills-title: $red;
 $skills-title-color: $awesome-white;
 $skills-progress: $red;
+$skills-progress-bg: $awesome-white;
 
 /* UI Experience background  color */
 $experience-title: $flat-whiteCloud;
 $experience-color: $awesome-white;
-$experience-bg: $flat-blueWhale;
-$experience-job-title: $flat-black;
-$experience-job-type: $pomegranate;
+$experience-highlight-box: $flat-black;
+$experience-job-title: $red;
 $experience-border-color: $flat-graySmoke ;
 $experience-date-bg: $red;
 
 /* UI Timeline Education background  color */
 $timeline-text-color: $flat-black;
 $timeline-color-white: $awesome-white;
-$timeline-color: $flat-blue;
 
 /* UI Hobbies background  color */
 $hobbies-quotes-border: $awesome-white;
 
 /* UI Footer background  color */
-$footer-border: $gray-smoked;
+$footer-border: $flatgray;
+$footer-color: $gray;
+$footer-bg: $awesome-white2;
 $download-bg: $red;
-$download-box: $pomegranate;
 
-$twitter-bg: #55acee;
+
+/* Loader color */
+
+$loader-bg: $flat-black2;
+$loader-hexagon-color: $red;

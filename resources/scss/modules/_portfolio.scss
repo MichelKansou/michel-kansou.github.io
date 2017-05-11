@@ -1,22 +1,20 @@
-.ui.text.container{
-    &.portfolio-container {
-        max-width: 907px!important;
-    }
-    .ui.link.cards{
-        &.portfolio-cards {
-            margin-top: 20px;
-        }
-    }
-}
-@media only screen and (max-width : 635px) {
-    .ui.text.container{
-        .ui.link.cards{
-            &.portfolio-cards {
-                margin-left: auto;
-                margin-right: auto;
-                max-width: 290px;
+.segment.portfolio {
+    .portfolio-cards {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+            width: 45%;
+            margin: 1.5em;
+            img {
+                max-width: 150px;
             }
         }
     }
-
+}
+@media only screen and (max-width : 991px) {
+    .segment.portfolio {
+        .portfolio-cards {
+            justify-content: center;
+        }
+    }
 }

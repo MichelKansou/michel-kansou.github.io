@@ -1,0 +1,16 @@
+a {
+    &.btn {
+        text-decoration: none;
+    }
+}
+.btn{
+    background-color: $download-bg;
+    color: $awesome-white2;
+    padding: 1em;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-o {
+    color: $download-bg;
+}
