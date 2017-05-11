@@ -1,23 +1,17 @@
-var React = require('react');
-var T = require('i18n-react');
+import React from 'react';
 
-var Profile = React.createClass({
-    render: function() {
-        var trans = this.props.trans;
-        return (
-            <div className="ui inverted vertical masthead center aligned segment customSegment2">
-                <div className="ui text container">
-                    <div className="segment-title">
-                        <i className="fa fa-user"> - {trans.Profile.title} </i>
-                    </div>
-                    <h4>{trans.Profile.description}</h4>
-                    <a className="ui custom button resume-download" href={trans.Profile.cvUrl} >
-                        <i className="fa fa-download"></i> {trans.Profile.downloadCV}
-                    </a>
-                </div>
+const Profile = (props) =>  {
+    const trans = props.trans;
+    return (
+        <div className="segment profile light">
+            <div className="container">
+                <i className="fa fa-user-o fa-3x"></i>
+                <h3 className="segment-title">{trans.profile.title}</h3>
+                <hr/>
+                <p>{trans.profile.description}</p>
             </div>
-        );
-    }
-});
+        </div>
+    );
+}
 
 export default Profile;

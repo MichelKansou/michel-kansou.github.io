@@ -1,41 +1,49 @@
-var webpack = require('webpack');
-var path = require('path');
+const path = require('path');
+const webpack = require('webpack');
+
 module.exports = {
-    entry: [
-      'webpack/hot/only-dev-server',
-      "./resources/js/app.jsx"
-    ],
-    output: {
-        path: __dirname + '/build',
-        filename: "bundle.js"
-    },
-    devServer: {
-     hot: true,
-     inline: true
-   },
-    module: {
-        loaders: [
-            { test: /\.css$/, loader: "style!css" },
-            { test: /\.ya?ml$/, loader: 'json!yaml' },
-            {
-              test: /\.js[x]?$/,
-              loaders: ['babel-loader?presets[]=es2015&presets[]=react'],
-              exclude: /(node_modules|bower_components)/
-            }
-
-        ]
-    },
-    resolve: {
-      extensions: ['', '.js', '.jsx']
-    },
-    plugins: [
-      new webpack.HotModuleReplacementPlugin(),
-      new webpack.NoErrorsPlugin(),
-      new webpack.DefinePlugin({
-      "process.env": {
-        NODE_ENV: JSON.stringify("production")
-      }
+  entry: {
+    'app': './resources/js/app.jsx'
+  },
+  output: {
+    path: __dirname + '/build',
+    filename: "bundle.js"
+  },
+  module: {
+   rules: [
+     {
+       test: /.jsx?$/,
+       exclude: /node_modules/,
+       use: [
+         {
+           loader: 'babel-loader',
+           options: {
+             babelrc: false,
+             presets: [
+               ['es2015', { modules: false }],
+               'react',
+               'stage-0'
+             ],
+           }
+         }
+       ]
+     },
+     { test: /\.json$/, loader: "json-loader" },
+     { test: /\.css$/, loader: "style!css" },
+   ]
+ },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
     })
-    ]
-
+  ],
+  resolve: {
+    modules: [
+        path.resolve('./resources'),
+        path.join(process.cwd(), 'app'),
+        'node_modules'
+    ],
+    extensions: ['.js', '.jsx']
+  },
+  devtool: false
 };

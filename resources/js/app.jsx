@@ -1,41 +1,51 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var T = require('i18n-react');
-var $ = require('jquery');
-var ga = require('react-google-analytics');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ga from 'react-google-analytics';
 import NavigationMenu from './Views/NavigationMenu.jsx';
+import Home from './Views/Home.jsx';
 import PageContents from './Views/PageContents.jsx';
 import Footer from './Views/Footer.jsx';
+import PageLoader from './Components/PageLoader.jsx';
 
+import English from 'locales/EN-en.json';
+import French from 'locales/FR-fr.json';
 
-import English from '../locales/EN-en.yml';
-import French from '../locales/FR-fr.yml';
-
-var App = React.createClass({
+const App = React.createClass({
     getInitialState: function() {
         return {
-            trans: English
+            trans: English,
+            loading: true
         };
     },
-    //Write all Js for Semantic UI in root App in componentDidMount function :D
-    componentDidMount() {
-        $(document).ready(function(){
-            var offset = $(".headerNav").offset().top;
-            $(document).scroll(function(){
-                var scrollTop = $(document).scrollTop();
-                if(scrollTop > offset){
-                    $(".headerNav").css("position", "fixed");
-                }
-                else {
-                    $(".headerNav").css("position", "relative");
-                }
-            });
-          $('#menu-icon').on('click', function(){
-            $('.navbar').toggleClass('expand');
-            return false;
-          });
-        });
+
+    //Write all Js in root App in componentDidMount function :D
+    componentWillMount() {
+        const browserLanguage = navigator.language;
+        if (browserLanguage == 'fr-FR' || browserLanguage == 'fr') {
+            this.setState({trans: French});
+        }
     },
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ loading: false }), 1600);
+        // $(document).ready(function(){
+        //     var offset = $(".headerNav").offset().top;
+        //     $(document).scroll(function(){
+        //         var scrollTop = $(document).scrollTop();
+        //         if(scrollTop > offset){
+        //             $(".headerNav").css("position", "fixed");
+        //         }
+        //         else {
+        //             $(".headerNav").css("position", "relative");
+        //         }
+        //     });
+        //   $('#menu-icon').on('click', function(){
+        //     $('.navbar').toggleClass('expand');
+        //     return false;
+        //   });
+        // });
+    },
+
     handleClick( language ) {
         if ( language == 'FR' ){
             this.setState({
@@ -49,20 +59,22 @@ var App = React.createClass({
         }
     },
   render: function() {
-      ga('create', 'UA-69121322-1', 'auto');
-      ga('send', 'pageview');
-      var GAInitiailizer = ga.Initializer;
-      var translation = this.state.trans;
-    //   console.log(this.state.languagechanged);
-    //   var trans = this.state.languagechanged;
+    ga('create', 'UA-69121322-1', 'auto');
+    ga('send', 'pageview');
+    const GAInitiailizer = ga.Initializer;
+    const translation = this.state.trans;
+
     return (
-        <div className="app-container">
-            <NavigationMenu trans={translation} handleClick={this.handleClick} />
-            <PageContents trans={translation}/>
-            <Footer trans={translation}/>
+        <div className="container">
+            <PageLoader loading={this.state.loading}>
+                <NavigationMenu trans={translation} handleClick={this.handleClick} />
+                <Home trans={translation}/>
+                <PageContents trans={translation}/>
+                <Footer trans={translation}/>
+            </PageLoader>
             <GAInitiailizer />
         </div>
-        );
+    );
   }
 });
 

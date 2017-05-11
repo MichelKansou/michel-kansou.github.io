@@ -1,113 +1,112 @@
-var React = require('react');
+import React from 'react';
 
-var skillsDB = require("../../locales/skills.yml");
+import skillsDB from 'locales/skills.json';
 
-var Skills = React.createClass({
-    componentDidMount() {
-        // var loaded = 0;
-        //     $(document).scroll(function(){
-        //         if($(this).scrollTop()>=$('#profile').position().top){
-        //             // on page load...
-        //             moveProgressBar();
-        //             // on browser resize...
-        //             $(window).resize(function() {
-        //                 loaded = 0;
-        //                 moveProgressBar();
-        //             });
-        //         }
-        //     })
-        // // SIGNATURE PROGRESS
-        // function moveProgressBar() {
-        //     if (!loaded == 1){
-        //     var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
-        //     var getProgressWrapWidth = $('.progress-wrap').width();
-        //     var progressTotal = getPercent * getProgressWrapWidth;
-        //     var animationLength = 1000;
-        //     console.log(progressTotal);
-        //     // on page load, animate percentage bar to data percentage length
-        //     // .stop() used to prevent animation queueing
-        //     $('.progress-bar').stop().animate({
-        //         left: progressTotal
-        //     }, animationLength);
-        //     }
-        //}
-    },
-    render: function() {
-        var trans = this.props.trans;
-        var webSkills = skillsDB.Web_skills.map((data, index) =>
-          <span key={index}>{data.name}
-              <div className="progress-wrap progress" key={index}>
-                  <div className="progress-bar progress" style={{left: data.progress}}></div>
+const Skills = (props) =>  {
+        const trans = props.trans;
+        const webSkillsFront = skillsDB.webSkillsFront.map((data, index) =>
+          <span key={index} className="skill">{data.name}
+              <div className="progress-wrapper" key={index}>
+                  <div className="progress" style={{width: data.progress}}>
+                      <span className="skills-percent">{data.progress}</span>
+                  </div>
                 </div>
           </span>
         )
-        var mobileSkills = skillsDB.Mobile_skills.map((data, index) =>
-            <span key={index}>{data.name}
-                <div className="progress-wrap progress" key={index}>
-                    <div className="progress-bar progress" style={{left: data.progress}}></div>
+        const webSkillsBack = skillsDB.webSkillsBack.map((data, index) =>
+          <span key={index} className="skill">{data.name}
+              <div className="progress-wrapper" key={index}>
+                  <div className="progress" style={{width: data.progress}}>
+                      <span className="skills-percent">{data.progress}</span>
+                  </div>
+                </div>
+          </span>
+        )
+        const mobileSkills = skillsDB.mobileSkills.map((data, index) =>
+            <span key={index} className="skill">{data.name}
+                <div className="progress-wrapper" key={index}>
+                    <div className="progress" style={{width: data.progress}}>
+                        <span className="skills-percent">{data.progress}</span>
+                    </div>
                   </div>
             </span>
         )
-        var tools = skillsDB.Tools.map((data, index) =>
-            <span key={index}>{data.name}
-                <div className="progress-wrap progress" key={index}>
-                    <div className="progress-bar progress" style={{left: data.progress}}></div>
+        const softwareSkills = skillsDB.softwareSkills.map((data, index) =>
+            <span key={index} className="skill">{data.name}
+                <div className="progress-wrapper" key={index}>
+                    <div className="progress" style={{width: data.progress}}>
+                        <span className="skills-percent">{data.progress}</span>
+                    </div>
                   </div>
             </span>
         )
-        var softwareSkills = skillsDB.Software_skills.map((data, index) =>
-            <span key={index}>{data.name}
-                <div className="progress-wrap progress" key={index}>
-                    <div className="progress-bar progress" style={{left: data.progress}}></div>
+        const database = skillsDB.database.map((data, index) =>
+            <span key={index} className="skill">{data.name}
+                <div className="progress-wrapper" key={index}>
+                    <div className="progress" style={{width: data.progress}}>
+                        <span className="skills-percent">{data.progress}</span>
+                    </div>
                   </div>
             </span>
         )
-        var database = skillsDB.Database.map((data, index) =>
-            <span key={index}>{data.name}
-                <div className="progress-wrap progress" key={index}>
-                    <div className="progress-bar progress" style={{left: data.progress}}></div>
+        const standard = skillsDB.standard.map((data, index) =>
+            <span key={index} className="skill">{data.name}
+                <div className="progress-wrapper" key={index}>
+                    <div className="progress" style={{width: data.progress}}>
+                        <span className="skills-percent">{data.progress}</span>
+                    </div>
                   </div>
             </span>
         )
-        var standard = skillsDB.Standard.map((data, index) =>
-            <span key={index}>{data.name}
-                <div className="progress-wrap progress" key={index}>
-                    <div className="progress-bar progress" style={{left: data.progress}}></div>
+        const tools = skillsDB.tools.map((data, index) =>
+            <span key={index} className="skill">{data.name}
+                <div className="progress-wrapper" key={index}>
+                    <div className="progress" style={{width: data.progress}}>
+                        <span className="skills-percent">{data.progress}</span>
+                    </div>
                   </div>
             </span>
         )
       return (
-        <div className="ui inverted vertical masthead center aligned segment customSegment1">
-            <div className="ui text container skills-container">
-                <div className="segment-title">
-                    <i className="fa fa-cogs"> - {trans.Skills.title} </i>
+        <div className="segment skills dark">
+            <div className="container">
+                <i className="fa fa-cogs fa-3x"></i>
+                <h3 className="segment-title">{trans.skills.title}</h3>
+                <hr/>
+                <div className="row">
+                    <div className="column">
+                        <h3 className="title">Web</h3>
+                        <h4 className="title">Front-end</h4>
+                        {webSkillsFront}
+                        <h4 className="title">Back-end</h4>
+                        {webSkillsBack}
+                    </div>
+                    <div className="column">
+                        <h3 className="skills-title">{trans.skills.mobile.title} </h3>
+                        {mobileSkills}
+                        <h3 className="skills-title">{trans.skills.software.title} </h3>
+                        {softwareSkills}
+                        <h3 className="skills-title">{trans.skills.database.title} </h3>
+                        {database}
+                    </div>
                 </div>
-                <div className="ui stackable four column grid custom-grid">
-                  <div className="column custom-column">
-                      <h3 className="skills-title"><i className="fa fa-html5 fa"></i>  {trans.Skills.web.title} </h3>
-                      {webSkills}
-                  </div>
-                  <div className="column custom-column">
-                      <h3 className="skills-title"><i className="fa fa-mobile fa"></i>  {trans.Skills.mobile.title} </h3>
-                         {mobileSkills}
-                      <h3 className="skills-title"><i className="fa fa-cog fa"></i>  {trans.Skills.tools.title} </h3>
-                         {tools}
-                  </div>
-                  <div className="column custom-column">
-                      <h3 className="skills-title"><i className="fa fa-laptop fa"></i>  {trans.Skills.software.title} </h3>
-                         {softwareSkills}
-                      <h3 className="skills-title"><i className="fa fa-database fa"></i>  {trans.Skills.database.title} </h3>
-                         {database}
-                  </div>
-                  <div className="column custom-column">
-                          <h3 className="skills-title"><i className="fa fa-plus-square fa"></i>  {trans.Skills.standard.title} </h3>
-                         {standard}
-                  </div>
+                <div className="resume-project">
+                    <p>This project is build with React JS.</p>
+                    <a href="https://github.com/MichelKansou/michelkansou.github.io" className="btn" >See project on Github</a>
+                </div>
+                <div className="row">
+                    <div className="column">
+                        <h3 className="skills-title">{trans.skills.standard.title} </h3>
+                        {standard}
+                    </div>
+                    <div className="column">
+                        <h3 className="skills-title">{trans.skills.tools.title} </h3>
+                        {tools}
+                    </div>
                 </div>
             </div>
       </div>
       );
-    }
-});
+}
 
 export default Skills;

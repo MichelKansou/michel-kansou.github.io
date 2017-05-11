@@ -1,34 +1,32 @@
-var React = require('react');
+import React from 'react';
 
-var Portfolio = React.createClass({
-    render: function() {
-      var trans = this.props.trans;
-      var portfolioList = trans.Portfolio.list.map((data, index) =>
-          <div className="card" key={index}>
-                <div className="image">
-                    <img src={data.img}/>
+const Portfolio = (props) =>  {
+    const trans = props.trans;
+    const portfolioList = trans.portfolio.list.map((data, index) =>
+        <div className="card" key={index}>
+            <div className="image">
+                <img src={data.img}/>
+            </div>
+            <div className="content" key={index}>
+                <a className="header" href={data.url}>{data.projectName}</a>
+                <div className="description">
+                    {data.description}
                 </div>
-                <div className="content" key={index}>
-                      <a className="header" href={data.url}>{data.projectName}</a>
-                      <div className="description">
-                            {data.description}
-                      </div>
-                </div>
-          </div>
-      )
+            </div>
+        </div>
+    )
       return (
-        <div className="ui inverted vertical masthead center aligned segment customSegment2">
-            <div className="ui text container portfolio-container">
-                <div className="segment-title">
-                    <i className="fa fa-eye"> - {trans.Portfolio.title} </i>
-                </div>
-                <div className="ui link cards portfolio-cards">
+        <div className="segment portfolio light">
+            <div className="container">
+                <i className="fa fa-eye fa-3x"></i>
+                <h3 className="segment-title">{trans.portfolio.title}</h3>
+                <hr/>
+                <div className="portfolio-cards">
                     {portfolioList}
                 </div>
             </div>
-      </div>
-      );
-    }
-});
+        </div>
+    );
+}
 
 export default Portfolio;

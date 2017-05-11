@@ -1,31 +1,30 @@
-var React = require('react');
+import React from 'react';
 
-var Footer = React.createClass({
-    render: function() {
-      var trans = this.props.trans;
-      return (
-          <div className="ui inverted vertical footer segment custom-footer">
-              <div className="ui text container footer-container">
-                  <div className="segment-title">
-                      <i className="fa fa-paper-plane"> - {trans.Footer.contact.title} </i>
-                  </div>
-                  {trans.Footer.contact.message}
-                  <div className="social-container">
-                      <a href="mailto:michel.kansou@viacesi.fr"><i className="circular inverted yellow big mail outline icon"></i></a>
-                      <a href="https://www.facebook.com/michel.kansou"><i className="circular inverted blue big facebook icon"></i></a>
-                      <a href="https://twitter.com/MichelKansou"><i className="circular inverted blue big twitter icon"></i></a>
-                      <a href="https://fr.linkedin.com/in/michel-kansou-4384a38a"><i className="circular inverted blue big linkedin icon"></i></a>
-                      <a href="http://stackoverflow.com/users/4724949/michel"><i className="circular inverted grey big stack overflow icon"></i></a>
-                      <a href="https://github.com/MichelKansou"><i className="circular inverted red big github icon"></i></a>
-                  </div>
-                  <a className="ui custom button resume-download" href={trans.Profile.cvUrl} >
-                      <i className="fa fa-download"></i> {trans.Profile.downloadCV}
+const Footer = (props) =>  {
+    const trans = props.trans;
+    return (
+        <footer>
+            <div className="container">
+                <div className="row">
+                    <div className="column">
+                        <p id="copyright"><i className="fa fa-code"></i> with <i className="fa fa-heart"></i> {trans.footer.copyright}</p>
+                    </div>
+                    <div className="column">
+                        <a className="btn-o" href={trans.profile.cvUrl} >
+                            <i className="fa fa-download"></i> {trans.profile.downloadCV}
                         </a>
-                <p id="copyright"><i className="fa fa-code"></i> with <i className="fa fa-heart"></i> {trans.Footer.copyright}</p>
-              </div>
-        </div>
-      );
-    }
-});
+                    </div>
+                    <div className="column">
+                        <a className="link" href="mailto:michel.kansou@viacesi.fr"><i className="fa fa-envelope-o"></i></a>
+                        <a className="link" href="https://twitter.com/MichelKansou"><i className="fa fa-twitter"></i></a>
+                        <a className="link" href="https://fr.linkedin.com/in/michel-kansou-4384a38a"><i className="fa fa-linkedin"></i></a>
+                        <a className="link" href="http://stackoverflow.com/users/4724949/michel"><i className="fa fa-stack-overflow"></i></a>
+                        <a className="link" href="https://github.com/MichelKansou"><i className="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
+}
 
 export default Footer;
