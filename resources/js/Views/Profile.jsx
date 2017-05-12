@@ -6,7 +6,7 @@ const Profile = (props) =>  {
         <div className="segment profile light">
             <div className="container">
                 <i className="fa fa-user-o fa-3x"></i>
-                <h3 className="segment-title">{trans.profile.title}</h3>
+                <h3 className="segment-title">{trans.profile.title}<span className="point">.</span></h3>
                 <hr/>
                 <p>{trans.profile.description}</p>
             </div>

@@ -66,7 +66,7 @@ export default class Contact extends React.Component {
             <div className="segment contact light">
                 <div className="container">
                     <i className="fa fa-paper-plane fa-3x"></i>
-                    <h3 className="segment-title">{trans.footer.contact.title}</h3>
+                    <h3 className="segment-title">{trans.footer.contact.title}<span className="point">.</span></h3>
                     <hr/>
                     {trans.footer.contact.message}
                     <form id="contact" className="contact-form">

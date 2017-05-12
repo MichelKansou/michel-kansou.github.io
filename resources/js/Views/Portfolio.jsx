@@ -19,7 +19,7 @@ const Portfolio = (props) =>  {
         <div className="segment portfolio light">
             <div className="container">
                 <i className="fa fa-eye fa-3x"></i>
-                <h3 className="segment-title">{trans.portfolio.title}</h3>
+                <h3 className="segment-title">{trans.portfolio.title}<span className="point">.</span></h3>
                 <hr/>
                 <div className="portfolio-cards">
                     {portfolioList}

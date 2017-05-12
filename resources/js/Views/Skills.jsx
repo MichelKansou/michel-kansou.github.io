@@ -71,7 +71,7 @@ const Skills = (props) =>  {
         <div className="segment skills dark">
             <div className="container">
                 <i className="fa fa-cogs fa-3x"></i>
-                <h3 className="segment-title">{trans.skills.title}</h3>
+                <h3 className="segment-title">{trans.skills.title}<span className="point">.</span></h3>
                 <hr/>
                 <div className="row">
                     <div className="column">

@@ -20,7 +20,7 @@ const Experience = (props) =>  {
             <div className="segment experience dark">
                 <div className="container">
                     <i className="fa fa-briefcase fa-3x" aria-hidden="true"></i>
-                    <h3 className="segment-title">{trans.workExperience.title}</h3>
+                    <h3 className="segment-title">{trans.workExperience.title}<span className="point">.</span></h3>
                     <hr/>
                     <div className="highlight-experience row">
                         <div className="column">
