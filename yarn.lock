@@ -1204,6 +1204,33 @@ commoner@^0.10.1:
     q "^1.1.2"
     recast "^0.11.17"
 
+component-clone@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/component-clone/-/component-clone-0.2.2.tgz#c7f5979822880fad8cfb0962ba29186d061ee04f"
+  dependencies:
+    component-type "*"
+
+component-emitter@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.0.tgz#ccd113a86388d06482d03de3fc7df98526ba8efe"
+
+component-raf@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/component-raf/-/component-raf-1.2.0.tgz#b2bc72d43f1b014fde7a4b3c447c764bc73ccbaa"
+
+component-tween@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/component-tween/-/component-tween-1.2.0.tgz#cc39ce5dbab05b52825f41d1947638a0b01b2b8a"
+  dependencies:
+    component-clone "0.2.2"
+    component-emitter "1.2.0"
+    component-type "1.1.0"
+    ease-component "1.0.0"
+
+component-type@*, component-type@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/component-type/-/component-type-1.1.0.tgz#95b666aad53e5c8d1f2be135c45b5d499197c0c5"
+
 compressible@~2.0.8:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/compressible/-/compressible-2.0.10.tgz#feda1c7f7617912732b29bf8cf26252a20b9eecd"
@@ -1496,6 +1523,10 @@ diffie-hellman@^5.0.0:
 domain-browser@^1.1.1:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
+
+ease-component@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ease-component/-/ease-component-1.0.0.tgz#b375726db0b5b04595b77440396fec7daa5d77c9"
 
 ecc-jsbn@~0.1.1:
   version "0.1.1"
@@ -2046,10 +2077,6 @@ http-signature@~1.1.0:
 https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
-
-i18n-react@^0.3.0-ts1:
-  version "0.3.0-ts1"
-  resolved "https://registry.yarnpkg.com/i18n-react/-/i18n-react-0.3.0-ts1.tgz#94acb68f409a54a567257dc972b080ccbe4b06b5"
 
 iconv-lite@^0.4.5, iconv-lite@~0.4.13:
   version "0.4.15"
@@ -3453,6 +3480,19 @@ sass-loader@^6.0.3:
 sax@~1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.2.tgz#fd8631a23bc7826bef5d871bdb87378c95647828"
+
+scroll-to-element@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/scroll-to-element/-/scroll-to-element-2.0.0.tgz#3467330e3384743b7295ac64b30279990c5ac164"
+  dependencies:
+    scroll-to "0.0.2"
+
+scroll-to@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/scroll-to/-/scroll-to-0.0.2.tgz#936d398a9133660a2492145c2c0081dfcb0728f3"
+  dependencies:
+    component-raf "1.2.0"
+    component-tween "1.2.0"
 
 select-hose@^2.0.0:
   version "2.0.0"

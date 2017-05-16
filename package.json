@@ -27,6 +27,7 @@
     "react-dom": "^15.5.4",
     "react-google-analytics": "^0.2.0",
     "sass-loader": "^6.0.3",
+    "scroll-to-element": "^2.0.0",
     "style-loader": "^0.17.0",
     "webpack-dev-server": "^2.4.5",
     "yaml-loader": "^0.1.0"

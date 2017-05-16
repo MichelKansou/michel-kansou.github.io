@@ -16,7 +16,7 @@ const PageContents = (props) =>  {
     //   </section>
     return (
         <div className="page-contents">
-            <section id="profile">
+            <section id="about">
                 <Profile trans={trans} />
             </section>
             <section id="experience">

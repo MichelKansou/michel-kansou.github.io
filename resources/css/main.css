@@ -753,15 +753,15 @@ a.btn {
   .segment {
     padding: 100px 10px;
   }
-  /* line 113, ../scss/modules/_segment.scss */
-  .segment.home h1 {
+  /* line 114, ../scss/modules/_segment.scss */
+  .segment.home .content h1 {
     font-size: 32px;
   }
-  /* line 116, ../scss/modules/_segment.scss */
-  .segment.home h2 {
+  /* line 117, ../scss/modules/_segment.scss */
+  .segment.home .content h2 {
     font-size: 16px;
   }
-  /* line 121, ../scss/modules/_segment.scss */
+  /* line 123, ../scss/modules/_segment.scss */
   .segment .container .segment-title {
     font-size: 40px;
   }
