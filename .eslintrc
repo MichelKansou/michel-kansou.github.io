@@ -1,0 +1,8 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["standard-react"],
+    "rules": {
+        "indent": 2,
+        "react/jsx-indent": [2, 4]
+    }
+}

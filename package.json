@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -w -d --config webpack.config.js",
-    "start": "http-server -a 0.0.0.0 -p 9000"
+    "watch-webpack": "webpack -w -d --config webpack.config.js",
+    "build": "yarn run watch-webpack",
+    "start": "http-server -a 0.0.0.0 -p 9000",
+    "eslint": "./node_modules/.bin/eslint --ext .jsx resources/js/**",
+    "esw": "./node_modules/.bin/esw -w --ext .jsx resources/js/**"
   },
   "author": "Michel Kansou",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-react": "^7.0.1",
+    "babel-eslint": "^7.2.3",
+    "eslint-watch": "^3.1.0",
     "http-server": "0.9.0",
     "jsx-loader": "^0.13.2",
     "loaders.css": "^0.1.2",

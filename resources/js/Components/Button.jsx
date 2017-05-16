@@ -2,9 +2,9 @@ import React from 'react';
 
 export default class Button extends React.Component {
     constructor(props) {
-    super(props);
+        super(props);
         this.state = {
-          loading: false
+            loading: false
         };
     };
 
@@ -18,14 +18,14 @@ export default class Button extends React.Component {
 
     loader() {
         return (
-            <div className="loader">
-              <div className="loader-inner line-scale">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
+            <div className='loader'>
+                <div className='loader-inner line-scale'>
+                    <div />
+                    <div />
+                    <div />
+                    <div />
+                    <div />
+                </div>
             </div>
         );
     }
@@ -41,8 +41,8 @@ export default class Button extends React.Component {
 }
 
 Button.propTypes = {
-  text: React.PropTypes.string.isRequired,
-  loading: React.PropTypes.bool.isRequired,
-  className: React.PropTypes.string,
-  call: React.PropTypes.func
+    text: React.PropTypes.string.isRequired,
+    loading: React.PropTypes.bool.isRequired,
+    className: React.PropTypes.string,
+    call: React.PropTypes.func
 };

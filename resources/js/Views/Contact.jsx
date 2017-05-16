@@ -3,11 +3,11 @@ import Button from '../Components/Button.jsx';
 
 export default class Contact extends React.Component {
     constructor(props) {
-    super(props);
+        super(props);
         this.state = {
-          loading: false,
-          message: '',
-          success: false
+            loading: false,
+            message: '',
+            success: false
         };
     };
 
@@ -63,30 +63,34 @@ export default class Contact extends React.Component {
         const { success, loading, message } = this.state;
 
         return (
-            <div className="segment contact light">
-                <div className="container">
-                    <i className="fa fa-paper-plane fa-3x"></i>
-                    <h3 className="segment-title">{trans.footer.contact.title}<span className="point">.</span></h3>
-                    <hr/>
+            <div className='segment contact light'>
+                <div className='container'>
+                    <i className='fa fa-paper-plane fa-3x' />
+                    <h3 className='segment-title'>{trans.footer.contact.title}<span className='point'>.</span></h3>
+                    <hr />
                     {trans.footer.contact.message}
-                    <form id="contact" className="contact-form">
-                        <div className="field">
-                            <input name="name" type="text" placeholder="Your Name" ref={(ref) => this.nameRef = ref} required/>
+                    <form id='contact' className='contact-form'>
+                        <div className='field'>
+                            <input name='name' type='text' placeholder='Your Name' ref={(ref) => this.nameRef = ref} required />
                         </div>
-                        <div className="field">
-                            <input name="email" type="text" placeholder="Your Email" ref={(ref) => this.emailRef = ref} required/>
+                        <div className='field'>
+                            <input name='email' type='text' placeholder='Your Email' ref={(ref) => this.emailRef = ref} required />
                         </div>
-                        <div className="field">
-                            <input name="subject" type="text" placeholder="Subject" ref={(ref) => this.subjectRef = ref} required/>
+                        <div className='field'>
+                            <input name='subject' type='text' placeholder='Subject' ref={(ref) => this.subjectRef = ref} required />
                         </div>
-                        <div className="field">
-                            <textarea name="message" placeholder="Message" ref={(ref) => this.messageRef = ref} required></textarea>
+                        <div className='field'>
+                            <textarea name='message' placeholder='Message' ref={(ref) => this.messageRef = ref} required />
                         </div>
                     </form>
-                    <Button loading={loading} call={this.sendEmail.bind(this)} text="Send Message"/>
+                    <Button loading={loading} call={() => this.sendEmail()} text='Send Message' />
                     {message ? <p className={this.state.success ? 'message positive' : 'message negative'}>{message}</p>: null}
                 </div>
             </div>
         );
     }
 }
+
+Contact.propTypes = {
+    trans: React.PropTypes.object
+};

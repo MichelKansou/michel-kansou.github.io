@@ -2,9 +2,9 @@ import React from 'react';
 
 export default class PageLoader extends React.Component {
     constructor(props) {
-    super(props);
+        super(props);
         this.state = {
-          loading: true
+            loading: true
         };
     };
 
@@ -18,15 +18,15 @@ export default class PageLoader extends React.Component {
 
     loader() {
         return (
-            <div className="hexagon-loader">
-                <ul className="hexagon-container">
-                    <li className="hexagon hex_1"></li>
-                    <li className="hexagon hex_2"></li>
-                    <li className="hexagon hex_3"></li>
-                    <li className="hexagon hex_4"></li>
-                    <li className="hexagon hex_5"></li>
-                    <li className="hexagon hex_6"></li>
-                    <li className="hexagon hex_7"></li>
+            <div className='hexagon-loader'>
+                <ul className='hexagon-container'>
+                    <li className='hexagon hex_1' />
+                    <li className='hexagon hex_2' />
+                    <li className='hexagon hex_3' />
+                    <li className='hexagon hex_4' />
+                    <li className='hexagon hex_5' />
+                    <li className='hexagon hex_6' />
+                    <li className='hexagon hex_7' />
                 </ul>
             </div>
         );
@@ -35,7 +35,7 @@ export default class PageLoader extends React.Component {
     render() {
         const children = this.state.loading ? this.loader() : this.props.children;
         return (
-            <div className="loader-container">
+            <div className='loader-container'>
                 {children}
             </div>
         )
@@ -43,6 +43,6 @@ export default class PageLoader extends React.Component {
 }
 
 PageLoader.propTypes = {
-  children: React.PropTypes.node.isRequired,
-  loading: React.PropTypes.bool.isRequired
+    children: React.PropTypes.node.isRequired,
+    loading: React.PropTypes.bool.isRequired
 };

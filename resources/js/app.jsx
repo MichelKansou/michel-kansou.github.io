@@ -58,24 +58,24 @@ const App = React.createClass({
             });
         }
     },
-  render: function() {
-    ga('create', 'UA-69121322-1', 'auto');
-    ga('send', 'pageview');
-    const GAInitiailizer = ga.Initializer;
-    const translation = this.state.trans;
+    render: function() {
+        ga('create', 'UA-69121322-1', 'auto');
+        ga('send', 'pageview');
+        const GAInitiailizer = ga.Initializer;
+        const translation = this.state.trans;
 
-    return (
-        <div className="container">
-            <PageLoader loading={this.state.loading}>
-                <NavigationMenu trans={translation} handleClick={this.handleClick} />
-                <Home trans={translation}/>
-                <PageContents trans={translation}/>
-                <Footer trans={translation}/>
-            </PageLoader>
-            <GAInitiailizer />
-        </div>
-    );
-  }
+        return (
+            <div className='container'>
+                <PageLoader loading={this.state.loading}>
+                    <NavigationMenu trans={translation} handleClick={this.handleClick} />
+                    <Home trans={translation} />
+                    <PageContents trans={translation} />
+                    <Footer trans={translation} />
+                </PageLoader>
+                <GAInitiailizer />
+            </div>
+        );
+    }
 });
 
 ReactDOM.render(

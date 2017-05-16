@@ -11,31 +11,35 @@ import Contact from './Contact.jsx';
 const PageContents = (props) =>  {
 
     const trans = props.trans;
-    //   <section id="education">
+    //   <section id='education'>
     //       <Education trans={trans} />
     //   </section>
     return (
-        <div className="page-contents">
-            <section id="about">
+        <div className='page-contents'>
+            <section id='about'>
                 <Profile trans={trans} />
             </section>
-            <section id="experience">
+            <section id='experience'>
                 <Experience trans={trans} />
             </section>
-            <section id="skills">
+            <section id='skills'>
                 <Skills trans={trans} />
             </section>
-            <section id="portfolio">
-                <Portfolio trans={trans}/>
+            <section id='portfolio'>
+                <Portfolio trans={trans} />
             </section>
-            <section id="hobbies">
-                <Hobbies trans={trans}/>
+            <section id='hobbies'>
+                <Hobbies trans={trans} />
             </section>
-            <section id="contact">
+            <section id='contact'>
                 <Contact trans={trans} />
             </section>
         </div>
     );
 }
+
+PageContents.propTypes = {
+    trans: React.PropTypes.object
+};
 
 export default PageContents;
