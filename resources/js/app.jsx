@@ -18,32 +18,16 @@ const App = React.createClass({
         };
     },
 
-    //Write all Js in root App in componentDidMount function :D
-    componentWillMount() {
-        const browserLanguage = navigator.language;
-        if (browserLanguage == 'fr-FR' || browserLanguage == 'fr') {
-            this.setState({trans: French});
-        }
-    },
+    //TODO: Update French local
+    // componentWillMount() {
+    //     const browserLanguage = navigator.language;
+    //     if (browserLanguage == 'fr-FR' || browserLanguage == 'fr') {
+    //         this.setState({trans: French});
+    //     }
+    // },
 
     componentDidMount() {
         setTimeout(() => this.setState({ loading: false }), 1400);
-        // $(document).ready(function(){
-        //     var offset = $(".headerNav").offset().top;
-        //     $(document).scroll(function(){
-        //         var scrollTop = $(document).scrollTop();
-        //         if(scrollTop > offset){
-        //             $(".headerNav").css("position", "fixed");
-        //         }
-        //         else {
-        //             $(".headerNav").css("position", "relative");
-        //         }
-        //     });
-        //   $('#menu-icon').on('click', function(){
-        //     $('.navbar').toggleClass('expand');
-        //     return false;
-        //   });
-        // });
     },
 
     handleClick( language ) {
