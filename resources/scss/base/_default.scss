@@ -37,6 +37,10 @@ a {
 	margin-top: 2em;
 }
 
+.white {
+	color: $awesome-white2!important;
+}
+
 @font-face {
     font-family: 'batmanFont';
     src: url('./fonts/batman.ttf');

@@ -38,6 +38,11 @@ export default class Home extends React.Component {
                             <a className='link' href='http://stackoverflow.com/users/4724949/michel'><i className='fa fa-stack-overflow' /></a>
                             <a className='link' href='https://github.com/MichelKansou'><i className='fa fa-github' /></a>
                         </div>
+                        <div className='row'>
+                            <a className='btn-o white' href={trans.profile.cvUrl} >
+                                <i className='fa fa-download' /> {trans.profile.downloadCV}
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>

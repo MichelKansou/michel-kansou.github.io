@@ -56,6 +56,11 @@ a:hover {
   margin-top: 2em;
 }
 
+/* line 40, ../scss/base/_default.scss */
+.white {
+  color: #f5f5f5 !important;
+}
+
 @font-face {
   font-family: 'batmanFont';
   src: url("./fonts/batman.ttf");
@@ -655,34 +660,35 @@ a.btn {
   position: absolute;
   margin: 0;
   padding: 0;
+  width: 100%;
   text-align: center;
   top: 50%;
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
-/* line 28, ../scss/modules/_segment.scss */
+/* line 29, ../scss/modules/_segment.scss */
 .segment.home .content h2 {
   font-weight: 500;
 }
-/* line 31, ../scss/modules/_segment.scss */
+/* line 32, ../scss/modules/_segment.scss */
 .segment.home .content h1 {
   text-transform: uppercase;
   font-size: 3rem;
   letter-spacing: 8px;
 }
-/* line 36, ../scss/modules/_segment.scss */
+/* line 37, ../scss/modules/_segment.scss */
 .segment.home .content img.circular.image {
   margin-left: auto;
   margin-right: auto;
   max-width: 180px;
 }
-/* line 41, ../scss/modules/_segment.scss */
+/* line 42, ../scss/modules/_segment.scss */
 .segment.home .content .row {
   display: flex;
   justify-content: center;
 }
-/* line 44, ../scss/modules/_segment.scss */
+/* line 45, ../scss/modules/_segment.scss */
 .segment.home .content .row .link {
   color: #f5f5f5;
   background-color: rgba(255, 255, 255, 0.05);
@@ -692,76 +698,76 @@ a.btn {
   width: 40px;
   border-radius: 50%;
 }
-/* line 52, ../scss/modules/_segment.scss */
+/* line 53, ../scss/modules/_segment.scss */
 .segment.home .content .row .link:hover {
   background-color: #E25041;
 }
-/* line 55, ../scss/modules/_segment.scss */
+/* line 56, ../scss/modules/_segment.scss */
 .segment.home .content .row .link i {
   vertical-align: bottom;
 }
-/* line 63, ../scss/modules/_segment.scss */
+/* line 64, ../scss/modules/_segment.scss */
 .segment .point {
   color: #E25041;
   font-size: 5rem;
   line-height: 45px;
 }
-/* line 68, ../scss/modules/_segment.scss */
+/* line 69, ../scss/modules/_segment.scss */
 .segment .container {
   margin: auto;
 }
-/* line 70, ../scss/modules/_segment.scss */
+/* line 71, ../scss/modules/_segment.scss */
 .segment .container .segment-title {
   font-size: 3rem;
 }
-/* line 74, ../scss/modules/_segment.scss */
+/* line 75, ../scss/modules/_segment.scss */
 .segment .container hr {
   border-color: #E25041;
   border-top: 0;
   max-width: 50px;
   margin: 30px auto;
 }
-/* line 82, ../scss/modules/_segment.scss */
+/* line 83, ../scss/modules/_segment.scss */
 .segment.dark {
   background-color: #191b1d;
   color: #f9f9f9;
 }
-/* line 86, ../scss/modules/_segment.scss */
+/* line 87, ../scss/modules/_segment.scss */
 .segment.light {
   background-color: #f9f9f9;
   color: #191b1d;
 }
 
 @media (min-width: 1200px) {
-  /* line 94, ../scss/modules/_segment.scss */
+  /* line 95, ../scss/modules/_segment.scss */
   .segment .container {
     width: 1170px;
   }
 }
 @media (min-width: 992px) {
-  /* line 101, ../scss/modules/_segment.scss */
+  /* line 102, ../scss/modules/_segment.scss */
   .segment {
     padding: 100px 1em;
   }
-  /* line 103, ../scss/modules/_segment.scss */
+  /* line 104, ../scss/modules/_segment.scss */
   .segment .container {
     max-width: 970px;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 110, ../scss/modules/_segment.scss */
+  /* line 111, ../scss/modules/_segment.scss */
   .segment {
     padding: 100px 10px;
   }
-  /* line 114, ../scss/modules/_segment.scss */
+  /* line 115, ../scss/modules/_segment.scss */
   .segment.home .content h1 {
     font-size: 32px;
   }
-  /* line 117, ../scss/modules/_segment.scss */
+  /* line 118, ../scss/modules/_segment.scss */
   .segment.home .content h2 {
     font-size: 16px;
   }
-  /* line 123, ../scss/modules/_segment.scss */
+  /* line 124, ../scss/modules/_segment.scss */
   .segment .container .segment-title {
     font-size: 40px;
   }

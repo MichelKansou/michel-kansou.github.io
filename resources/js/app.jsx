@@ -27,7 +27,7 @@ const App = React.createClass({
     },
 
     componentDidMount() {
-        setTimeout(() => this.setState({ loading: false }), 1600);
+        setTimeout(() => this.setState({ loading: false }), 1400);
         // $(document).ready(function(){
         //     var offset = $(".headerNav").offset().top;
         //     $(document).scroll(function(){
