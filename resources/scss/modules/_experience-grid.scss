@@ -29,6 +29,11 @@
                 left: 32.5%;
                 background-color: #e7e7e7;
             }
+            .experience-grid {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
     .experience-grid {

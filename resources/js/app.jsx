@@ -27,7 +27,7 @@ const App = React.createClass({
     // },
 
     componentDidMount() {
-        setTimeout(() => this.setState({ loading: false }), 1400);
+        setTimeout(() => this.setState({ loading: false }), 1313);
     },
 
     handleClick( language ) {

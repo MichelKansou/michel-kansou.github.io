@@ -15,6 +15,9 @@
     .segment.portfolio {
         .portfolio-cards {
             justify-content: center;
+            .card {
+                width: 100%;
+            }
         }
     }
 }

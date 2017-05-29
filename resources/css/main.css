@@ -810,7 +810,11 @@ a.btn {
   left: 32.5%;
   background-color: #e7e7e7;
 }
-/* line 34, ../scss/modules/_experience-grid.scss */
+/* line 33, ../scss/modules/_experience-grid.scss */
+.segment.experience.light .container .experience-grid:last-child {
+  margin-bottom: 0;
+}
+/* line 39, ../scss/modules/_experience-grid.scss */
 .segment.experience .experience-grid {
   display: flex;
   justify-content: center;
@@ -819,20 +823,20 @@ a.btn {
   /* margin: 3em auto; */
   margin-bottom: 50px;
 }
-/* line 42, ../scss/modules/_experience-grid.scss */
+/* line 47, ../scss/modules/_experience-grid.scss */
 .segment.experience .experience-grid .column {
   text-align: left;
 }
-/* line 45, ../scss/modules/_experience-grid.scss */
+/* line 50, ../scss/modules/_experience-grid.scss */
 .segment.experience .experience-grid .column:hover:after {
   background-color: #EF2D56 !important;
 }
-/* line 49, ../scss/modules/_experience-grid.scss */
+/* line 54, ../scss/modules/_experience-grid.scss */
 .segment.experience .experience-grid .column:first-child {
   width: 25%;
   position: relative;
 }
-/* line 52, ../scss/modules/_experience-grid.scss */
+/* line 57, ../scss/modules/_experience-grid.scss */
 .segment.experience .experience-grid .column:first-child:after {
   content: "";
   position: absolute;
@@ -848,70 +852,70 @@ a.btn {
   margin-left: -6px;
   border-radius: 50%;
 }
-/* line 68, ../scss/modules/_experience-grid.scss */
+/* line 73, ../scss/modules/_experience-grid.scss */
 .segment.experience .experience-grid .column:last-child {
   width: 55%;
   margin-left: 5%;
   padding-left: 25px;
   padding-right: 25px;
 }
-/* line 74, ../scss/modules/_experience-grid.scss */
+/* line 79, ../scss/modules/_experience-grid.scss */
 .segment.experience .experience-grid .column h3 {
   text-transform: uppercase;
   font-weight: 500;
 }
-/* line 78, ../scss/modules/_experience-grid.scss */
+/* line 83, ../scss/modules/_experience-grid.scss */
 .segment.experience .experience-grid .column .company-name {
   color: #E25041;
 }
-/* line 81, ../scss/modules/_experience-grid.scss */
+/* line 86, ../scss/modules/_experience-grid.scss */
 .segment.experience .experience-grid .column .job-date {
   font-weight: 500;
 }
-/* line 84, ../scss/modules/_experience-grid.scss */
+/* line 89, ../scss/modules/_experience-grid.scss */
 .segment.experience .experience-grid .column .job-type {
   font-weight: 700;
 }
-/* line 87, ../scss/modules/_experience-grid.scss */
+/* line 92, ../scss/modules/_experience-grid.scss */
 .segment.experience .experience-grid .column .job-description {
   white-space: pre;
   font-weight: 100;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 97, ../scss/modules/_experience-grid.scss */
+  /* line 102, ../scss/modules/_experience-grid.scss */
   .segment.experience .highlight-experience {
     display: block;
   }
-  /* line 99, ../scss/modules/_experience-grid.scss */
+  /* line 104, ../scss/modules/_experience-grid.scss */
   .segment.experience .highlight-experience .column {
     width: 100%;
   }
-  /* line 106, ../scss/modules/_experience-grid.scss */
+  /* line 111, ../scss/modules/_experience-grid.scss */
   .segment.experience.light .container:before {
     display: none;
   }
-  /* line 109, ../scss/modules/_experience-grid.scss */
+  /* line 114, ../scss/modules/_experience-grid.scss */
   .segment.experience.light .container .experience-grid {
     display: block;
     border-bottom: 1px solid #bdc3c7;
     padding-bottom: 25px;
   }
-  /* line 113, ../scss/modules/_experience-grid.scss */
+  /* line 118, ../scss/modules/_experience-grid.scss */
   .segment.experience.light .container .experience-grid .column {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  /* line 118, ../scss/modules/_experience-grid.scss */
+  /* line 123, ../scss/modules/_experience-grid.scss */
   .segment.experience.light .container .experience-grid .column:first-child:after {
     display: none;
   }
-  /* line 122, ../scss/modules/_experience-grid.scss */
+  /* line 127, ../scss/modules/_experience-grid.scss */
   .segment.experience.light .container .experience-grid .column:last-child {
     margin-top: 1em;
   }
-  /* line 125, ../scss/modules/_experience-grid.scss */
+  /* line 130, ../scss/modules/_experience-grid.scss */
   .segment.experience.light .container .experience-grid .column .job-description {
     white-space: normal;
   }
@@ -1002,6 +1006,10 @@ a.btn {
   /* line 16, ../scss/modules/_portfolio.scss */
   .segment.portfolio .portfolio-cards {
     justify-content: center;
+  }
+  /* line 18, ../scss/modules/_portfolio.scss */
+  .segment.portfolio .portfolio-cards .card {
+    width: 100%;
   }
 }
 /* line 3, ../scss/modules/_hobbies.scss */
