@@ -38,7 +38,7 @@
   "mobileSkills": [
     {
       "name": "Swift 3",
-      "progress": "60%"
+      "progress": "70%"
     },
     {
       "name": "React Native",
@@ -51,22 +51,22 @@
       "progress": "50%"
     },
     {
-      "name": "C",
+      "name": "C#",
       "progress": "60%"
+    },
+    {
+      "name": "C",
+      "progress": "50%"
     }
   ],
   "database": [
     {
-      "name": "SQL",
-      "progress": "60%"
-    },
-    {
-      "name": "MySQL",
+      "name": "SQL / MySQL",
       "progress": "60%"
     },
     {
       "name": "Firebase",
-      "progress": "50%"
+      "progress": "60%"
     }
   ],
   "standard": [
