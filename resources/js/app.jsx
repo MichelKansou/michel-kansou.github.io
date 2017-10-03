@@ -18,7 +18,7 @@ class App extends React.Component {
             loading: true
         };
         ReactGA.initialize('UA-69121322-1');
-      }
+    }
     componentDidMount() {
         setTimeout(() => this.setState({ loading: false }), 1313);
     }
@@ -48,7 +48,7 @@ class App extends React.Component {
                 </PageLoader>
             </div>
         );
-  }
+    }
 }
 
 ReactDOM.render(
