@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class PageLoader extends React.Component {
     constructor(props) {
@@ -43,6 +44,6 @@ export default class PageLoader extends React.Component {
 }
 
 PageLoader.propTypes = {
-    children: React.PropTypes.node.isRequired,
-    loading: React.PropTypes.bool.isRequired
+    children: PropTypes.node.isRequired,
+    loading: PropTypes.bool.isRequired
 };

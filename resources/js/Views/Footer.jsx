@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Footer = (props) =>  {
     const trans = props.trans;
@@ -28,7 +29,7 @@ const Footer = (props) =>  {
 }
 
 Footer.propTypes = {
-    trans: React.PropTypes.object
+    trans: PropTypes.object
 };
 
 export default Footer;

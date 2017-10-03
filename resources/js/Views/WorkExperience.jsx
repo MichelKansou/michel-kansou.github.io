@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Experience = (props) =>  {
     const trans = props.trans;
@@ -44,7 +45,7 @@ const Experience = (props) =>  {
 }
 
 Experience.propTypes = {
-    trans: React.PropTypes.object
+    trans: PropTypes.object
 };
 
 export default Experience;

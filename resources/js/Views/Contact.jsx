@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Components/Button.jsx';
+import PropTypes from 'prop-types';
 
 export default class Contact extends React.Component {
     constructor(props) {
@@ -92,5 +93,5 @@ export default class Contact extends React.Component {
 }
 
 Contact.propTypes = {
-    trans: React.PropTypes.object
+    trans: PropTypes.object
 };

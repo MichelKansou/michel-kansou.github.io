@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class Button extends React.Component {
     constructor(props) {
@@ -41,8 +42,8 @@ export default class Button extends React.Component {
 }
 
 Button.propTypes = {
-    text: React.PropTypes.string.isRequired,
-    loading: React.PropTypes.bool.isRequired,
-    className: React.PropTypes.string,
-    call: React.PropTypes.func
+    text: PropTypes.string.isRequired,
+    loading: PropTypes.bool.isRequired,
+    className: PropTypes.string,
+    call: PropTypes.func
 };

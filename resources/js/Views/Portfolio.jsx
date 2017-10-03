@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Portfolio = (props) =>  {
     const trans = props.trans;
@@ -30,7 +31,7 @@ const Portfolio = (props) =>  {
 }
 
 Portfolio.propTypes = {
-    trans: React.PropTypes.object
+    trans: PropTypes.object
 };
 
 export default Portfolio;

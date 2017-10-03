@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Profile from './Profile.jsx';
 import Skills from './Skills.jsx';
@@ -39,7 +40,7 @@ const PageContents = (props) =>  {
 }
 
 PageContents.propTypes = {
-    trans: React.PropTypes.object
+    trans: PropTypes.object
 };
 
 export default PageContents;

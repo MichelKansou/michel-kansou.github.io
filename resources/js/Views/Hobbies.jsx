@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Hobbies = (props) =>  {
     const trans = props.trans;
@@ -58,7 +59,7 @@ const Hobbies = (props) =>  {
 }
 
 Hobbies.propTypes = {
-    trans: React.PropTypes.object
+    trans: PropTypes.object
 };
 
 export default Hobbies;

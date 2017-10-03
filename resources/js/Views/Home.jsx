@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import {initHeader, initAnimation, mouseMove, scrollCheck, resize} from '../Library/CanvasAnimation.js';
 
 
@@ -51,5 +51,5 @@ export default class Home extends React.Component {
 }
 
 Home.propTypes = {
-    trans: React.PropTypes.object
+    trans: PropTypes.object
 };

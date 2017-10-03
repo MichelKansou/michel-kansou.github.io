@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import skillsDB from 'locales/skills.json';
 
@@ -110,7 +111,7 @@ const Skills = (props) =>  {
 }
 
 Skills.propTypes = {
-    trans: React.PropTypes.object
+    trans: PropTypes.object
 };
 
 export default Skills;

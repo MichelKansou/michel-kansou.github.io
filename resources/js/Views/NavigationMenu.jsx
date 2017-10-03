@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import scrollToElement from 'scroll-to-element';
 
 export default class NavigationMenu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            navTitle: 'Michel Kansou',
+            navTitle: 'MK',
             activeRM: false
         };
     }
@@ -48,5 +49,5 @@ export default class NavigationMenu extends React.Component {
 }
 
 NavigationMenu.propTypes = {
-    trans: React.PropTypes.object
+    trans: PropTypes.object
 };

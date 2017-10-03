@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Profile = (props) =>  {
     const trans = props.trans;
@@ -15,7 +16,7 @@ const Profile = (props) =>  {
 }
 
 Profile.propTypes = {
-    trans: React.PropTypes.object
+    trans: PropTypes.object
 };
 
 export default Profile;
