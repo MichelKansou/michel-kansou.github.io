@@ -99,3 +99,6 @@ jspm_packages
 ### Sass ###
 .sass-cache/
 *.css.map
+
+### Secret ###
+resources/secret/*
