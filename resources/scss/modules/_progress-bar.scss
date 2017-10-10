@@ -1,5 +1,5 @@
 .progress-wrapper {
-    background-color: $skills-progress-bg;
+    background-color: $gray;
     height: 2px;
     margin-top: 1em;
     .progress {
@@ -12,6 +12,27 @@
             right: 0;
             top: -25px;
             font-size: 15px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .progress-wrapper {
+        margin-top: 1.5em;
+    }
+}
+
+.main-skills {
+    .progress-bar-container {
+        background-color: #E5E5E5;
+        width: 80%;
+        height: 12px;
+        margin: 1em auto;
+        border-radius: 4px;
+        .progress {
+            height: 100%;
+            border-radius: 4px;
         }
     }
 }

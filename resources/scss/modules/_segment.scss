@@ -1,7 +1,5 @@
 .segment {
-    text-align: center;
     padding: 100px 2em;
-
     &.home {
         height: 100%;
         display: flex;
@@ -9,43 +7,53 @@
         flex-direction: column;
         justify-content: center;
         .header {
-            position: relative;
             width: 100%;
-            overflow: hidden;
-            background-size: cover;
-            background-position: center center;
-            z-index: 1;
+            display: flex;
+            justify-content: center;
         }
         .content {
-            position: absolute;
-        	margin: 0;
-        	padding: 0;
             width: 100%;
         	text-align: center;
-        	top: 50%;
-        	left: 50%;
-        	-webkit-transform: translate3d(-50%,-50%,0);
-        	transform: translate3d(-50%,-50%,0);
-            h2 {
+            color: $segment-dark-text-color;
+            max-width: 850px;
+            border-radius: 12px;
+            padding: 4em 0em;
+
+            h1 {
+                text-transform: capitalize;
+                font-size: 3rem;
                 font-weight: 500;
             }
-            h1 {
+
+            h2 {
                 text-transform: uppercase;
-                font-size: 3rem;
-                letter-spacing: 8px;
+                font-weight: 500;
             }
+            hr {
+                width: 70px;
+                height: 2px;
+                background-color: $awesome-white;
+                border: 0;
+                margin: 2em auto;
+            }
+            .avatar {
+                max-width: 150px;
+                margin-bottom: 1em;
+            }
+
             img.circular.image {
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 180px;
             }
             .row {
+                margin-bottom: 2em;
                 display: flex;
                 justify-content: center;
                 .link {
-                    color: $awesome-white2;
-                    background-color: rgba(255, 255, 255, 0.05);
-                    margin: 1em .5em;
+                    color: $segment-dark-text-color;
+                    background-color: rgba(255, 255, 255, 0.10);
+                    margin: 0em 1em;
                     font-size: 20px;
                     height: 40px;
                     width: 40px;
@@ -60,28 +68,79 @@
             }
         }
     }
+    &.about {
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-position: center;
+            background-image: url("../images/lightBackgroundPattern.png");
+            z-index: -1;
+        }
+        #about {
+            margin-bottom: 5em;
+        }
+        .about-row {
+            z-index: 2;
+            display: flex;
+            max-width: 1062px;
+            margin-left: auto;
+            margin-right: auto;
+            .col-container {
+                max-width: 325px;
+                margin: 0 2em;
+                .segment-title {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $flat-orange;
+                    margin-bottom: 1em;
+                    i {
+                        margin-right: 1em;
+                    }
+                }
+                p {
+                    white-space: pre-line;
+                    text-align: left;
+                    span{
+                        margin-bottom: 1em;
+                        display: block;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
 
+    &.portfolio {
+        .container {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .segment-title {
+        &.light {
+            font-size: 35px;
+            font-weight: 400;
+            color: $awesome-white;
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+    }
     .point{
         color: $red;
         font-size: 5rem;
         line-height: 45px;
     }
-    .container {
-        margin: auto;
-        .segment-title {
-            font-size: 3rem;
-        }
-
-        hr {
-            border-color: $segment-hr;
-            border-top: 0;
-            max-width: 50px;
-            margin: 30px auto;
-        }
-    }
 
     &.dark {
-        background-color: $segment-dark;
+        background: linear-gradient(to right, $flat-orange, $red);
         color: $segment-dark-text-color;
     }
     &.light {
@@ -90,40 +149,55 @@
     }
 
 }
-@media (min-width: 1200px) {
-    .segment {
-        .container {
-            width: 1170px;
-        }
-    }
-}
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .segment {
-        padding: 100px 1em;
-        .container {
-            max-width: 970px;
-        }
-    }
-}
-
-@media only screen and (max-width : 768px) {
-    .segment {
-        padding: 100px 10px;
-        &.home {
-            .content {
-                h1 {
-                    font-size: 32px;
-                }
-                h2 {
-                    font-size: 16px;
-                }
-            }
-        }
-        .container {
-            .segment-title {
-                font-size: 40px;
+        &.about {
+            .about-row {
+                    flex-direction: column;
+                    .col-container {
+                        text-align: left;
+                        width: 100%;
+                        max-width: 100%;
+                        margin: 2em auto;
+                    }
             }
         }
     }
 }
+
+@media (max-width: 768px) {
+    .segment {
+        padding: 50px 1.8em;
+        &.about {
+            .about-row {
+                    flex-direction: column;
+                    .col-container {
+                        margin: 2em 0em;
+                        width: 100%;
+                    }
+            }
+        }
+    }
+}
+//
+// @media only screen and (max-width : 768px) {
+//     .segment {
+//         padding: 100px 10px;
+//         &.home {
+//             .content {
+//                 h1 {
+//                     font-size: 32px;
+//                 }
+//                 h2 {
+//                     font-size: 16px;
+//                 }
+//             }
+//         }
+//         .container {
+//             .segment-title {
+//                 font-size: 40px;
+//             }
+//         }
+//     }
+// }

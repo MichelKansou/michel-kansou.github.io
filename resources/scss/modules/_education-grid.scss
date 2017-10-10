@@ -1,0 +1,18 @@
+.education-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .row {
+        margin: 5px 0;
+        text-align: left;
+        h3 {
+            font-weight: 500;
+        }
+        h5 {
+            color: #9C9C9C;
+            i {
+                margin-right: 1em;
+            }
+        }
+    }
+}

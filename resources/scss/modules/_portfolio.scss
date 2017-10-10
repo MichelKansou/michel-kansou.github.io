@@ -1,12 +1,30 @@
 .segment.portfolio {
+    position: relative;
+    z-index: 1;
+    .backgroundPattern {
+        display: block;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url("../images/darkBackgroundPattern.png");
+        z-index: -1;
+    }
     .portfolio-cards {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         .card {
-            width: 45%;
+            width: 35%;
             margin: 1.5em;
+            background-color: $awesome-white;
+            color: black;
+            padding: 2em;
+            border-radius: 12px;
+            text-align: center;
             img {
-                max-width: 150px;
+                max-width: 120px;
             }
         }
     }
@@ -16,7 +34,7 @@
         .portfolio-cards {
             justify-content: center;
             .card {
-                width: 100%;
+                width: 90%;
             }
         }
     }

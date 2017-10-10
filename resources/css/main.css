@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 /* Color Palletes */
 /* default Element background  color */
 /* UI Navbar background  color */
@@ -25,45 +24,122 @@ html, body {
 /* line 12, ../scss/base/_default.scss */
 html {
   font-size: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'SF-Pro';
   font-weight: normal;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
 /* line 20, ../scss/base/_default.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+/* line 24, ../scss/base/_default.scss */
 span {
-  font-size: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-family: 'SF-Pro';
   font-weight: normal;
 }
 
-/* line 25, ../scss/base/_default.scss */
+/* line 29, ../scss/base/_default.scss */
 a {
-  color: #E25041;
+  color: #ff656e;
   opacity: 1;
   text-decoration: none;
 }
-/* line 29, ../scss/base/_default.scss */
+/* line 33, ../scss/base/_default.scss */
 a:hover {
   opacity: 0.85;
   text-decoration: underline;
 }
 
-/* line 35, ../scss/base/_default.scss */
+/* line 39, ../scss/base/_default.scss */
 .content {
   text-align: center;
   margin-top: 2em;
 }
 
-/* line 40, ../scss/base/_default.scss */
+/* line 44, ../scss/base/_default.scss */
 .white {
-  color: #f5f5f5 !important;
+  color: #f9f9f9 !important;
 }
 
 @font-face {
   font-family: 'batmanFont';
   src: url("./fonts/batman.ttf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/SF-Pro-Text-Light.otf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: italic;
+  font-weight: 300;
+  src: url("./fonts/SF-Pro-Text-LightItalic.otf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/SF-Pro-Text-Regular.otf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/SF-Pro-Text-RegularItalic.otf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/SF-Pro-Text-Medium.otf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: italic;
+  font-weight: 500;
+  src: url("./fonts/SF-Pro-Text-MediumItalic.otf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/SF-Pro-Text-Semibold.otf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/SF-Pro-Text-SemiboldItalic.otf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/SF-Pro-Text-Bold.otf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: url("./fonts/SF-Pro-Text-BoldItalic.otf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: normal;
+  font-weight: 800;
+  src: url("./fonts/SF-Pro-Text-Heavy.otf");
+}
+@font-face {
+  font-family: 'SF-Pro';
+  font-style: italic;
+  font-weight: 800;
+  src: url("./fonts/SF-Pro-Text-HeavyItalic.otf");
 }
 /**
  * Animations
@@ -197,43 +273,42 @@ main#app .container .loader-container {
 /* line 1, ../scss/layouts/_footer.scss */
 footer {
   position: relative;
-  background-color: #f5f5f5;
-  border-top: 1px solid #e7e7e7;
+  background-color: #f9f9f9;
 }
-/* line 5, ../scss/layouts/_footer.scss */
+/* line 4, ../scss/layouts/_footer.scss */
 footer .container {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  color: #6d747c;
+  color: #9C9C9C;
 }
-/* line 12, ../scss/layouts/_footer.scss */
+/* line 11, ../scss/layouts/_footer.scss */
 footer .container .row {
   display: flex;
 }
-/* line 14, ../scss/layouts/_footer.scss */
+/* line 13, ../scss/layouts/_footer.scss */
 footer .container .row .column {
   width: 33.3333%;
   text-align: center;
 }
-/* line 17, ../scss/layouts/_footer.scss */
+/* line 16, ../scss/layouts/_footer.scss */
 footer .container .row .column .link {
-  color: #6d747c;
+  color: #9C9C9C;
   margin: 0 1em;
 }
-/* line 20, ../scss/layouts/_footer.scss */
+/* line 19, ../scss/layouts/_footer.scss */
 footer .container .row .column .link:hover {
-  color: #E25041;
+  color: #ff656e;
 }
 
 @media only screen and (max-width: 904px) {
-  /* line 32, ../scss/layouts/_footer.scss */
+  /* line 31, ../scss/layouts/_footer.scss */
   footer .container .row {
     display: block;
   }
-  /* line 34, ../scss/layouts/_footer.scss */
+  /* line 33, ../scss/layouts/_footer.scss */
   footer .container .row .column {
     width: 100%;
     margin: 1em 0;
@@ -241,7 +316,7 @@ footer .container .row .column .link:hover {
 }
 /* line 1, ../scss/modules/_hexagon-loader.scss */
 .loader-container {
-  background-color: #191b1d;
+  background-image: linear-gradient(to right, #ffb681, #ff656e);
 }
 /* line 3, ../scss/modules/_hexagon-loader.scss */
 .loader-container .hexagon-loader {
@@ -262,7 +337,7 @@ footer .container .row .column .link:hover {
   height: 160px;
   display: block;
   position: absolute;
-  border: 2px solid #898a86;
+  border: 2px solid #ffb681;
   border-radius: 50%;
   top: -2px;
   left: -2px;
@@ -280,7 +355,7 @@ footer .container .row .column .link:hover {
   height: 160px;
   display: block;
   position: absolute;
-  border: 2px solid #c1bebb;
+  border: 2px solid #ff656e;
   border-radius: 50%;
   top: -2px;
   left: -2px;
@@ -302,7 +377,7 @@ footer .container .row .column .link:hover {
   position: absolute;
   width: 40px;
   height: 23px;
-  background-color: #E25041;
+  background-color: #f9f9f9;
 }
 /* line 70, ../scss/modules/_hexagon-loader.scss */
 .loader-container .hexagon-loader .hexagon:before {
@@ -314,7 +389,7 @@ footer .container .row .column .link:hover {
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 11.5px solid #E25041;
+  border-bottom: 11.5px solid #f9f9f9;
 }
 /* line 81, ../scss/modules/_hexagon-loader.scss */
 .loader-container .hexagon-loader .hexagon:after {
@@ -326,7 +401,7 @@ footer .container .row .column .link:hover {
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 11.5px solid #E25041;
+  border-top: 11.5px solid #f9f9f9;
 }
 /* line 101, ../scss/modules/_hexagon-loader.scss */
 .loader-container .hexagon-loader .hexagon.hex_1 {
@@ -385,8 +460,8 @@ a.btn {
 
 /* line 6, ../scss/modules/_buttons.scss */
 .btn {
-  background-color: #E25041;
-  color: #f5f5f5;
+  background-color: #ff656e;
+  color: #f9f9f9;
   padding: 1em;
   border: 0;
   cursor: pointer;
@@ -394,7 +469,25 @@ a.btn {
 
 /* line 14, ../scss/modules/_buttons.scss */
 .btn-o {
-  color: #E25041;
+  background-color: #f9f9f9;
+  padding: .5em;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #202325;
+}
+/* line 20, ../scss/modules/_buttons.scss */
+.btn-o:hover {
+  text-decoration: none;
+}
+
+/* line 25, ../scss/modules/_buttons.scss */
+.btn-l {
+  cursor: pointer;
+  color: #ff656e;
+}
+/* line 28, ../scss/modules/_buttons.scss */
+.btn-l:hover {
+  text-decoration: none;
 }
 
 /* Header */
@@ -485,13 +578,12 @@ a.btn {
 .navbar .menu li {
   list-style-type: none;
   display: block;
-  text-transform: uppercase;
 }
-/* line 71, ../scss/modules/_navigationMenu.scss */
+/* line 70, ../scss/modules/_navigationMenu.scss */
 .navbar .menu li.language-responsive-button {
   display: block;
 }
-/* line 74, ../scss/modules/_navigationMenu.scss */
+/* line 73, ../scss/modules/_navigationMenu.scss */
 .navbar .menu li a {
   display: block;
   height: 50px;
@@ -503,22 +595,22 @@ a.btn {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 82, ../scss/modules/_navigationMenu.scss */
+/* line 81, ../scss/modules/_navigationMenu.scss */
 .navbar .menu li a:hover {
-  color: #E25041;
+  color: #ff656e;
 }
-/* line 86, ../scss/modules/_navigationMenu.scss */
+/* line 85, ../scss/modules/_navigationMenu.scss */
 .navbar .menu li a.active {
-  color: #E25041;
+  color: #ff656e;
 }
 
-/* line 95, ../scss/modules/_navigationMenu.scss */
+/* line 94, ../scss/modules/_navigationMenu.scss */
 .expand {
   max-height: 20em;
 }
 
 @media only screen and (min-width: 904px) {
-  /* line 101, ../scss/modules/_navigationMenu.scss */
+  /* line 100, ../scss/modules/_navigationMenu.scss */
   .wrap {
     height: 60px;
     display: flex;
@@ -526,23 +618,23 @@ a.btn {
     align-items: center;
   }
 
-  /* line 108, ../scss/modules/_navigationMenu.scss */
+  /* line 107, ../scss/modules/_navigationMenu.scss */
   .logo {
     margin-left: 0;
   }
 
-  /* line 112, ../scss/modules/_navigationMenu.scss */
+  /* line 111, ../scss/modules/_navigationMenu.scss */
   .logo, .navbar {
     display: inline-block;
   }
 
   /* Mobile menu icon */
-  /* line 117, ../scss/modules/_navigationMenu.scss */
+  /* line 116, ../scss/modules/_navigationMenu.scss */
   #menu-icon {
     display: none;
   }
 
-  /* line 120, ../scss/modules/_navigationMenu.scss */
+  /* line 119, ../scss/modules/_navigationMenu.scss */
   .ui.floating.dropdown.labeled.icon.button.language-button {
     display: block;
     float: right;
@@ -550,23 +642,23 @@ a.btn {
     color: #191b1d;
   }
 
-  /* line 126, ../scss/modules/_navigationMenu.scss */
+  /* line 125, ../scss/modules/_navigationMenu.scss */
   .navbar {
     height: 60px;
     overflow-y: hidden;
   }
-  /* line 131, ../scss/modules/_navigationMenu.scss */
+  /* line 130, ../scss/modules/_navigationMenu.scss */
   .navbar .menu li {
     list-style-type: none;
     display: inline-block;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
-  /* line 136, ../scss/modules/_navigationMenu.scss */
+  /* line 135, ../scss/modules/_navigationMenu.scss */
   .navbar .menu li.language-responsive-button {
     display: none;
   }
-  /* line 139, ../scss/modules/_navigationMenu.scss */
+  /* line 138, ../scss/modules/_navigationMenu.scss */
   .navbar .menu li a {
     display: block;
     border-bottom: 0;
@@ -575,15 +667,15 @@ a.btn {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 13px;
+    font-size: 20px;
   }
-  /* line 149, ../scss/modules/_navigationMenu.scss */
+  /* line 148, ../scss/modules/_navigationMenu.scss */
   .navbar .menu li a:hover {
-    box-shadow: 0 -3px 0 #E25041 inset;
+    box-shadow: 0 -3px 0 #ff656e inset;
   }
-  /* line 153, ../scss/modules/_navigationMenu.scss */
+  /* line 152, ../scss/modules/_navigationMenu.scss */
   .navbar .menu li a.active {
-    box-shadow: 0 -3px 0 #E25041 inset;
+    box-shadow: 0 -3px 0 #ff656e inset;
   }
 }
 @-moz-keyframes blinker {
@@ -635,10 +727,9 @@ a.btn {
 
 /* line 1, ../scss/modules/_segment.scss */
 .segment {
-  text-align: center;
   padding: 100px 2em;
 }
-/* line 5, ../scss/modules/_segment.scss */
+/* line 3, ../scss/modules/_segment.scss */
 .segment.home {
   height: 100%;
   display: flex;
@@ -646,289 +737,258 @@ a.btn {
   flex-direction: column;
   justify-content: center;
 }
-/* line 11, ../scss/modules/_segment.scss */
+/* line 9, ../scss/modules/_segment.scss */
 .segment.home .header {
-  position: relative;
   width: 100%;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
 }
-/* line 19, ../scss/modules/_segment.scss */
+/* line 14, ../scss/modules/_segment.scss */
 .segment.home .content {
-  position: absolute;
-  margin: 0;
-  padding: 0;
   width: 100%;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+  color: #f9f9f9;
+  max-width: 850px;
+  border-radius: 12px;
+  padding: 4em 0em;
 }
-/* line 29, ../scss/modules/_segment.scss */
+/* line 22, ../scss/modules/_segment.scss */
+.segment.home .content h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 500;
+}
+/* line 28, ../scss/modules/_segment.scss */
 .segment.home .content h2 {
+  text-transform: uppercase;
   font-weight: 500;
 }
 /* line 32, ../scss/modules/_segment.scss */
-.segment.home .content h1 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  letter-spacing: 8px;
+.segment.home .content hr {
+  width: 70px;
+  height: 2px;
+  background-color: #f9f9f9;
+  border: 0;
+  margin: 2em auto;
 }
-/* line 37, ../scss/modules/_segment.scss */
+/* line 39, ../scss/modules/_segment.scss */
+.segment.home .content .avatar {
+  max-width: 150px;
+  margin-bottom: 1em;
+}
+/* line 44, ../scss/modules/_segment.scss */
 .segment.home .content img.circular.image {
   margin-left: auto;
   margin-right: auto;
   max-width: 180px;
 }
-/* line 42, ../scss/modules/_segment.scss */
+/* line 49, ../scss/modules/_segment.scss */
 .segment.home .content .row {
+  margin-bottom: 2em;
   display: flex;
   justify-content: center;
 }
-/* line 45, ../scss/modules/_segment.scss */
+/* line 53, ../scss/modules/_segment.scss */
 .segment.home .content .row .link {
-  color: #f5f5f5;
-  background-color: rgba(255, 255, 255, 0.05);
-  margin: 1em .5em;
+  color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0em 1em;
   font-size: 20px;
   height: 40px;
   width: 40px;
   border-radius: 50%;
 }
-/* line 53, ../scss/modules/_segment.scss */
+/* line 61, ../scss/modules/_segment.scss */
 .segment.home .content .row .link:hover {
-  background-color: #E25041;
+  background-color: #ff656e;
 }
-/* line 56, ../scss/modules/_segment.scss */
+/* line 64, ../scss/modules/_segment.scss */
 .segment.home .content .row .link i {
   vertical-align: bottom;
 }
-/* line 64, ../scss/modules/_segment.scss */
+/* line 71, ../scss/modules/_segment.scss */
+.segment.about {
+  position: relative;
+  z-index: 1;
+}
+/* line 74, ../scss/modules/_segment.scss */
+.segment.about::before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-image: url("../images/lightBackgroundPattern.png");
+  z-index: -1;
+}
+/* line 86, ../scss/modules/_segment.scss */
+.segment.about #about {
+  margin-bottom: 5em;
+}
+/* line 89, ../scss/modules/_segment.scss */
+.segment.about .about-row {
+  z-index: 2;
+  display: flex;
+  max-width: 1062px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 95, ../scss/modules/_segment.scss */
+.segment.about .about-row .col-container {
+  max-width: 325px;
+  margin: 0 2em;
+}
+/* line 98, ../scss/modules/_segment.scss */
+.segment.about .about-row .col-container .segment-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffb681;
+  margin-bottom: 1em;
+}
+/* line 103, ../scss/modules/_segment.scss */
+.segment.about .about-row .col-container .segment-title i {
+  margin-right: 1em;
+}
+/* line 107, ../scss/modules/_segment.scss */
+.segment.about .about-row .col-container p {
+  white-space: pre-line;
+  text-align: left;
+}
+/* line 110, ../scss/modules/_segment.scss */
+.segment.about .about-row .col-container p span {
+  margin-bottom: 1em;
+  display: block;
+  font-weight: 300;
+}
+/* line 121, ../scss/modules/_segment.scss */
+.segment.portfolio .container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 128, ../scss/modules/_segment.scss */
+.segment .segment-title.light {
+  font-size: 35px;
+  font-weight: 400;
+  color: #f9f9f9;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+/* line 136, ../scss/modules/_segment.scss */
 .segment .point {
-  color: #E25041;
+  color: #ff656e;
   font-size: 5rem;
   line-height: 45px;
 }
-/* line 69, ../scss/modules/_segment.scss */
-.segment .container {
-  margin: auto;
-}
-/* line 71, ../scss/modules/_segment.scss */
-.segment .container .segment-title {
-  font-size: 3rem;
-}
-/* line 75, ../scss/modules/_segment.scss */
-.segment .container hr {
-  border-color: #E25041;
-  border-top: 0;
-  max-width: 50px;
-  margin: 30px auto;
-}
-/* line 83, ../scss/modules/_segment.scss */
+/* line 142, ../scss/modules/_segment.scss */
 .segment.dark {
-  background-color: #191b1d;
+  background: linear-gradient(to right, #ffb681, #ff656e);
   color: #f9f9f9;
 }
-/* line 87, ../scss/modules/_segment.scss */
+/* line 146, ../scss/modules/_segment.scss */
 .segment.light {
   background-color: #f9f9f9;
   color: #191b1d;
 }
 
-@media (min-width: 1200px) {
-  /* line 95, ../scss/modules/_segment.scss */
-  .segment .container {
-    width: 1170px;
+@media (max-width: 992px) {
+  /* line 156, ../scss/modules/_segment.scss */
+  .segment.about .about-row {
+    flex-direction: column;
+  }
+  /* line 158, ../scss/modules/_segment.scss */
+  .segment.about .about-row .col-container {
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    margin: 2em auto;
   }
 }
-@media (min-width: 992px) {
-  /* line 102, ../scss/modules/_segment.scss */
+@media (max-width: 768px) {
+  /* line 170, ../scss/modules/_segment.scss */
   .segment {
-    padding: 100px 1em;
+    padding: 50px 1.8em;
   }
-  /* line 104, ../scss/modules/_segment.scss */
-  .segment .container {
-    max-width: 970px;
+  /* line 173, ../scss/modules/_segment.scss */
+  .segment.about .about-row {
+    flex-direction: column;
   }
-}
-@media only screen and (max-width: 768px) {
-  /* line 111, ../scss/modules/_segment.scss */
-  .segment {
-    padding: 100px 10px;
-  }
-  /* line 115, ../scss/modules/_segment.scss */
-  .segment.home .content h1 {
-    font-size: 32px;
-  }
-  /* line 118, ../scss/modules/_segment.scss */
-  .segment.home .content h2 {
-    font-size: 16px;
-  }
-  /* line 124, ../scss/modules/_segment.scss */
-  .segment .container .segment-title {
-    font-size: 40px;
+  /* line 175, ../scss/modules/_segment.scss */
+  .segment.about .about-row .col-container {
+    margin: 2em 0em;
+    width: 100%;
   }
 }
-/* line 2, ../scss/modules/_experience-grid.scss */
-.segment.experience .highlight-experience {
+/* line 1, ../scss/modules/_education-grid.scss */
+.education-grid {
   display: flex;
-  justify-content: space-around;
-  align-content: center;
-}
-/* line 6, ../scss/modules/_experience-grid.scss */
-.segment.experience .highlight-experience .column {
-  background-color: #202325;
-  padding: 35px;
-  width: 345px;
-}
-/* line 10, ../scss/modules/_experience-grid.scss */
-.segment.experience .highlight-experience .column .title {
-  font-size: 13px;
-  margin: 25px 0 0 0;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-}
-/* line 18, ../scss/modules/_experience-grid.scss */
-.segment.experience.light {
-  position: relative;
-}
-/* line 20, ../scss/modules/_experience-grid.scss */
-.segment.experience.light .container {
-  position: relative;
-  max-width: 800px;
-}
-/* line 23, ../scss/modules/_experience-grid.scss */
-.segment.experience.light .container:before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  top: -100px;
-  bottom: -100px;
-  left: 32.5%;
-  background-color: #e7e7e7;
-}
-/* line 33, ../scss/modules/_experience-grid.scss */
-.segment.experience.light .container .experience-grid:last-child {
-  margin-bottom: 0;
-}
-/* line 39, ../scss/modules/_experience-grid.scss */
-.segment.experience .experience-grid {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  /* margin: 3em auto; */
-  margin-bottom: 50px;
 }
-/* line 47, ../scss/modules/_experience-grid.scss */
-.segment.experience .experience-grid .column {
+/* line 5, ../scss/modules/_education-grid.scss */
+.education-grid .row {
+  margin: 5px 0;
   text-align: left;
 }
-/* line 50, ../scss/modules/_experience-grid.scss */
-.segment.experience .experience-grid .column:hover:after {
-  background-color: #EF2D56 !important;
-}
-/* line 54, ../scss/modules/_experience-grid.scss */
-.segment.experience .experience-grid .column:first-child {
-  width: 25%;
-  position: relative;
-}
-/* line 57, ../scss/modules/_experience-grid.scss */
-.segment.experience .experience-grid .column:first-child:after {
-  content: "";
-  position: absolute;
-  left: 100%;
-  top: 0;
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  border: 2px solid #EF2D56;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  z-index: 100;
-  margin-left: -6px;
-  border-radius: 50%;
-}
-/* line 73, ../scss/modules/_experience-grid.scss */
-.segment.experience .experience-grid .column:last-child {
-  width: 55%;
-  margin-left: 5%;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-/* line 79, ../scss/modules/_experience-grid.scss */
-.segment.experience .experience-grid .column h3 {
-  text-transform: uppercase;
+/* line 8, ../scss/modules/_education-grid.scss */
+.education-grid .row h3 {
   font-weight: 500;
 }
-/* line 83, ../scss/modules/_experience-grid.scss */
-.segment.experience .experience-grid .column .company-name {
-  color: #E25041;
+/* line 11, ../scss/modules/_education-grid.scss */
+.education-grid .row h5 {
+  color: #9C9C9C;
 }
-/* line 86, ../scss/modules/_experience-grid.scss */
-.segment.experience .experience-grid .column .job-date {
-  font-weight: 500;
-}
-/* line 89, ../scss/modules/_experience-grid.scss */
-.segment.experience .experience-grid .column .job-type {
-  font-weight: 700;
-}
-/* line 92, ../scss/modules/_experience-grid.scss */
-.segment.experience .experience-grid .column .job-description {
-  white-space: pre;
-  font-weight: 100;
+/* line 13, ../scss/modules/_education-grid.scss */
+.education-grid .row h5 i {
+  margin-right: 1em;
 }
 
-@media only screen and (max-width: 768px) {
-  /* line 102, ../scss/modules/_experience-grid.scss */
-  .segment.experience .highlight-experience {
-    display: block;
-  }
-  /* line 104, ../scss/modules/_experience-grid.scss */
-  .segment.experience .highlight-experience .column {
-    width: 100%;
-  }
-  /* line 111, ../scss/modules/_experience-grid.scss */
-  .segment.experience.light .container:before {
-    display: none;
-  }
-  /* line 114, ../scss/modules/_experience-grid.scss */
-  .segment.experience.light .container .experience-grid {
-    display: block;
-    border-bottom: 1px solid #bdc3c7;
-    padding-bottom: 25px;
-  }
-  /* line 118, ../scss/modules/_experience-grid.scss */
-  .segment.experience.light .container .experience-grid .column {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  /* line 123, ../scss/modules/_experience-grid.scss */
-  .segment.experience.light .container .experience-grid .column:first-child:after {
-    display: none;
-  }
-  /* line 127, ../scss/modules/_experience-grid.scss */
-  .segment.experience.light .container .experience-grid .column:last-child {
-    margin-top: 1em;
-  }
-  /* line 130, ../scss/modules/_experience-grid.scss */
-  .segment.experience.light .container .experience-grid .column .job-description {
-    white-space: normal;
-  }
+/* line 1, ../scss/modules/_experience-grid.scss */
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+/* line 5, ../scss/modules/_experience-grid.scss */
+.experience-grid .row {
+  display: flex;
+  text-align: left;
+  margin: 5px 0;
+}
+/* line 9, ../scss/modules/_experience-grid.scss */
+.experience-grid .row h5 {
+  color: #9C9C9C;
+}
+/* line 11, ../scss/modules/_experience-grid.scss */
+.experience-grid .row h5 i {
+  margin-right: 1em;
+}
+/* line 15, ../scss/modules/_experience-grid.scss */
+.experience-grid .row .job-title {
+  font-weight: 500;
+}
+/* line 18, ../scss/modules/_experience-grid.scss */
+.experience-grid .row .job-type {
+  font-weight: 500;
+  margin-left: 2em;
+  background-color: #FFB180;
+  padding: 1px 5px;
+  color: white;
+  border-radius: 5px;
+}
+
 /* line 1, ../scss/modules/_progress-bar.scss */
 .progress-wrapper {
-  background-color: #f9f9f9;
+  background-color: #9C9C9C;
   height: 2px;
   margin-top: 1em;
 }
 /* line 5, ../scss/modules/_progress-bar.scss */
 .progress-wrapper .progress {
-  background-color: #E25041;
+  background-color: #ff656e;
   height: 100%;
   width: 0;
   position: relative;
@@ -941,33 +1001,126 @@ a.btn {
   font-size: 15px;
 }
 
-/* line 2, ../scss/modules/_skills-grid.scss */
-.segment.skills .row {
+@media (max-width: 768px) {
+  /* line 21, ../scss/modules/_progress-bar.scss */
+  .progress-wrapper {
+    margin-top: 1.5em;
+  }
+}
+/* line 27, ../scss/modules/_progress-bar.scss */
+.main-skills .progress-bar-container {
+  background-color: #E5E5E5;
+  width: 80%;
+  height: 12px;
+  margin: 1em auto;
+  border-radius: 4px;
+}
+/* line 33, ../scss/modules/_progress-bar.scss */
+.main-skills .progress-bar-container .progress {
+  height: 100%;
+  border-radius: 4px;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10%);
+    display: none;
+  }
+}
+/* line 19, ../scss/modules/_skills-grid.scss */
+.skills-grid {
+  text-align: center;
+}
+/* line 21, ../scss/modules/_skills-grid.scss */
+.skills-grid .segment-title {
+  font-weight: 500;
+  font-size: 25px;
+}
+/* line 25, ../scss/modules/_skills-grid.scss */
+.skills-grid .row {
+  display: flex;
+  justify-content: center;
+}
+/* line 29, ../scss/modules/_skills-grid.scss */
+.skills-grid .main-skills, .skills-grid .companions {
+  max-width: 800px;
+  margin: 2em auto;
+}
+/* line 32, ../scss/modules/_skills-grid.scss */
+.skills-grid .main-skills .segment-title, .skills-grid .companions .segment-title {
+  margin: 2em 0;
+}
+/* line 35, ../scss/modules/_skills-grid.scss */
+.skills-grid .main-skills .column, .skills-grid .companions .column {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+/* line 38, ../scss/modules/_skills-grid.scss */
+.skills-grid .main-skills .column .skill-title, .skills-grid .companions .column .skill-title {
+  font-weight: 500;
+  font-size: 15px;
+}
+/* line 45, ../scss/modules/_skills-grid.scss */
+.skills-grid hr {
+  max-width: 800px;
+  margin: 2em auto;
+  background-color: rgba(151, 151, 151, 0.5);
+  height: 2px;
+  border: 0;
+}
+/* line 53, ../scss/modules/_skills-grid.scss */
+.skills-grid .container.shown {
+  display: block;
+  animation: slide-down 1s ease-out;
+}
+/* line 57, ../scss/modules/_skills-grid.scss */
+.skills-grid .container.hidden {
+  display: none;
+  animation: slide-up 1s ease-out;
+}
+/* line 61, ../scss/modules/_skills-grid.scss */
+.skills-grid .container .row {
   display: flex;
   justify-content: space-around;
 }
-/* line 5, ../scss/modules/_skills-grid.scss */
-.segment.skills .row .column {
+/* line 64, ../scss/modules/_skills-grid.scss */
+.skills-grid .container .row .column {
   width: 40%;
   text-align: left;
 }
-/* line 8, ../scss/modules/_skills-grid.scss */
-.segment.skills .row .column h3 {
+/* line 67, ../scss/modules/_skills-grid.scss */
+.skills-grid .container .row .column h3 {
   font-size: 25px;
 }
-/* line 11, ../scss/modules/_skills-grid.scss */
-.segment.skills .row .column .skill {
+/* line 70, ../scss/modules/_skills-grid.scss */
+.skills-grid .container .row .column .skill {
   margin: 5px 0px;
   display: block;
   text-transform: uppercase;
 }
-/* line 18, ../scss/modules/_skills-grid.scss */
-.segment.skills .resume-project {
+/* line 77, ../scss/modules/_skills-grid.scss */
+.skills-grid .container .resume-project {
   margin: 1em 0;
   font-style: italic;
 }
-/* line 21, ../scss/modules/_skills-grid.scss */
-.segment.skills .resume-project .btn {
+/* line 80, ../scss/modules/_skills-grid.scss */
+.skills-grid .container .resume-project .btn {
   font-style: normal;
   display: block;
   max-width: 200px;
@@ -976,40 +1129,94 @@ a.btn {
   margin-right: auto;
   margin-top: 1em;
 }
+/* line 92, ../scss/modules/_skills-grid.scss */
+.skills-grid .detail-button {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 3em;
+}
+/* line 97, ../scss/modules/_skills-grid.scss */
+.skills-grid .chevron-button {
+  background-color: #ff656e;
+  width: 40px;
+  height: 40px;
+  color: #f9f9f9;
+  border-radius: 50%;
+  margin: 1em auto;
+  cursor: pointer;
+}
+/* line 105, ../scss/modules/_skills-grid.scss */
+.skills-grid .chevron-button i {
+  vertical-align: -13px;
+  font-size: 30px;
+}
 
 @media only screen and (max-width: 904px) {
-  /* line 36, ../scss/modules/_skills-grid.scss */
-  .segment.skills .row {
+  /* line 115, ../scss/modules/_skills-grid.scss */
+  .skills-grid .container .row {
     flex-direction: column;
   }
-  /* line 38, ../scss/modules/_skills-grid.scss */
-  .segment.skills .row .column {
+  /* line 117, ../scss/modules/_skills-grid.scss */
+  .skills-grid .container .row .column {
     width: 100%;
   }
 }
-/* line 2, ../scss/modules/_portfolio.scss */
+@media (max-width: 600px) {
+  /* line 127, ../scss/modules/_skills-grid.scss */
+  .skills-grid .row {
+    flex-direction: column;
+  }
+  /* line 129, ../scss/modules/_skills-grid.scss */
+  .skills-grid .row .column {
+    width: 100%;
+    margin: 1em 0;
+  }
+}
+/* line 1, ../scss/modules/_portfolio.scss */
+.segment.portfolio {
+  position: relative;
+  z-index: 1;
+}
+/* line 4, ../scss/modules/_portfolio.scss */
+.segment.portfolio .backgroundPattern {
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../images/darkBackgroundPattern.png");
+  z-index: -1;
+}
+/* line 14, ../scss/modules/_portfolio.scss */
 .segment.portfolio .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-/* line 5, ../scss/modules/_portfolio.scss */
+/* line 18, ../scss/modules/_portfolio.scss */
 .segment.portfolio .portfolio-cards .card {
-  width: 45%;
+  width: 35%;
   margin: 1.5em;
+  background-color: #f9f9f9;
+  color: black;
+  padding: 2em;
+  border-radius: 12px;
+  text-align: center;
 }
-/* line 8, ../scss/modules/_portfolio.scss */
+/* line 26, ../scss/modules/_portfolio.scss */
 .segment.portfolio .portfolio-cards .card img {
-  max-width: 150px;
+  max-width: 120px;
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 16, ../scss/modules/_portfolio.scss */
+  /* line 34, ../scss/modules/_portfolio.scss */
   .segment.portfolio .portfolio-cards {
     justify-content: center;
   }
-  /* line 18, ../scss/modules/_portfolio.scss */
+  /* line 36, ../scss/modules/_portfolio.scss */
   .segment.portfolio .portfolio-cards .card {
-    width: 100%;
+    width: 90%;
   }
 }
 /* line 3, ../scss/modules/_hobbies.scss */
@@ -1071,66 +1278,128 @@ a.btn {
     margin-bottom: 1em;
   }
 }
-/* line 2, ../scss/modules/_contact.scss */
+/* line 1, ../scss/modules/_contact.scss */
+.segment.contact {
+  text-align: center;
+}
+/* line 3, ../scss/modules/_contact.scss */
+.segment.contact .segment-title {
+  font-size: 35px;
+  font-weight: 400;
+  color: #202325;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+/* line 10, ../scss/modules/_contact.scss */
+.segment.contact .subtitle {
+  font-size: 25px;
+  font-weight: 300;
+  color: #202325;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+/* line 17, ../scss/modules/_contact.scss */
+.segment.contact hr {
+  border: 0;
+  background-color: rgba(151, 151, 151, 0.5);
+  width: 200px;
+  margin: 2em auto;
+  height: 2px;
+}
+/* line 24, ../scss/modules/_contact.scss */
 .segment.contact .contact-form {
-  max-width: 500px;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 7, ../scss/modules/_contact.scss */
-.segment.contact .contact-form .field {
-  margin-bottom: 1.5em;
-}
-/* line 9, ../scss/modules/_contact.scss */
-.segment.contact .contact-form .field input, .segment.contact .contact-form .field textarea {
-  padding: 18px 24px;
-  height: 55px;
-  border-radius: 0;
-  background-color: transparent;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  box-shadow: none;
-  border-color: #e7e7e7;
-  width: 100%;
-  border: 1px solid #ccc;
-}
-/* line 21, ../scss/modules/_contact.scss */
-.segment.contact .contact-form .field input:focus, .segment.contact .contact-form .field textarea:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: #E25041;
+  max-width: 800px;
+  margin: 3em auto;
 }
 /* line 27, ../scss/modules/_contact.scss */
-.segment.contact .contact-form .field textarea {
-  min-height: 100px;
+.segment.contact .contact-form .row {
+  display: flex;
+  justify-content: center;
+}
+/* line 30, ../scss/modules/_contact.scss */
+.segment.contact .contact-form .row .column {
+  width: 100%;
 }
 /* line 32, ../scss/modules/_contact.scss */
+.segment.contact .contact-form .row .column:first-child {
+  margin-right: 6em;
+}
+/* line 35, ../scss/modules/_contact.scss */
+.segment.contact .contact-form .row .column .field {
+  margin-bottom: 1.5em;
+  width: 100%;
+  text-align: left;
+}
+/* line 39, ../scss/modules/_contact.scss */
+.segment.contact .contact-form .row .column .field .header {
+  font-weight: 300;
+}
+/* line 42, ../scss/modules/_contact.scss */
+.segment.contact .contact-form .row .column .field input, .segment.contact .contact-form .row .column .field textarea {
+  padding: 18px 0 18px 0;
+  height: 60px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  box-shadow: none;
+  width: 100%;
+  font-weight: 300;
+  background-color: transparent;
+  border-bottom: 2px solid #e7e7e7;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  font-family: "SF-Pro";
+}
+/* line 56, ../scss/modules/_contact.scss */
+.segment.contact .contact-form .row .column .field input:focus, .segment.contact .contact-form .row .column .field textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ff656e;
+}
+/* line 62, ../scss/modules/_contact.scss */
+.segment.contact .contact-form .row .column .field textarea {
+  width: 100%;
+  min-height: 170px;
+}
+/* line 70, ../scss/modules/_contact.scss */
 .segment.contact button {
   font-size: 15px;
   font-weight: 200;
   min-width: 250px;
   min-height: 50px;
   padding: 0;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #202325;
+  border-radius: 56px;
+  border: 1px solid;
+  border-color: #979797;
 }
-/* line 41, ../scss/modules/_contact.scss */
+/* line 85, ../scss/modules/_contact.scss */
 .segment.contact button .loader .loader-inner.line-scale div {
   margin: 8px 3px 3px 3px;
   height: 30px;
+  background-color: #ff656e;
 }
-/* line 48, ../scss/modules/_contact.scss */
+/* line 93, ../scss/modules/_contact.scss */
 .segment.contact .message {
   margin-top: 1em;
 }
-/* line 50, ../scss/modules/_contact.scss */
+/* line 95, ../scss/modules/_contact.scss */
 .segment.contact .message.negative {
-  color: #E25041;
+  color: #ff656e;
 }
-/* line 53, ../scss/modules/_contact.scss */
+/* line 98, ../scss/modules/_contact.scss */
 .segment.contact .message.positive {
   color: green;
+}
+
+@media (max-width: 768px) {
+  /* line 107, ../scss/modules/_contact.scss */
+  .segment.contact .contact-form .row {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

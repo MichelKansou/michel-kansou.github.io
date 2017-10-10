@@ -1,138 +1,27 @@
-.segment.experience {
-    .highlight-experience {
+.experience-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .row {
         display: flex;
-        justify-content: space-around;
-        align-content: center;
-        .column {
-            background-color: $experience-highlight-box;
-            padding: 35px;
-            width: 345px;
-            .title {
-                font-size: 13px;
-                margin: 25px 0 0 0;
-                text-transform: uppercase;
-                letter-spacing: .2em;
+        text-align: left;
+        margin: 5px 0;
+        h5 {
+            color: #9C9C9C;
+            i {
+                margin-right: 1em;
             }
         }
-    }
-    &.light {
-        position: relative;
-        .container {
-            position: relative;
-            max-width: 800px;
-            &:before {
-                content: "";
-                position: absolute;
-                width: 1px;
-                top: -100px;
-                bottom: -100px;
-                left: 32.5%;
-                background-color: #e7e7e7;
-            }
-            .experience-grid {
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
+        .job-title {
+            font-weight: 500;
         }
-    }
-    .experience-grid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        /* margin: 3em auto; */
-        margin-bottom: 50px;
-
-        .column {
-            text-align: left;
-            &:hover {
-                &:after {
-                    background-color: #EF2D56!important;
-                }
-            }
-            &:first-child {
-                width: 25%;
-                position: relative;
-                &:after {
-                    content: "";
-                    position: absolute;
-                    left: 100%;
-                    top: 0;
-                    width: 12px;
-                    height: 12px;
-                    background-color: #fff;
-                    border: 2px solid #EF2D56;
-                    -webkit-transition: all .3s ease;
-                    transition: all .3s ease;
-                    z-index: 100;
-                    margin-left: -6px;
-                    border-radius: 50%;
-                }
-            }
-            &:last-child {
-                width: 55%;
-                margin-left: 5%;
-                padding-left: 25px;
-                padding-right: 25px;
-            }
-            h3 {
-                text-transform: uppercase;
-                font-weight: 500;
-            }
-            .company-name {
-                color: $experience-job-title;
-            }
-            .job-date {
-                font-weight: 500;
-            }
-            .job-type {
-                font-weight: 700;
-            }
-            .job-description {
-                white-space: pre;
-                font-weight: 100;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width : 768px) {
-    .segment.experience {
-        .highlight-experience {
-            display: block;
-            .column {
-                width: 100%;
-            }
-        }
-
-        &.light {
-            .container {
-                &:before {
-                    display: none;
-                }
-                .experience-grid {
-                    display: block;
-                    border-bottom: 1px solid $experience-border-color;
-                    padding-bottom: 25px;
-                    .column {
-                        width: 100%;
-                        padding: 0;
-                        margin: 0;
-                        &:first-child {
-                            &:after {
-                                display: none;
-                            }
-                        }
-                        &:last-child {
-                            margin-top: 1em;
-                        }
-                        .job-description {
-                            white-space: normal;
-                        }
-                    }
-                }
-            }
+        .job-type{
+            font-weight: 500;
+            margin-left: 2em;
+            background-color: #FFB180;
+            padding: 1px 5px;
+            color: white;
+            border-radius: 5px;
         }
     }
 }

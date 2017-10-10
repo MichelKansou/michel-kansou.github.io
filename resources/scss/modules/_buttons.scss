@@ -5,12 +5,27 @@ a {
 }
 .btn{
     background-color: $download-bg;
-    color: $awesome-white2;
+    color: $awesome-white;
     padding: 1em;
     border: 0;
     cursor: pointer;
 }
 
 .btn-o {
+    background-color: $awesome-white;
+    padding: .5em;
+    border-radius: 5px;
+    cursor: pointer;
+    color: $flat-black;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-l {
+    cursor: pointer;
     color: $download-bg;
+    &:hover {
+        text-decoration: none;
+    }
 }

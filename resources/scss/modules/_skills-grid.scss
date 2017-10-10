@@ -1,42 +1,134 @@
-.segment.skills {
+@keyframes slide-down {
+      0% { opacity: 0; transform: translateY(+10%); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+      0% {
+          opacity: 1;
+          transform: translateY(0);
+          display: block;
+      }
+    100% {
+        opacity: 0;
+        transform: translateY(+10%);
+        display: none;
+     }
+}
+
+.skills-grid {
+    text-align: center;
+    .segment-title {
+        font-weight: 500;
+        font-size: 25px;
+    }
     .row {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+    }
+    .main-skills, .companions {
+        max-width: 800px;
+        margin: 2em auto;
+        .segment-title {
+            margin: 2em 0;
+        }
         .column {
-            width: 40%;
-            text-align: left;
-            h3 {
-                font-size: 25px;
-            }
-            .skill {
-                margin: 5px 0px;
-                display: block;
-                text-transform: uppercase;
+            flex-grow: 1;
+            flex-basis: 0;
+            .skill-title {
+                font-weight: 500;
+                font-size: 15px;
             }
         }
     }
-    .resume-project {
-        margin: 1em 0;
-        font-style: italic;
-        .btn {
-            font-style: normal;
+
+    hr {
+        max-width: 800px;
+        margin: 2em auto;
+        background-color: rgba(151, 151, 151, 0.5);
+        height: 2px;
+        border: 0;
+    }
+    .container {
+        &.shown {
             display: block;
-            max-width: 200px;
-            padding: .5em;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 1em;
+            animation: slide-down 1s ease-out;
+        }
+        &.hidden {
+            display: none;
+            animation: slide-up 1s ease-out;
+        }
+        .row {
+            display: flex;
+            justify-content: space-around;
+            .column {
+                width: 40%;
+                text-align: left;
+                h3 {
+                    font-size: 25px;
+                }
+                .skill {
+                    margin: 5px 0px;
+                    display: block;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .resume-project {
+            margin: 1em 0;
+            font-style: italic;
+            .btn {
+                font-style: normal;
+                display: block;
+                max-width: 200px;
+                padding: .5em;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 1em;
+            }
+        }
+    }
+
+    .detail-button {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 3em;
+    }
+    .chevron-button {
+        background-color: $red;
+        width: 40px;
+        height: 40px;
+        color: $awesome-white;
+        border-radius: 50%;
+        margin: 1em auto;
+        cursor: pointer;
+        i {
+            vertical-align: -13px;
+            font-size: 30px;
         }
     }
 }
 
-
 @media only screen and (max-width : 904px) {
-    .segment.skills {
+    .skills-grid {
+        .container {
+            .row {
+                flex-direction: column;
+                .column {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
         .row {
             flex-direction: column;
             .column {
                 width: 100%;
+                margin: 1em 0;
             }
         }
     }
