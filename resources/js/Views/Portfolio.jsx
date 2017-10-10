@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Portfolio = (props) =>  {
-    const trans = props.trans;
-    const portfolioList = trans.portfolio.list.map((data, index) =>
+    const translation = props.translation;
+    const portfolioList = translation.portfolio.list.map((data, index) =>
         <div className='card' key={index}>
             <div className='image'>
                 <img src={data.img} />
@@ -17,11 +17,10 @@ const Portfolio = (props) =>  {
         </div>
     )
     return (
-        <div className='segment portfolio light'>
+        <div className='segment portfolio dark'>
+            <span className='backgroundPattern' />
             <div className='container'>
-                <i className='fa fa-eye fa-3x' />
-                <h3 className='segment-title'>{trans.portfolio.title}<span className='point'>.</span></h3>
-                <hr />
+                <h3 className='segment-title light'>{translation.portfolio.title}</h3>
                 <div className='portfolio-cards'>
                     {portfolioList}
                 </div>
@@ -31,7 +30,7 @@ const Portfolio = (props) =>  {
 }
 
 Portfolio.propTypes = {
-    trans: PropTypes.object
+    translation: PropTypes.object
 };
 
 export default Portfolio;

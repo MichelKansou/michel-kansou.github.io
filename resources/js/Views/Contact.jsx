@@ -18,7 +18,7 @@ export default class Contact extends React.Component {
         let name = this.nameRef.value
         let email = this.emailRef.value
         let message = this.messageRef.value
-        let subjectRef = this.subjectRef.value
+        let subjectRef = "Job contact from online resume!"
         if (name && email && message && subjectRef) {
             this.setState({ loading: true });
             return fetch('https://formspree.io/michel.kansou@viacesi.fr', {
@@ -60,28 +60,33 @@ export default class Contact extends React.Component {
     }
 
     render() {
-        const trans = this.props.trans;
+        const translation = this.props.translation;
         const { success, loading, message } = this.state;
 
         return (
             <div className='segment contact light'>
                 <div className='container'>
-                    <i className='fa fa-paper-plane fa-3x' />
-                    <h3 className='segment-title'>{trans.footer.contact.title}<span className='point'>.</span></h3>
+                    <h3 className='segment-title'>{translation.footer.contact.title}</h3>
+                    <h4 className='subtitle'>{translation.footer.contact.message}</h4>
                     <hr />
-                    {trans.footer.contact.message}
                     <form id='contact' className='contact-form'>
-                        <div className='field'>
-                            <input name='name' type='text' placeholder='Your Name' ref={(ref) => this.nameRef = ref} required />
-                        </div>
-                        <div className='field'>
-                            <input name='email' type='text' placeholder='Your Email' ref={(ref) => this.emailRef = ref} required />
-                        </div>
-                        <div className='field'>
-                            <input name='subject' type='text' placeholder='Subject' ref={(ref) => this.subjectRef = ref} required />
-                        </div>
-                        <div className='field'>
-                            <textarea name='message' placeholder='Message' ref={(ref) => this.messageRef = ref} required />
+                        <div className='row'>
+                            <div className='column'>
+                                <div className='field'>
+                                    <div className='header'>Your Name</div>
+                                    <input name='name' type='text' placeholder='Write Your Name' ref={(ref) => this.nameRef = ref} required />
+                                </div>
+                                <div className='field'>
+                                    <div className='header'>Your Email Address</div>
+                                    <input name='email' type='text' placeholder='Write Your Email Address' ref={(ref) => this.emailRef = ref} required />
+                                </div>
+                            </div>
+                            <div className='column'>
+                                <div className='field'>
+                                    <div className='header'>Your Message</div>
+                                    <textarea name='message' placeholder='Write Your Message' ref={(ref) => this.messageRef = ref} required />
+                                </div>
+                            </div>
                         </div>
                     </form>
                     <Button loading={loading} call={() => this.sendEmail()} text='Send Message' />
@@ -93,5 +98,5 @@ export default class Contact extends React.Component {
 }
 
 Contact.propTypes = {
-    trans: PropTypes.object
+    translation: PropTypes.object
 };

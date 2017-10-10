@@ -2,17 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Footer = (props) =>  {
-    const trans = props.trans;
+    const translation = props.translation;
     return (
         <footer>
             <div className='container'>
                 <div className='row'>
                     <div className='column'>
-                        <p id='copyright'><i className='fa fa-code' /> with <i className='fa fa-heart' /> {trans.footer.copyright}</p>
+                        <p id='copyright'><i className='fa fa-code' /> with <i className='fa fa-heart' /> {translation.footer.copyright}</p>
                     </div>
                     <div className='column'>
-                        <a className='btn-o' href={trans.profile.cvUrl} >
-                            <i className='fa fa-download' /> {trans.profile.downloadCV}
+                        <a className='btn-l' href={translation.profile.resumeLink}>
+                            {translation.profile.downloadBtn}
                         </a>
                     </div>
                     <div className='column'>
@@ -29,7 +29,7 @@ const Footer = (props) =>  {
 }
 
 Footer.propTypes = {
-    trans: PropTypes.object
+    translation: PropTypes.object
 };
 
 export default Footer;

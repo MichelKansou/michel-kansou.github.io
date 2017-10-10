@@ -11,36 +11,37 @@ import Contact from './Contact.jsx';
 
 const PageContents = (props) =>  {
 
-    const trans = props.trans;
-    //   <section id='education'>
-    //       <Education trans={trans} />
-    //   </section>
+    const translation = props.translation;
+    // TODO add Hobbies section
+    // <section id='hobbies'>
+    //     <Hobbies trans={trans} />
+    // </section>
     return (
         <div className='page-contents'>
-            <section id='about'>
-                <Profile trans={trans} />
-            </section>
-            <section id='experience'>
-                <Experience trans={trans} />
-            </section>
-            <section id='skills'>
-                <Skills trans={trans} />
-            </section>
+            <div className='segment light about'>
+                <section id='about'>
+                    <div className='about-row'>
+                        <Profile translation={translation} />
+                        <Experience translation={translation} />
+                        <Education translation={translation} />
+                    </div>
+                </section>
+                <section id='skills'>
+                    <Skills translation={translation} />
+                </section>
+            </div>
             <section id='portfolio'>
-                <Portfolio trans={trans} />
-            </section>
-            <section id='hobbies'>
-                <Hobbies trans={trans} />
+                <Portfolio translation={translation} />
             </section>
             <section id='contact'>
-                <Contact trans={trans} />
+                <Contact translation={translation} />
             </section>
         </div>
     );
 }
 
 PageContents.propTypes = {
-    trans: PropTypes.object
+    translation: PropTypes.object
 };
 
 export default PageContents;

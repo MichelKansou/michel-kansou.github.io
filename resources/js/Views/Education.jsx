@@ -1,32 +1,34 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Education = (props) =>  {
-    const trans = this.props.trans;
-    const schoolsList = trans.Education.schools.map((data, index) =>
-        <div className='timeline-item' key={index}>
-            <div className='timeline-icon'>
-                <img className='timeline-img' src={data.imgURL} />
+    const translation = props.translation;
+    const schoolsList = translation.education.schools.map((data, index) =>
+        <div className='education-grid' key={index}>
+            <div className='row'>
+                <h3>{data.degree}</h3>
             </div>
-            <div className={'timeline-content '+data.position}>
-                <h4>{data.degree}</h4>
-                <p>
-                    {data.name}
-                </p>
+            <div className='row'>
+                <h5><i className='fa fa-university' />{data.name}</h5>
+            </div>
+            <div className='row'>
+                <h5><i className='fa fa-clock-o' />{data.date}</h5>
             </div>
         </div>
     );
+
     return (
-        <div className='ui inverted vertical masthead center aligned segment customSegment1'>
-            <div className='ui text container vertical-timeline-container'>
-                <div className='segment-title'>
-                    <i className='fa fa-graduation-cap'> - {trans.Education.title} </i>
-                    <div id='timeline'>
-                        {schoolsList}
-                    </div>
-                </div>
+        <div className='col-container education'>
+            <h3 className='segment-title'><i className='fa fa-graduation-cap' />{translation.education.title}</h3>
+            <div className='container'>
+                {schoolsList}
             </div>
         </div>
     );
 }
+
+Education.propTypes = {
+    translation: PropTypes.object
+};
 
 export default Education;

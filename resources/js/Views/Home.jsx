@@ -1,36 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {initHeader, initAnimation, mouseMove, scrollCheck, resize} from '../Library/CanvasAnimation.js';
-
 
 export default class Home extends React.Component {
     constructor(props) {
         super(props);
     }
 
-    componentDidMount() {
-        initHeader();
-        initAnimation();
-    }
-
-    onMouseMove = (e) => {
-        window.addEventListener('scroll', mouseMove(e));
-        window.addEventListener('scroll', scrollCheck);
-        window.addEventListener('resize', resize);
-    }
-
     render() {
+        // TODO Update blinker <span className='blinker'> |</span>
 
-        const trans = this.props.trans;
+        const translation = this.props.translation;
         return (
             <section id='home' className='segment home dark' onMouseMove={this.onMouseMove}>
                 <div id='header' className='header'>
-                    <canvas id='canvas' />
                     <div className='content'>
-                        <h2 className='header'>
-                            {trans.presentation.hello}<span className='blinker'> |</span>
-                        </h2>
-                        <h1>{trans.presentation.title}<span className='point'>.</span></h1>
+                        <img className='avatar' src='./resources/images/avatar.png' />
+                        <h1 className='header'>
+                            {translation.presentation.hello}
+                        </h1>
+                        <h2>{translation.presentation.title}</h2>
+                        <hr />
                         <div className='row'>
                             <a className='link' href='mailto:michel.kansou@viacesi.fr'><i className='fa fa-envelope-o' /></a>
                             <a className='link' href='https://twitter.com/MichelKansou'><i className='fa fa-twitter' /></a>
@@ -39,8 +28,8 @@ export default class Home extends React.Component {
                             <a className='link' href='https://github.com/MichelKansou'><i className='fa fa-github' /></a>
                         </div>
                         <div className='row'>
-                            <a className='btn-o white' href={trans.profile.cvUrl} >
-                                <i className='fa fa-download' /> {trans.profile.downloadCV}
+                            <a className='btn-o' href={translation.profile.resumeLink} >
+                                {translation.profile.downloadBtn}
                             </a>
                         </div>
                     </div>
@@ -51,5 +40,5 @@ export default class Home extends React.Component {
 }
 
 Home.propTypes = {
-    trans: PropTypes.object
+    translation: PropTypes.object
 };

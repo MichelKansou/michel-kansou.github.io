@@ -2,21 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Profile = (props) =>  {
-    const trans = props.trans;
+    const translation = props.translation;
+    const description = translation.profile.description.split('\n').map((item, key) => {
+        return <span key={key}>{item}<br /></span>
+    });
     return (
-        <div className='segment profile light'>
-            <div className='container'>
-                <i className='fa fa-user-o fa-3x' />
-                <h3 className='segment-title'>{trans.profile.title}<span className='point'>.</span></h3>
-                <hr />
-                <p>{trans.profile.description}</p>
-            </div>
+        <div className='col-container'>
+            <h3 className='segment-title'><i className='fa fa-user-o' /> {translation.profile.title}</h3>
+            <p>{description}</p>
         </div>
     );
 }
 
 Profile.propTypes = {
-    trans: PropTypes.object
+    translation: PropTypes.object
 };
 
 export default Profile;

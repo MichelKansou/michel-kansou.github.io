@@ -17,15 +17,14 @@ export default class NavigationMenu extends React.Component {
 
     smoothScroll(sectionId) {
         scrollToElement(sectionId, {
-        	offset: 0,
+        	offset: -100,
         	ease: 'out-circ',
         	duration: 1400
         });
     }
 
     render() {
-
-        const trans = this.props.trans;
+        const translation = this.props.translation;
         return (
             <header className='headerNav'>
                 <div className='wrap' aria-expanded='true'>
@@ -35,11 +34,11 @@ export default class NavigationMenu extends React.Component {
                     </div>
                     <nav className={this.state.activeRM ? 'navbar active' : 'navbar'}>
                         <ul className='menu'>
-                            <li><a onClick={() => this.smoothScroll('#about')} href='#about'> {trans.navigation.profile} </a></li>
-                            <li><a onClick={() => this.smoothScroll('#experience')} href='#experience'> {trans.navigation.workExperience} </a></li>
-                            <li><a onClick={() => this.smoothScroll('#skills')} href='#skills'> {trans.navigation.skills} </a></li>
-                            <li><a onClick={() => this.smoothScroll('#portfolio')} href='#portfolio'> {trans.navigation.portfolio} </a></li>
-                            <li><a onClick={() => this.smoothScroll('#contact')} href='#contact'> {trans.navigation.contact} </a></li>
+                            <li><a onClick={() => this.smoothScroll('#home')} href='#home'> {translation.navigation.home} </a></li>
+                            <li><a onClick={() => this.smoothScroll('#about')} href='#about'> {translation.navigation.about} </a></li>
+                            <li><a onClick={() => this.smoothScroll('#skills')} href='#skills'> {translation.navigation.skills} </a></li>
+                            <li><a onClick={() => this.smoothScroll('#portfolio')} href='#portfolio'> {translation.navigation.portfolio} </a></li>
+                            <li><a onClick={() => this.smoothScroll('#contact')} href='#contact'> {translation.navigation.contact} </a></li>
                         </ul>
                     </nav>
                 </div>
@@ -49,5 +48,5 @@ export default class NavigationMenu extends React.Component {
 }
 
 NavigationMenu.propTypes = {
-    trans: PropTypes.object
+    translation: PropTypes.object,
 };

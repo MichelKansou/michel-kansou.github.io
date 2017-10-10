@@ -2,50 +2,33 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Experience = (props) =>  {
-    const trans = props.trans;
-    const dataList = trans.workExperience.experiences.map((data, index) =>
+    const translation = props.translation;
+    const dataList = translation.workExperience.experiences.map((data, index) =>
         <div className='experience-grid' key={index}>
-            <div className='column'>
-                <h3 className='company-name'>{data.title}</h3>
-                <h5 className='job-date'>{data.date}</h5>
-                <h6 className='job-type'>{data.jobType}</h6>
-            </div>
-            <div className='column wide'>
+            <div className='row'>
                 <h3 className='job-title' >{data.jobTitle}</h3>
-                <p className='job-description'>{data.description}</p>
+            </div>
+            <div className='row'>
+                <h5 className='company-name'><i className='fa fa-building' />{data.title}</h5>
+                <h5 className='job-type'>{data.jobType}</h5>
+            </div>
+            <div className='row'>
+                <h5 className='job-date'><i className='fa fa-clock-o' />{data.date}</h5>
             </div>
         </div>
     )
     return (
-        <div>
-            <div className='segment experience dark'>
-                <div className='container'>
-                    <i className='fa fa-briefcase fa-3x' aria-hidden='true' />
-                    <h3 className='segment-title'>{trans.workExperience.title}<span className='point'>.</span></h3>
-                    <hr />
-                    <div className='highlight-experience row'>
-                        <div className='column'>
-                            <i className='fa fa-html5 fa-2x' />
-                            <h4 className='title'>{trans.workExperience.webTitle}</h4>
-                        </div>
-                        <div className='column'>
-                            <i className='fa fa-mobile fa-2x' />
-                            <h4 className='title'>{trans.workExperience.mobileTitle}</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='segment experience light'>
-                <div className='container'>
-                    {dataList}
-                </div>
+        <div className='col-container'>
+            <h3 className='segment-title'><i className='fa fa-briefcase' />{translation.workExperience.title}</h3>
+            <div className='container'>
+                {dataList}
             </div>
         </div>
     );
 }
 
 Experience.propTypes = {
-    trans: PropTypes.object
+    translation: PropTypes.object
 };
 
 export default Experience;
