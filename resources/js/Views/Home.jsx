@@ -14,7 +14,7 @@ export default class Home extends React.Component {
             <section id='home' className='segment home dark' onMouseMove={this.onMouseMove}>
                 <div id='header' className='header'>
                     <div className='content'>
-                        <img className='avatar' src='./resources/images/avatar.png' />
+                        <img className='avatar' src='./resources/images/Avatar.png' />
                         <h1 className='header'>
                             {translation.presentation.hello}
                         </h1>
