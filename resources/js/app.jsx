@@ -18,17 +18,17 @@ class App extends React.Component {
             firebase: {},
             loading: true
         };
-        ReactGA.initialize('UA-69121322-1');
         firebase.initializeApp(config);
+        ReactGA.initialize('UA-69121322-1');
     }
     componentDidMount() {
         return firebase.database().ref('/').once('value').then(function(snapshot) {
-            console.log(snapshot.val());
             this.setState({
                 loading: false,
                 firebase: snapshot.val()
             });
         }.bind(this));
+        ReactGA.pageview(window.location.pathname);
     }
 
     render() {
