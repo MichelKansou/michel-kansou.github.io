@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactGA from 'react-ga';
 import * as firebase from 'firebase';
 
 import NavigationMenu from './Views/NavigationMenu.jsx';
@@ -19,7 +18,6 @@ class App extends React.Component {
             loading: true
         };
         firebase.initializeApp(config);
-        ReactGA.initialize('UA-69121322-1');
     }
     componentDidMount() {
         return firebase.database().ref('/').once('value').then(function(snapshot) {
@@ -28,7 +26,6 @@ class App extends React.Component {
                 firebase: snapshot.val()
             });
         }.bind(this));
-        ReactGA.pageview(window.location.pathname);
     }
 
     render() {
