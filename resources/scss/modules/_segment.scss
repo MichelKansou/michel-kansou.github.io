@@ -1,11 +1,33 @@
 .segment {
     padding: 100px 2em;
     &.home {
+        position: relative;
         height: 100%;
+        z-index: 1;
         display: flex;
         padding: 0;
         flex-direction: column;
         justify-content: center;
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-position: center;
+            background-image: url("../images/starsBackgroundPattern.png");
+            z-index: -2;
+        }
+        .spaceship {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            z-index: -1;
+            top: 50%;
+            left: 20px;
+        }
         .header {
             width: 100%;
             display: flex;
@@ -71,18 +93,6 @@
     &.about {
         position: relative;
         z-index: 1;
-        &::before {
-            content: "";
-            display: block;
-            width: 100%;
-            position: absolute;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-position: center;
-            background-image: url("../images/lightBackgroundPattern.png");
-            z-index: -1;
-        }
         #about {
             margin-bottom: 5em;
         }
@@ -98,7 +108,7 @@
                 .segment-title {
                     font-size: 20px;
                     font-weight: 500;
-                    color: $flat-orange;
+                    color: $flat-purple;
                     margin-bottom: 1em;
                     i {
                         margin-right: 1em;
@@ -134,13 +144,13 @@
         }
     }
     .point{
-        color: $red;
+        color: $dark-purple;
         font-size: 5rem;
         line-height: 45px;
     }
 
     &.dark {
-        background: linear-gradient(to right, $flat-orange, $red);
+        background: linear-gradient(to bottom, $dark-purple, $flat-purple);
         color: $segment-dark-text-color;
     }
     &.light {
@@ -169,6 +179,18 @@
 @media (max-width: 768px) {
     .segment {
         padding: 50px 1.8em;
+        &.home {
+            height: inherit;
+            min-height: 700px;
+            &::before {
+                top: -10%;
+                left: -15%;
+                background-position: left;
+            }
+            .spaceship {
+                visibility: hidden;
+            }
+        }
         &.about {
             .about-row {
                     flex-direction: column;

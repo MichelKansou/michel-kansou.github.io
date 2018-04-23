@@ -31,37 +31,40 @@ $flat-black: #202325;
 $flat-black2: #191b1d;
 $gray-smoked: #7D7D7D;
 
+$flat-purple: #5A1B81;
+$dark-purple: #0E0C5B;
+
 /* default Element background  color */
 
 $body-bg: #313131;
-$link-color: $red;
+$link-color: $flat-purple;
 
 /* UI Navbar background  color */
 $navbar-bg: $awesome-white;
 $navigation-color: $flat-black2;
-$navigation-hover-text-color: $red;
+$navigation-hover-text-color: $flat-purple;
 $navigation-language-button: $black;
 
 /* UI Segments background  color */
-$segment-hr : $red;
+$segment-hr : $flat-purple;
 $segment-dark : $flat-black2;
 $segment-dark-text-color: $awesome-white;
 $segment-light : $awesome-white;
 $segment-light-text-color: $flat-black2;
 
 /* UI Skills Grid background  color */
-$skills-title: $red;
+$skills-title: $flat-purple;
 $skills-title-color: $awesome-white;
-$skills-progress: $red;
+$skills-progress: $flat-purple;
 $skills-progress-bg: $awesome-white;
 
 /* UI Experience background  color */
 $experience-title: $flat-whiteCloud;
 $experience-color: $awesome-white;
 $experience-highlight-box: $flat-black;
-$experience-job-title: $red;
+$experience-job-title: $flat-purple;
 $experience-border-color: $flat-graySmoke ;
-$experience-date-bg: $red;
+$experience-date-bg: $flat-purple;
 
 /* UI Timeline Education background  color */
 $timeline-text-color: $flat-black;
@@ -74,10 +77,10 @@ $hobbies-quotes-border: $awesome-white;
 $footer-border: $awesome-white;
 $footer-color: $gray;
 $footer-bg: $awesome-white;
-$download-bg: $red;
+$download-bg: $flat-purple;
 
 
 /* Loader color */
 
-$loader-bg: linear-gradient(to right, $flat-orange, $red);
+$loader-bg: linear-gradient(to bottom, $dark-purple, $flat-purple);
 $loader-hexagon-color: $awesome-white;

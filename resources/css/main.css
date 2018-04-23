@@ -44,7 +44,7 @@ span {
 
 /* line 29, ../scss/base/_default.scss */
 a {
-  color: #ff656e;
+  color: #5A1B81;
   opacity: 1;
   text-decoration: none;
 }
@@ -300,7 +300,7 @@ footer .container .row .column .link {
 }
 /* line 19, ../scss/layouts/_footer.scss */
 footer .container .row .column .link:hover {
-  color: #ff656e;
+  color: #5A1B81;
 }
 
 @media only screen and (max-width: 904px) {
@@ -316,7 +316,7 @@ footer .container .row .column .link:hover {
 }
 /* line 1, ../scss/modules/_hexagon-loader.scss */
 .loader-container {
-  background-image: linear-gradient(to right, #ffb681, #ff656e);
+  background-image: linear-gradient(to bottom, #0e0c5b, #5a1b81);
 }
 /* line 3, ../scss/modules/_hexagon-loader.scss */
 .loader-container .hexagon-loader {
@@ -337,7 +337,7 @@ footer .container .row .column .link:hover {
   height: 160px;
   display: block;
   position: absolute;
-  border: 2px solid #ffb681;
+  border: 2px solid transparent;
   border-radius: 50%;
   top: -2px;
   left: -2px;
@@ -355,7 +355,7 @@ footer .container .row .column .link:hover {
   height: 160px;
   display: block;
   position: absolute;
-  border: 2px solid #ff656e;
+  border: 2px solid #5A1B81;
   border-radius: 50%;
   top: -2px;
   left: -2px;
@@ -460,7 +460,7 @@ a.btn {
 
 /* line 6, ../scss/modules/_buttons.scss */
 .btn {
-  background-color: #ff656e;
+  background-color: #5A1B81;
   color: #f9f9f9;
   padding: 1em;
   border: 0;
@@ -470,8 +470,8 @@ a.btn {
 /* line 14, ../scss/modules/_buttons.scss */
 .btn-o {
   background-color: #f9f9f9;
-  padding: .5em;
-  border-radius: 5px;
+  padding: 0.75em;
+  border-radius: 25px;
   cursor: pointer;
   color: #202325;
 }
@@ -483,7 +483,7 @@ a.btn {
 /* line 25, ../scss/modules/_buttons.scss */
 .btn-l {
   cursor: pointer;
-  color: #ff656e;
+  color: #5A1B81;
 }
 /* line 28, ../scss/modules/_buttons.scss */
 .btn-l:hover {
@@ -597,11 +597,11 @@ a.btn {
 }
 /* line 81, ../scss/modules/_navigationMenu.scss */
 .navbar .menu li a:hover {
-  color: #ff656e;
+  color: #5A1B81;
 }
 /* line 85, ../scss/modules/_navigationMenu.scss */
 .navbar .menu li a.active {
-  color: #ff656e;
+  color: #5A1B81;
 }
 
 /* line 94, ../scss/modules/_navigationMenu.scss */
@@ -671,11 +671,11 @@ a.btn {
   }
   /* line 148, ../scss/modules/_navigationMenu.scss */
   .navbar .menu li a:hover {
-    box-shadow: 0 -3px 0 #ff656e inset;
+    box-shadow: 0 -3px 0 #5A1B81 inset;
   }
   /* line 152, ../scss/modules/_navigationMenu.scss */
   .navbar .menu li a.active {
-    box-shadow: 0 -3px 0 #ff656e inset;
+    box-shadow: 0 -3px 0 #5A1B81 inset;
   }
 }
 @-moz-keyframes blinker {
@@ -731,19 +731,43 @@ a.btn {
 }
 /* line 3, ../scss/modules/_segment.scss */
 .segment.home {
+  position: relative;
   height: 100%;
+  z-index: 1;
   display: flex;
   padding: 0;
   flex-direction: column;
   justify-content: center;
 }
-/* line 9, ../scss/modules/_segment.scss */
+/* line 11, ../scss/modules/_segment.scss */
+.segment.home::before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-image: url("../images/starsBackgroundPattern.png");
+  z-index: -2;
+}
+/* line 23, ../scss/modules/_segment.scss */
+.segment.home .spaceship {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  top: 50%;
+  left: 20px;
+}
+/* line 31, ../scss/modules/_segment.scss */
 .segment.home .header {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-/* line 14, ../scss/modules/_segment.scss */
+/* line 36, ../scss/modules/_segment.scss */
 .segment.home .content {
   width: 100%;
   text-align: center;
@@ -752,18 +776,18 @@ a.btn {
   border-radius: 12px;
   padding: 4em 0em;
 }
-/* line 22, ../scss/modules/_segment.scss */
+/* line 44, ../scss/modules/_segment.scss */
 .segment.home .content h1 {
   text-transform: capitalize;
   font-size: 3rem;
   font-weight: 500;
 }
-/* line 28, ../scss/modules/_segment.scss */
+/* line 50, ../scss/modules/_segment.scss */
 .segment.home .content h2 {
   text-transform: uppercase;
   font-weight: 500;
 }
-/* line 32, ../scss/modules/_segment.scss */
+/* line 54, ../scss/modules/_segment.scss */
 .segment.home .content hr {
   width: 70px;
   height: 2px;
@@ -771,24 +795,24 @@ a.btn {
   border: 0;
   margin: 2em auto;
 }
-/* line 39, ../scss/modules/_segment.scss */
+/* line 61, ../scss/modules/_segment.scss */
 .segment.home .content .avatar {
   max-width: 150px;
   margin-bottom: 1em;
 }
-/* line 44, ../scss/modules/_segment.scss */
+/* line 66, ../scss/modules/_segment.scss */
 .segment.home .content img.circular.image {
   margin-left: auto;
   margin-right: auto;
   max-width: 180px;
 }
-/* line 49, ../scss/modules/_segment.scss */
+/* line 71, ../scss/modules/_segment.scss */
 .segment.home .content .row {
   margin-bottom: 2em;
   display: flex;
   justify-content: center;
 }
-/* line 53, ../scss/modules/_segment.scss */
+/* line 75, ../scss/modules/_segment.scss */
 .segment.home .content .row .link {
   color: #f9f9f9;
   background-color: rgba(255, 255, 255, 0.1);
@@ -798,37 +822,24 @@ a.btn {
   width: 40px;
   border-radius: 50%;
 }
-/* line 61, ../scss/modules/_segment.scss */
+/* line 83, ../scss/modules/_segment.scss */
 .segment.home .content .row .link:hover {
   background-color: #ff656e;
 }
-/* line 64, ../scss/modules/_segment.scss */
+/* line 86, ../scss/modules/_segment.scss */
 .segment.home .content .row .link i {
   vertical-align: bottom;
 }
-/* line 71, ../scss/modules/_segment.scss */
+/* line 93, ../scss/modules/_segment.scss */
 .segment.about {
   position: relative;
   z-index: 1;
 }
-/* line 74, ../scss/modules/_segment.scss */
-.segment.about::before {
-  content: "";
-  display: block;
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-position: center;
-  background-image: url("../images/lightBackgroundPattern.png");
-  z-index: -1;
-}
-/* line 86, ../scss/modules/_segment.scss */
+/* line 96, ../scss/modules/_segment.scss */
 .segment.about #about {
   margin-bottom: 5em;
 }
-/* line 89, ../scss/modules/_segment.scss */
+/* line 99, ../scss/modules/_segment.scss */
 .segment.about .about-row {
   z-index: 2;
   display: flex;
@@ -836,40 +847,40 @@ a.btn {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 95, ../scss/modules/_segment.scss */
+/* line 105, ../scss/modules/_segment.scss */
 .segment.about .about-row .col-container {
   max-width: 325px;
   margin: 0 2em;
 }
-/* line 98, ../scss/modules/_segment.scss */
+/* line 108, ../scss/modules/_segment.scss */
 .segment.about .about-row .col-container .segment-title {
   font-size: 20px;
   font-weight: 500;
-  color: #ffb681;
+  color: #5A1B81;
   margin-bottom: 1em;
 }
-/* line 103, ../scss/modules/_segment.scss */
+/* line 113, ../scss/modules/_segment.scss */
 .segment.about .about-row .col-container .segment-title i {
   margin-right: 1em;
 }
-/* line 107, ../scss/modules/_segment.scss */
+/* line 117, ../scss/modules/_segment.scss */
 .segment.about .about-row .col-container p {
   white-space: pre-line;
   text-align: left;
 }
-/* line 110, ../scss/modules/_segment.scss */
+/* line 120, ../scss/modules/_segment.scss */
 .segment.about .about-row .col-container p span {
   margin-bottom: 1em;
   display: block;
   font-weight: 300;
 }
-/* line 121, ../scss/modules/_segment.scss */
+/* line 131, ../scss/modules/_segment.scss */
 .segment.portfolio .container {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 128, ../scss/modules/_segment.scss */
+/* line 138, ../scss/modules/_segment.scss */
 .segment .segment-title.light {
   font-size: 35px;
   font-weight: 400;
@@ -877,29 +888,29 @@ a.btn {
   margin-bottom: 0.5em;
   text-align: center;
 }
-/* line 136, ../scss/modules/_segment.scss */
+/* line 146, ../scss/modules/_segment.scss */
 .segment .point {
-  color: #ff656e;
+  color: #0E0C5B;
   font-size: 5rem;
   line-height: 45px;
 }
-/* line 142, ../scss/modules/_segment.scss */
+/* line 152, ../scss/modules/_segment.scss */
 .segment.dark {
-  background: linear-gradient(to right, #ffb681, #ff656e);
+  background: linear-gradient(to bottom, #0e0c5b, #5a1b81);
   color: #f9f9f9;
 }
-/* line 146, ../scss/modules/_segment.scss */
+/* line 156, ../scss/modules/_segment.scss */
 .segment.light {
   background-color: #f9f9f9;
   color: #191b1d;
 }
 
 @media (max-width: 992px) {
-  /* line 156, ../scss/modules/_segment.scss */
+  /* line 166, ../scss/modules/_segment.scss */
   .segment.about .about-row {
     flex-direction: column;
   }
-  /* line 158, ../scss/modules/_segment.scss */
+  /* line 168, ../scss/modules/_segment.scss */
   .segment.about .about-row .col-container {
     text-align: left;
     width: 100%;
@@ -908,15 +919,30 @@ a.btn {
   }
 }
 @media (max-width: 768px) {
-  /* line 170, ../scss/modules/_segment.scss */
+  /* line 180, ../scss/modules/_segment.scss */
   .segment {
     padding: 50px 1.8em;
   }
-  /* line 173, ../scss/modules/_segment.scss */
+  /* line 182, ../scss/modules/_segment.scss */
+  .segment.home {
+    height: inherit;
+    min-height: 700px;
+  }
+  /* line 185, ../scss/modules/_segment.scss */
+  .segment.home::before {
+    top: -10%;
+    left: -15%;
+    background-position: left;
+  }
+  /* line 190, ../scss/modules/_segment.scss */
+  .segment.home .spaceship {
+    visibility: hidden;
+  }
+  /* line 195, ../scss/modules/_segment.scss */
   .segment.about .about-row {
     flex-direction: column;
   }
-  /* line 175, ../scss/modules/_segment.scss */
+  /* line 197, ../scss/modules/_segment.scss */
   .segment.about .about-row .col-container {
     margin: 2em 0em;
     width: 100%;
@@ -974,7 +1000,7 @@ a.btn {
 .experience-grid .row .job-type {
   font-weight: 500;
   margin-left: 2em;
-  background-color: #FFB180;
+  background-color: #0E0C5B;
   padding: 1px 5px;
   color: white;
   border-radius: 5px;
@@ -988,7 +1014,7 @@ a.btn {
 }
 /* line 5, ../scss/modules/_progress-bar.scss */
 .progress-wrapper .progress {
-  background-color: #ff656e;
+  background-color: #5A1B81;
   height: 100%;
   width: 0;
   position: relative;
@@ -1067,16 +1093,21 @@ a.btn {
   margin: 2em 0;
 }
 /* line 35, ../scss/modules/_skills-grid.scss */
+.skills-grid .main-skills img, .skills-grid .companions img {
+  max-width: 100px;
+  max-height: 100px;
+}
+/* line 39, ../scss/modules/_skills-grid.scss */
 .skills-grid .main-skills .column, .skills-grid .companions .column {
   flex-grow: 1;
   flex-basis: 0;
 }
-/* line 38, ../scss/modules/_skills-grid.scss */
+/* line 42, ../scss/modules/_skills-grid.scss */
 .skills-grid .main-skills .column .skill-title, .skills-grid .companions .column .skill-title {
   font-weight: 500;
   font-size: 15px;
 }
-/* line 45, ../scss/modules/_skills-grid.scss */
+/* line 49, ../scss/modules/_skills-grid.scss */
 .skills-grid hr {
   max-width: 800px;
   margin: 2em auto;
@@ -1084,42 +1115,42 @@ a.btn {
   height: 2px;
   border: 0;
 }
-/* line 53, ../scss/modules/_skills-grid.scss */
+/* line 57, ../scss/modules/_skills-grid.scss */
 .skills-grid .container.shown {
   display: block;
   animation: slide-down 1s ease-out;
 }
-/* line 57, ../scss/modules/_skills-grid.scss */
+/* line 61, ../scss/modules/_skills-grid.scss */
 .skills-grid .container.hidden {
   display: none;
   animation: slide-up 1s ease-out;
 }
-/* line 61, ../scss/modules/_skills-grid.scss */
+/* line 65, ../scss/modules/_skills-grid.scss */
 .skills-grid .container .row {
   display: flex;
   justify-content: space-around;
 }
-/* line 64, ../scss/modules/_skills-grid.scss */
+/* line 68, ../scss/modules/_skills-grid.scss */
 .skills-grid .container .row .column {
   width: 40%;
   text-align: left;
 }
-/* line 67, ../scss/modules/_skills-grid.scss */
+/* line 71, ../scss/modules/_skills-grid.scss */
 .skills-grid .container .row .column h3 {
   font-size: 25px;
 }
-/* line 70, ../scss/modules/_skills-grid.scss */
+/* line 74, ../scss/modules/_skills-grid.scss */
 .skills-grid .container .row .column .skill {
   margin: 5px 0px;
   display: block;
   text-transform: uppercase;
 }
-/* line 77, ../scss/modules/_skills-grid.scss */
+/* line 81, ../scss/modules/_skills-grid.scss */
 .skills-grid .container .resume-project {
   margin: 1em 0;
   font-style: italic;
 }
-/* line 80, ../scss/modules/_skills-grid.scss */
+/* line 84, ../scss/modules/_skills-grid.scss */
 .skills-grid .container .resume-project .btn {
   font-style: normal;
   display: block;
@@ -1129,13 +1160,13 @@ a.btn {
   margin-right: auto;
   margin-top: 1em;
 }
-/* line 92, ../scss/modules/_skills-grid.scss */
+/* line 96, ../scss/modules/_skills-grid.scss */
 .skills-grid .detail-button {
   font-size: 18px;
   font-weight: 500;
   margin-top: 3em;
 }
-/* line 97, ../scss/modules/_skills-grid.scss */
+/* line 101, ../scss/modules/_skills-grid.scss */
 .skills-grid .chevron-button {
   background-color: #ff656e;
   width: 40px;
@@ -1145,28 +1176,28 @@ a.btn {
   margin: 1em auto;
   cursor: pointer;
 }
-/* line 105, ../scss/modules/_skills-grid.scss */
+/* line 109, ../scss/modules/_skills-grid.scss */
 .skills-grid .chevron-button i {
   vertical-align: -13px;
   font-size: 30px;
 }
 
 @media only screen and (max-width: 904px) {
-  /* line 115, ../scss/modules/_skills-grid.scss */
+  /* line 119, ../scss/modules/_skills-grid.scss */
   .skills-grid .container .row {
     flex-direction: column;
   }
-  /* line 117, ../scss/modules/_skills-grid.scss */
+  /* line 121, ../scss/modules/_skills-grid.scss */
   .skills-grid .container .row .column {
     width: 100%;
   }
 }
 @media (max-width: 600px) {
-  /* line 127, ../scss/modules/_skills-grid.scss */
+  /* line 131, ../scss/modules/_skills-grid.scss */
   .skills-grid .row {
     flex-direction: column;
   }
-  /* line 129, ../scss/modules/_skills-grid.scss */
+  /* line 133, ../scss/modules/_skills-grid.scss */
   .skills-grid .row .column {
     width: 100%;
     margin: 1em 0;
@@ -1185,7 +1216,7 @@ a.btn {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url("../images/darkBackgroundPattern.png");
+  background-image: url("../images/starsBackgroundPattern.png");
   z-index: -1;
 }
 /* line 14, ../scss/modules/_portfolio.scss */

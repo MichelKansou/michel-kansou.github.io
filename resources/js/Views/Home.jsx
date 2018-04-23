@@ -12,6 +12,7 @@ export default class Home extends React.Component {
         const translation = this.props.translation;
         return (
             <section id='home' className='segment home dark' onMouseMove={this.onMouseMove}>
+                <img className='spaceship' src='./resources/images/spaceship.png' />
                 <div id='header' className='header'>
                     <div className='content'>
                         <img className='avatar' src='./resources/images/Avatar.png' />
