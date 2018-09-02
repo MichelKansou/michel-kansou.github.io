@@ -1,5 +1,13 @@
 .segment.hobbies {
     .container {
+        text-align: center;
+        .segment-title {
+            font-size: 35px;
+            font-weight: 400;
+            color: $flat-black;
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
         .row {
             display: flex;
             justify-content: center;
@@ -31,7 +39,7 @@
                     padding: 0.25em;
                     width: 2em;
                     height: 64px;
-                    color: #fff;
+                    color: black;
                     margin-bottom: 10px;
                     margin-top: 10px;
                     display: inline-block;

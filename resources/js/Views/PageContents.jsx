@@ -10,12 +10,7 @@ import Hobbies from './Hobbies.jsx';
 import Contact from './Contact.jsx';
 
 const PageContents = (props) =>  {
-
     const translation = props.translation;
-    // TODO add Hobbies section
-    // <section id='hobbies'>
-    //     <Hobbies trans={trans} />
-    // </section>
     return (
         <div className='page-contents'>
             <div className='segment light about'>
@@ -32,6 +27,9 @@ const PageContents = (props) =>  {
             </div>
             <section id='portfolio'>
                 <Portfolio translation={translation} />
+            </section>
+            <section id='hobbies'>
+                <Hobbies translation={translation} />
             </section>
             <section id='contact'>
                 <Contact translation={translation} />

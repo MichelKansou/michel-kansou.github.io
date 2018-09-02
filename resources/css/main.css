@@ -1250,18 +1250,30 @@ a.btn {
     width: 90%;
   }
 }
-/* line 3, ../scss/modules/_hobbies.scss */
+/* line 2, ../scss/modules/_hobbies.scss */
+.segment.hobbies .container {
+  text-align: center;
+}
+/* line 4, ../scss/modules/_hobbies.scss */
+.segment.hobbies .container .segment-title {
+  font-size: 35px;
+  font-weight: 400;
+  color: #202325;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+/* line 11, ../scss/modules/_hobbies.scss */
 .segment.hobbies .container .row {
   display: flex;
   justify-content: center;
   margin-bottom: 2em;
 }
-/* line 7, ../scss/modules/_hobbies.scss */
+/* line 15, ../scss/modules/_hobbies.scss */
 .segment.hobbies .container .row .column {
   margin: 0 1em;
   width: 33.333333333%;
 }
-/* line 10, ../scss/modules/_hobbies.scss */
+/* line 18, ../scss/modules/_hobbies.scss */
 .segment.hobbies .container .row .column .circular-font {
   border: 1px solid;
   border-radius: 50%;
@@ -1271,16 +1283,16 @@ a.btn {
   margin-right: auto;
   margin-bottom: 1em;
 }
-/* line 18, ../scss/modules/_hobbies.scss */
+/* line 26, ../scss/modules/_hobbies.scss */
 .segment.hobbies .container .row .column .circular-font .fa {
   font-size: 30px;
 }
-/* line 22, ../scss/modules/_hobbies.scss */
+/* line 30, ../scss/modules/_hobbies.scss */
 .segment.hobbies .container .row .column h4, .segment.hobbies .container .row .column h5 {
   font-weight: 200;
   font-size: 15px;
 }
-/* line 26, ../scss/modules/_hobbies.scss */
+/* line 34, ../scss/modules/_hobbies.scss */
 .segment.hobbies .container .row .column span.batmanIcon {
   font-family: "batmanFont";
   font-size: 33px;
@@ -1289,21 +1301,21 @@ a.btn {
   padding: 0.25em;
   width: 2em;
   height: 64px;
-  color: #fff;
+  color: black;
   margin-bottom: 10px;
   margin-top: 10px;
   display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 47, ../scss/modules/_hobbies.scss */
+  /* line 55, ../scss/modules/_hobbies.scss */
   .segment.hobbies .container .row {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
   }
-  /* line 52, ../scss/modules/_hobbies.scss */
+  /* line 60, ../scss/modules/_hobbies.scss */
   .segment.hobbies .container .row .column {
     width: 100%;
     margin-bottom: 1em;
