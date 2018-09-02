@@ -2,13 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Hobbies = (props) =>  {
-    const trans = props.trans;
+    const trans = props.translation;
     return (
-        <div className='segment hobbies dark'>
+        <div className='segment hobbies light'>
             <div className='container'>
-                <i className='fa fa-heart fa-3x' />
-                <h3 className='segment-title'>{trans.hobbies.title}<span className='point'>.</span></h3>
-                <hr />
+                <h3 className='segment-title'>{trans.hobbies.title}</h3>
                 <div className='row'>
                     <div className='column'>
                         <div className='circular-font'>
@@ -59,7 +57,7 @@ const Hobbies = (props) =>  {
 }
 
 Hobbies.propTypes = {
-    trans: PropTypes.object
+    translation: PropTypes.object
 };
 
 export default Hobbies;
