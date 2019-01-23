@@ -17,7 +17,6 @@
     "eslint-plugin-react": "^7.4.0",
     "eslint-watch": "^3.1.2",
     "http-server": "0.10.0",
-    "jsx-loader": "^0.13.2",
     "loaders.css": "^0.1.2"
   },
   "dependencies": {
