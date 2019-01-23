@@ -19,7 +19,7 @@ export default class Contact extends React.Component {
         let email = this.emailRef.value
         let message = this.messageRef.value
         let subjectRef = "Job contact from online resume!"
-        if (name && email && message && subjectRef) {
+        if (this.validText(name) && this.validEmail(email) && this.validText(message)) {
             this.setState({ loading: true });
             return fetch('https://formspree.io/michel.kansou@viacesi.fr', {
                 method: 'POST',
@@ -57,6 +57,14 @@ export default class Contact extends React.Component {
                 message: 'Please ensure all fields are complete.'
             });
         }
+    }
+
+    validEmail(email) {
+        var regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return regExp.test(String(email).toLowerCase());
+    }
+    validText(text) {
+        return text != "" && text.length > 4;
     }
 
     render() {
