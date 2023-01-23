@@ -1,7 +1,10 @@
 {
   "name": "my-portfolio",
-  "version": "0.1.0",
+  "homepage": "https://michelkansou.github.io/",
+  "version": "3.0.0",
   "private": true,
+  "author": "Michel Kansou",
+  "license": "ISC",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -44,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "^5.1.26",
+    "gh-pages": "^5.0.0"
   }
 }
